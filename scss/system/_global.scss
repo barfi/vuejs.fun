@@ -46,8 +46,31 @@ a {
         color: $color-accent;
     }
 }
+svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 // App entry styles
 #app {
     height: 100%;
     padding: 76px 0 0 320px;
+}
+
+// Avatars classes and colors generator
+// 1. avatars-first-colors classes
+.af {
+    @each $name, $color in $avatars-first-colors {
+        &#{$name} {
+            color: $color;
+        }
+    }
+}
+// 2. avatars-second-colors classes
+.as {
+    @each $name, $color in $avatars-second-colors {
+        &#{$name} {
+            fill: $color;
+        }
+    }
 }

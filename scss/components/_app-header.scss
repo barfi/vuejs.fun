@@ -95,6 +95,7 @@
             display: block;
             line-height: 76px;
             float: left;
+            position: relative;
             &:first-child {
                 padding:0 20px 0 87px;
                 color: $color-base;
@@ -113,8 +114,13 @@
                     background: $color-base;
                 }
             }
-            svg {
-
+            .avatar {
+                position: absolute;
+                top: 50%;
+                left: 20px;
+                margin-top: -26px;
+                width: 52px;
+                height: 52px;
             }
         }
     }

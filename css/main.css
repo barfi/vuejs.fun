@@ -242,9 +242,48 @@ a {
   a:hover, a:active {
     color: #00b6ad; }
 
+svg {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
 #app {
   height: 100%;
   padding: 76px 0 0 320px; }
+
+.afc-1 {
+  color: #00b6ad; }
+.afc-2 {
+  color: #dc626f; }
+.afc-3 {
+  color: #8199a3; }
+.afc-4 {
+  color: #08aac7; }
+.afc-5 {
+  color: #7d7870; }
+.afc-6 {
+  color: #726680; }
+.afc-7 {
+  color: #66CC99; }
+.afc-8 {
+  color: #44BBFF; }
+
+.asc-1 {
+  fill: #fcb941; }
+.asc-2 {
+  fill: #ff7055; }
+.asc-3 {
+  fill: #7d7870; }
+.asc-4 {
+  fill: #08aac7; }
+.asc-5 {
+  fill: #726680; }
+.asc-6 {
+  fill: #BE8B5C; }
+.asc-7 {
+  fill: #9E58DC; }
+.asc-8 {
+  fill: #409C97; }
 
 #app-header {
   min-height: 76px;
@@ -325,7 +364,8 @@ a {
   #app-user-area .authorized a {
     display: block;
     line-height: 76px;
-    float: left; }
+    float: left;
+    position: relative; }
     #app-user-area .authorized a:first-child {
       padding: 0 20px 0 87px;
       color: #55576e;
@@ -338,6 +378,13 @@ a {
       background: #00b6ad; }
       #app-user-area .authorized a:last-child:hover, #app-user-area .authorized a:last-child:active {
         background: #55576e; }
+    #app-user-area .authorized a .avatar {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      margin-top: -26px;
+      width: 52px;
+      height: 52px; }
 
 #app-sidebar {
   background: #fff;
