@@ -41,7 +41,7 @@ a {
     outline: none;
     text-decoration: none;
     color: $color-base;
-    @include transition-single(color, .3s, ease-in-out, null);
+    @include transition-single(all, .3s, ease-in-out, null);
     &:hover, &:active {
         color: $color-accent;
     }

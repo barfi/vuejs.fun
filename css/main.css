@@ -235,10 +235,10 @@ a {
   outline: none;
   text-decoration: none;
   color: #55576e;
-  -webkit-transition: color 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out; }
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
   a:hover, a:active {
     color: #00b6ad; }
 
@@ -263,14 +263,18 @@ a {
   float: left; }
   #app-breadcrumbs ul {
     overflow: hidden;
-    padding-left: 30px; }
+    padding: 0 30px; }
     #app-breadcrumbs ul li {
       line-height: 76px;
       float: left;
       position: relative;
-      padding-right: 18px;
+      padding-right: 19px;
       margin-right: 15px;
-      color: #7f818e; }
+      color: #7f818e;
+      max-width: 300px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
       #app-breadcrumbs ul li:after {
         content: '';
         display: block;
@@ -285,7 +289,7 @@ a {
         -webkit-transform: rotate(-45deg);
         transform: rotate(-45deg);
         position: absolute;
-        right: 0;
+        right: 1px;
         top: 50%;
         margin-top: -3px; }
       #app-breadcrumbs ul li:last-child {
@@ -297,6 +301,43 @@ a {
         color: #00b6ad; }
         #app-breadcrumbs ul li a:hover, #app-breadcrumbs ul li a:active {
           color: #55576e; }
+
+#app-user-area {
+  float: right; }
+  #app-user-area .guest {
+    line-height: 76px;
+    padding: 0 30px; }
+    #app-user-area .guest a {
+      text-transform: uppercase;
+      display: inline-block;
+      line-height: 1;
+      border: 2px solid #00b6ad;
+      color: #00b6ad;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 12px;
+      padding: 12px 22px; }
+      #app-user-area .guest a:hover, #app-user-area .guest a:active {
+        color: #55576e;
+        border: 2px solid #55576e; }
+  #app-user-area .authorized a {
+    display: block;
+    line-height: 76px;
+    float: left; }
+    #app-user-area .authorized a:first-child {
+      padding: 0 20px 0 87px;
+      color: #55576e;
+      font-weight: 500; }
+      #app-user-area .authorized a:first-child:hover, #app-user-area .authorized a:first-child:active {
+        background: #f6f6f7; }
+    #app-user-area .authorized a:last-child {
+      height: 76px;
+      width: 76px;
+      background: #00b6ad; }
+      #app-user-area .authorized a:last-child:hover, #app-user-area .authorized a:last-child:active {
+        background: #55576e; }
 
 #app-sidebar {
   background: #fff;
