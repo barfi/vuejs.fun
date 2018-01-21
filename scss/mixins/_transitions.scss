@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+// Transitions mixins
+
+// example: @include transition-single(background, 1s, ease-in-out, 0s);
+
+@mixin transition-single($property, $duration, $timing-function, $delay: null) {
+    @if $delay != null {
+        -webkit-transition: $property $duration $timing-function $delay;
+        -moz-transition: $property $duration $timing-function $delay;
+        -o-transition: $property $duration $timing-function $delay;
+        transition: $property $duration $timing-function $delay;
+    } @else {
+        -webkit-transition: $property $duration $timing-function;
+        -moz-transition: $property $duration $timing-function;
+        -o-transition: $property $duration $timing-function;
+        transition: $property $duration $timing-function;
+    }
+
+}

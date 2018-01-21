@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+// Project helper classes
+
+// Floats
+.fl-l {
+    float: left;
+}
+.fl-r {
+    float: right;
+}
+// Clearfix
+.clear {
+    &:before, &:after {
+        content: '';
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+// Overflows
+.ov-h {
+    overflow: hidden;
+}
+.ov-a {
+    overflow: auto;
+}
+.ov-s {
+    overflow: scroll;
+}

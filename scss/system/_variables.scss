@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+// Basic color palette
+$color-white: #fff;
+$color-light: #888999;
+$color-base: #55576e;
+$color-dark: #3b3d52;
+$color-accent: #00b6ad;
+
+// Derivative color palette
+$color-extra-light: #f6f6f7;
+$color-base-10: #eeeef0;
+$color-dark-40: #b1b1ba;
+
+// Avatars color palette (as massive)
+$avatars-first-colors: (
+        afc-base: #00b6ad,
+        afc-red: #dc626f,
+        afc-gray: #8199a3,
+        afc-blue: #08aac7,
+        afc-brown: #7d7870,
+        afc-purple: #726680,
+        afc-green: #66CC99,
+        afc-cloud: #44BBFF
+);
+$avatars-second-colors: (
+        asc-base: #fcb941,
+        asc-orange: #ff7055,
+        asc-brown: #7d7870,
+        asc-blue: #08aac7,
+        asc-purple: #726680,
+        asc-woody: #BE8B5C,
+        asc-neon: #9E58DC,
+        asc-green: #409C97
+);
+
+// Fonts
+$font-rubik: 'Rubik', Arial, Tahoma, sans-serif;
+
+// Devices points for media queries

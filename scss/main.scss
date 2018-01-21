@@ -1,3 +1,18 @@
-body {
-    background: #f5f5f5;
-}
+@charset "UTF-8";
+
+/* ===========================================
+ * Vuejs.fun [http://vuejs.fun]
+ * Mr.Barfi [https://github.com/Barfich]
+ * Mr.qnpbgood [https://github.com/qnpbgood]
+ * Developer's site [http://barfi.ru]
+ * Version #1.0, Saint-Petersburg, 2018
+ * ===========================================
+ */
+
+// System files inc.
+@import "system/variables";
+@import "system/mixins";
+@import "system/fonts";
+@import "system/libs";
+@import "system/resets";
+@import "system/global";
