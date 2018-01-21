@@ -16,3 +16,8 @@
 @import "system/libs";
 @import "system/resets";
 @import "system/global";
+
+// App components inc.
+@import "components/app-header";
+@import "components/app-sidebar";
+@import "components/app-content";

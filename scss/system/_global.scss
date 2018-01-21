@@ -1,2 +1,48 @@
 @charset "UTF-8";
 
+// Project's global styles: sizes, colors, fonts etc.
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    line-height: (20/14); // 14px font to 20px line-height
+    height: 100%;
+}
+body {
+    font: {
+        family: $font-rubik;
+        weight: normal;
+        size: 14px;
+    }
+    color: rgba($color-base, .9);
+    background: $color-base-10;
+    min-width: 320px;
+    @extend %reset-margin;
+    @extend %reset-padding;
+    height: 100%;
+    overflow: hidden;
+}
+p {
+    @extend %reset-margin;
+}
+h1, h2, h3, h4, h5, h6 {
+    @extend %reset-margin;
+}
+ul, ol {
+    list-style: none;
+    @extend %reset-margin;
+    @extend %reset-padding;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    color: $color-base;
+    @include transition-single(color, .3s, ease-in-out, null);
+    &:hover, &:active {
+        color: $color-accent;
+    }
+}
