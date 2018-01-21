@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+// App header component styles
+
+#app-header {
+    min-height: 76px;
+    background: $color-white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-left: 320px;
+    overflow: hidden;
+    @include box-shadow-single(0, 2px, 8px, 0, rgba(#000, .1));
+}
+// App header breadcrumbs styles
+
+#app-breadcrumbs {
+    float: left;
+    ul {
+        overflow: hidden;
+        padding-left: 30px;
+        li {
+            line-height: 76px;
+            float: left;
+            position: relative;
+            padding-right: 18px;
+            margin-right: 15px;
+            color: $color-dark-65;
+            &:after {
+                content: '';
+                display: block;
+                width: 6px;
+                height: 6px;
+                border: 2px solid $color-dark-40;
+                border-top: transparent;
+                border-left: transparent;
+                @include rotate(-45);
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: -3px;
+            }
+            &:last-child {
+                padding: 0;
+                margin: 0;
+            }
+            &:last-child:after {
+                display: none;
+            }
+            a {
+                color: $color-accent;
+                &:hover, &:active {
+                    color: $color-base;
+                }
+            }
+        }
+    }
+}
