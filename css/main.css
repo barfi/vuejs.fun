@@ -447,9 +447,16 @@ svg {
       #app-sidebar .table .table-cell svg {
         display: none; }
   #app-sidebar footer ul {
-    text-align: center; }
+    text-align: center;
+    font-size: 0;
+    line-height: 1;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #eeeef0; }
     #app-sidebar footer ul li {
-      display: inline-block; }
+      display: inline-block;
+      margin-right: 30px; }
+      #app-sidebar footer ul li:last-child {
+        margin-right: 0; }
       #app-sidebar footer ul li a {
         display: block;
         width: 30px;
@@ -459,5 +466,21 @@ svg {
           color: #00b6ad; }
         #app-sidebar footer ul li a svg {
           display: block !important; }
+  #app-sidebar footer .copyrights {
+    overflow: hidden;
+    padding-top: 25px; }
+    #app-sidebar footer .copyrights p {
+      line-height: 1;
+      font-size: 12px;
+      font-weight: 400;
+      color: #888999; }
+      #app-sidebar footer .copyrights p a {
+        color: #00b6ad; }
+        #app-sidebar footer .copyrights p a:hover, #app-sidebar footer .copyrights p a:active {
+          color: #55576e; }
+      #app-sidebar footer .copyrights p:first-child {
+        float: left; }
+      #app-sidebar footer .copyrights p:last-child {
+        float: right; }
 
 /*# sourceMappingURL=main.css.map */

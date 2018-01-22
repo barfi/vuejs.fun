@@ -42,8 +42,16 @@
     footer {
         ul {
             text-align: center;
+            font-size: 0;
+            line-height: 1;
+            padding-bottom: 25px;
+            border-bottom: 2px solid $color-base-10;
             li {
                 display: inline-block;
+                margin-right: 30px;
+                &:last-child {
+                    margin-right: 0;
+                }
                 a {
                     display: block;
                     width: 30px;
@@ -55,6 +63,30 @@
                     svg {
                         display: block !important;
                     }
+                }
+            }
+        }
+        .copyrights {
+            overflow: hidden;
+            padding-top: 25px;
+            p {
+                line-height: 1;
+                font: {
+                    size: 12px;
+                    weight: 400;
+                }
+                color: $color-light;
+                a {
+                    color: $color-accent;
+                    &:hover, &:active {
+                        color: $color-base;
+                    }
+                }
+                &:first-child {
+                    float: left;
+                }
+                &:last-child {
+                    float: right;
                 }
             }
         }
