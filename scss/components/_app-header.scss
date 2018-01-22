@@ -96,6 +96,7 @@
             line-height: 76px;
             float: left;
             position: relative;
+            // Profile button
             &:first-child {
                 padding:0 20px 0 87px;
                 color: $color-base;
@@ -105,14 +106,8 @@
                 &:hover, &:active {
                     background: $color-extra-light;
                 }
-            }
-            &:last-child {
-                height: 76px;
-                width: 76px;
-                background: $color-accent;
-
-                &:hover, &:active {
-                    background: $color-base;
+                &:hover > .avatar .level, &:active > .avatar .level {
+                    border-color: $color-extra-light;
                 }
             }
             .avatar {
@@ -122,6 +117,37 @@
                 margin-top: -26px;
                 width: 52px;
                 height: 52px;
+                .level {
+                    position: absolute;
+                    display: block;
+                    background: $color-accent;
+                    width: 20px;
+                    height: 20px;
+                    border: 2px solid $color-white;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 18px;
+                    bottom: 2px;
+                    right: -9px;
+                    font: {
+                        size: 10px;
+                        weight: 500;
+                    }
+                    color: $color-white;
+                    @include transition-single(all, .3s, ease-in-out, null);
+                }
+            }
+            // Exit button
+            &:last-child {
+                height: 76px;
+                width: 76px;
+                padding: 22px;
+                background: $color-accent;
+                &:hover, &:active {
+                    background: $color-base;
+                }
             }
         }
     }

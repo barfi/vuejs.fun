@@ -372,12 +372,8 @@ svg {
       font-weight: 500; }
       #app-user-area .authorized a:first-child:hover, #app-user-area .authorized a:first-child:active {
         background: #f6f6f7; }
-    #app-user-area .authorized a:last-child {
-      height: 76px;
-      width: 76px;
-      background: #00b6ad; }
-      #app-user-area .authorized a:last-child:hover, #app-user-area .authorized a:last-child:active {
-        background: #55576e; }
+      #app-user-area .authorized a:first-child:hover > .avatar .level, #app-user-area .authorized a:first-child:active > .avatar .level {
+        border-color: #f6f6f7; }
     #app-user-area .authorized a .avatar {
       position: absolute;
       top: 50%;
@@ -385,6 +381,34 @@ svg {
       margin-top: -26px;
       width: 52px;
       height: 52px; }
+      #app-user-area .authorized a .avatar .level {
+        position: absolute;
+        display: block;
+        background: #00b6ad;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #fff;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 18px;
+        bottom: 2px;
+        right: -9px;
+        font-size: 10px;
+        font-weight: 500;
+        color: #fff;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+    #app-user-area .authorized a:last-child {
+      height: 76px;
+      width: 76px;
+      padding: 22px;
+      background: #00b6ad; }
+      #app-user-area .authorized a:last-child:hover, #app-user-area .authorized a:last-child:active {
+        background: #55576e; }
 
 #app-sidebar {
   background: #fff;
