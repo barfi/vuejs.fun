@@ -24,22 +24,77 @@
             color: $color-base;
         }
     }
+
     .table {
-        padding: 46px 0;
+        padding: 46px 0 113px;
         display: table;
         width: 100%;
         height: 100%;
         .table-cell {
             display: table-cell;
             vertical-align: middle;
-            svg {
-                display: none;
+        }
+    }
+    nav {
+        margin: 0 -30px;
+        ul {
+            li {
+                position: relative;
+                padding-left: 116px;
+                line-height: 26px;
+                margin-bottom: 26px;
+                &:nth-last-child(4) {
+                    margin-bottom: 78px;
+                }
+                &:last-child > a, &:last-child > svg {
+                    color: $color-donate !important;
+                }
+                &.active a:before {
+                    background: $color-accent;
+                    visibility: visible;
+                }
+                svg {
+                    width: 26px;
+                    height: 26px;
+                    position: absolute;
+                    left: 60px;
+                    top: 0;
+                    color: $color-dark-40;
+                    @include transition-single(all, .3s, ease-in-out, null);
+                }
+                a {
+                    &:before {
+                        content: '';
+                        display: block;
+                        width: 4px;
+                        height: 40px;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        margin-top: -20px;
+                        background: transparent;
+                        visibility: hidden;
+                        @include transition-single(all, .3s, ease-in-out, null);
+                    }
+                    &:hover ~ svg {
+                        color: $color-accent;
+                    }
+                    &:hover:before {
+                        background: $color-accent;
+                        visibility: visible;
+                    }
+                }
             }
         }
     }
 
-    // Footer styles
+    // Footer styles 88px height!
     footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 0 30px 30px;
         ul {
             text-align: center;
             font-size: 0;

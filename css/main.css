@@ -437,50 +437,99 @@ svg {
     #app-sidebar .logo:hover, #app-sidebar .logo:active {
       color: #55576e; }
   #app-sidebar .table {
-    padding: 46px 0;
+    padding: 46px 0 113px;
     display: table;
     width: 100%;
     height: 100%; }
     #app-sidebar .table .table-cell {
       display: table-cell;
       vertical-align: middle; }
-      #app-sidebar .table .table-cell svg {
-        display: none; }
-  #app-sidebar footer ul {
-    text-align: center;
-    font-size: 0;
-    line-height: 1;
-    padding-bottom: 25px;
-    border-bottom: 2px solid #eeeef0; }
-    #app-sidebar footer ul li {
-      display: inline-block;
-      margin-right: 30px; }
-      #app-sidebar footer ul li:last-child {
-        margin-right: 0; }
-      #app-sidebar footer ul li a {
+  #app-sidebar nav {
+    margin: 0 -30px; }
+    #app-sidebar nav ul li {
+      position: relative;
+      padding-left: 116px;
+      line-height: 26px;
+      margin-bottom: 26px; }
+      #app-sidebar nav ul li:nth-last-child(4) {
+        margin-bottom: 78px; }
+      #app-sidebar nav ul li:last-child > a, #app-sidebar nav ul li:last-child > svg {
+        color: #a875a7 !important; }
+      #app-sidebar nav ul li.active a:before {
+        background: #00b6ad;
+        visibility: visible; }
+      #app-sidebar nav ul li svg {
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        left: 60px;
+        top: 0;
+        color: #b1b1ba;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+      #app-sidebar nav ul li a:before {
+        content: '';
         display: block;
-        width: 30px;
-        height: 24px;
-        color: #b1b1ba; }
-        #app-sidebar footer ul li a:hover, #app-sidebar footer ul li a:active {
-          color: #00b6ad; }
-        #app-sidebar footer ul li a svg {
-          display: block !important; }
-  #app-sidebar footer .copyrights {
-    overflow: hidden;
-    padding-top: 25px; }
-    #app-sidebar footer .copyrights p {
-      line-height: 1;
-      font-size: 12px;
-      font-weight: 400;
-      color: #888999; }
-      #app-sidebar footer .copyrights p a {
+        width: 4px;
+        height: 40px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -20px;
+        background: transparent;
+        visibility: hidden;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+      #app-sidebar nav ul li a:hover ~ svg {
         color: #00b6ad; }
-        #app-sidebar footer .copyrights p a:hover, #app-sidebar footer .copyrights p a:active {
-          color: #55576e; }
-      #app-sidebar footer .copyrights p:first-child {
-        float: left; }
-      #app-sidebar footer .copyrights p:last-child {
-        float: right; }
+      #app-sidebar nav ul li a:hover:before {
+        background: #00b6ad;
+        visibility: visible; }
+  #app-sidebar footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0 30px 30px; }
+    #app-sidebar footer ul {
+      text-align: center;
+      font-size: 0;
+      line-height: 1;
+      padding-bottom: 25px;
+      border-bottom: 2px solid #eeeef0; }
+      #app-sidebar footer ul li {
+        display: inline-block;
+        margin-right: 30px; }
+        #app-sidebar footer ul li:last-child {
+          margin-right: 0; }
+        #app-sidebar footer ul li a {
+          display: block;
+          width: 30px;
+          height: 24px;
+          color: #b1b1ba; }
+          #app-sidebar footer ul li a:hover, #app-sidebar footer ul li a:active {
+            color: #00b6ad; }
+          #app-sidebar footer ul li a svg {
+            display: block !important; }
+    #app-sidebar footer .copyrights {
+      overflow: hidden;
+      padding-top: 25px; }
+      #app-sidebar footer .copyrights p {
+        line-height: 1;
+        font-size: 12px;
+        font-weight: 400;
+        color: #888999; }
+        #app-sidebar footer .copyrights p a {
+          color: #00b6ad; }
+          #app-sidebar footer .copyrights p a:hover, #app-sidebar footer .copyrights p a:active {
+            color: #55576e; }
+        #app-sidebar footer .copyrights p:first-child {
+          float: left; }
+        #app-sidebar footer .copyrights p:last-child {
+          float: right; }
 
 /*# sourceMappingURL=main.css.map */
