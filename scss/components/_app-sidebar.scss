@@ -37,4 +37,26 @@
             }
         }
     }
+
+    // Footer styles
+    footer {
+        ul {
+            text-align: center;
+            li {
+                display: inline-block;
+                a {
+                    display: block;
+                    width: 30px;
+                    height: 24px;
+                    color: $color-dark-40;
+                    &:hover, &:active {
+                        color: $color-accent;
+                    }
+                    svg {
+                        display: block !important;
+                    }
+                }
+            }
+        }
+    }
 }

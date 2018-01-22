@@ -446,5 +446,18 @@ svg {
       vertical-align: middle; }
       #app-sidebar .table .table-cell svg {
         display: none; }
+  #app-sidebar footer ul {
+    text-align: center; }
+    #app-sidebar footer ul li {
+      display: inline-block; }
+      #app-sidebar footer ul li a {
+        display: block;
+        width: 30px;
+        height: 24px;
+        color: #b1b1ba; }
+        #app-sidebar footer ul li a:hover, #app-sidebar footer ul li a:active {
+          color: #00b6ad; }
+        #app-sidebar footer ul li a svg {
+          display: block !important; }
 
 /*# sourceMappingURL=main.css.map */
