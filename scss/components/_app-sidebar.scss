@@ -10,39 +10,34 @@
     left: 0;
     width: 320px;
     @include box-shadow-single(2px, 0, 8px, 0, rgba(#000, .15));
-    padding: 106px 30px 30px 30px;
     .logo {
-        position: absolute;
-        top: 46px;
-        left: 50%;
+        margin: 0 auto;
+        margin-bottom: 70px;
         display: block;
         height: 60px;
         width: 150px;
         color: $color-accent;
-        @include translateX(-50%);
         &:hover, &:active {
             color: $color-base;
         }
     }
-
-    .table {
-        padding: 46px 0 113px;
-        display: table;
-        width: 100%;
+    // Scroll plugin selector
+    .sbr-scroll {
         height: 100%;
-        .table-cell {
-            display: table-cell;
-            vertical-align: middle;
-        }
+        padding-top: 46px;
     }
+    // Sidebar navigation
     nav {
-        margin: 0 -30px;
+        margin-bottom: 70px;
         ul {
             li {
                 position: relative;
                 padding-left: 116px;
                 line-height: 26px;
                 margin-bottom: 26px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
                 &:nth-last-child(4) {
                     margin-bottom: 78px;
                 }
@@ -87,14 +82,10 @@
             }
         }
     }
-
-    // Footer styles 88px height!
+    // Footer styles
     footer {
-        position: absolute;
-        left: 0;
-        bottom: 0;
         width: 100%;
-        padding: 0 30px 30px;
+        padding: 0 30px 25px;
         ul {
             text-align: center;
             font-size: 0;
