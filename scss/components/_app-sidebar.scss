@@ -10,4 +10,31 @@
     left: 0;
     width: 320px;
     @include box-shadow-single(2px, 0, 8px, 0, rgba(#000, .15));
+    padding: 106px 30px 30px 30px;
+    .logo {
+        position: absolute;
+        top: 46px;
+        left: 50%;
+        display: block;
+        height: 60px;
+        width: 150px;
+        color: $color-accent;
+        @include translateX(-50%);
+        &:hover, &:active {
+            color: $color-base;
+        }
+    }
+    .table {
+        padding: 46px 0;
+        display: table;
+        width: 100%;
+        height: 100%;
+        .table-cell {
+            display: table-cell;
+            vertical-align: middle;
+            svg {
+                display: none;
+            }
+        }
+    }
 }
