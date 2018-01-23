@@ -24,6 +24,12 @@
             color: $color-base;
         }
     }
+    .mini-logo {
+        margin-bottom: 52px;
+        display: none;
+        height: 66px;
+        padding: 13px;
+    }
     // Scroll plugin selector
     .sbr-scroll {
         height: 100%;
@@ -35,11 +41,25 @@
         a {
             position: relative;
             padding-left: 116px;
+            padding-right: 30px;
             display: block;
             line-height: 26px;
             margin-bottom: 26px;
+            &.active {
+                color: $color-accent;
+            }
             &:last-child {
                 margin-bottom: 0;
+                color: $color-donate;
+                svg {
+                    color: $color-donate !important;
+                }
+                &.active:before {
+                    background: $color-donate;
+                }
+                &:hover:before {
+                    background: $color-donate !important;
+                }
             }
             &:nth-last-child(4) {
                 margin-bottom: 78px;
@@ -57,7 +77,7 @@
                 visibility: hidden;
                 @include transition-single(background, .3s, ease-in-out, null);
             }
-            &:hover:before {
+            &:hover:before, &.active:before {
                 background: $color-accent;
                 visibility: visible;
             }
@@ -71,7 +91,7 @@
                 color: $color-dark-40;
                 @include transition-single(color, .3s, ease-in-out, null);
             }
-            &:hover > svg {
+            &:hover > svg, &.active > svg {
                 color: $color-accent;
             }
         }
@@ -136,6 +156,12 @@
         width: 66px;
         .logo {
             display: none;
+        }
+        .mini-logo {
+            display: block;
+        }
+        .sbr-scroll {
+            padding-top: 0;
         }
         nav {
             a {

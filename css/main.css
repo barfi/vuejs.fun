@@ -462,6 +462,11 @@ svg {
     color: #00b6ad; }
     #app-sidebar .logo:hover, #app-sidebar .logo:active {
       color: #55576e; }
+  #app-sidebar .mini-logo {
+    margin-bottom: 52px;
+    display: none;
+    height: 66px;
+    padding: 13px; }
   #app-sidebar .sbr-scroll {
     height: 100%;
     padding-top: 46px; }
@@ -470,11 +475,21 @@ svg {
     #app-sidebar nav a {
       position: relative;
       padding-left: 116px;
+      padding-right: 30px;
       display: block;
       line-height: 26px;
       margin-bottom: 26px; }
+      #app-sidebar nav a.active {
+        color: #00b6ad; }
       #app-sidebar nav a:last-child {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        color: #a875a7; }
+        #app-sidebar nav a:last-child svg {
+          color: #a875a7 !important; }
+        #app-sidebar nav a:last-child.active:before {
+          background: #a875a7; }
+        #app-sidebar nav a:last-child:hover:before {
+          background: #a875a7 !important; }
       #app-sidebar nav a:nth-last-child(4) {
         margin-bottom: 78px; }
       #app-sidebar nav a:before {
@@ -492,7 +507,7 @@ svg {
         -moz-transition: background 0.3s ease-in-out;
         -o-transition: background 0.3s ease-in-out;
         transition: background 0.3s ease-in-out; }
-      #app-sidebar nav a:hover:before {
+      #app-sidebar nav a:hover:before, #app-sidebar nav a.active:before {
         background: #00b6ad;
         visibility: visible; }
       #app-sidebar nav a svg {
@@ -507,7 +522,7 @@ svg {
         -moz-transition: color 0.3s ease-in-out;
         -o-transition: color 0.3s ease-in-out;
         transition: color 0.3s ease-in-out; }
-      #app-sidebar nav a:hover > svg {
+      #app-sidebar nav a:hover > svg, #app-sidebar nav a.active > svg {
         color: #00b6ad; }
   #app-sidebar footer {
     width: 100%;
@@ -552,6 +567,10 @@ svg {
     width: 66px; }
     #app-sidebar.shorted .logo {
       display: none; }
+    #app-sidebar.shorted .mini-logo {
+      display: block; }
+    #app-sidebar.shorted .sbr-scroll {
+      padding-top: 0; }
     #app-sidebar.shorted nav a {
       padding-left: 66px;
       line-height: 26px;
