@@ -16,7 +16,7 @@
     }
     .logo {
         margin: 0 auto;
-        margin-bottom: 70px;
+        margin-bottom: 63px;
         display: block;
         height: 60px;
         width: 150px;
@@ -32,14 +32,14 @@
     }
     // Sidebar navigation
     nav {
-        margin-bottom: 70px;
+        margin-bottom: 63px;
         a {
             position: relative;
             padding-left: 116px;
             padding-right: 30px;
             display: block;
-            line-height: 26px;
-            margin-bottom: 26px;
+            line-height: 40px;
+            margin-bottom: 12px;
             &.active {
                 color: $color-accent;
             }
@@ -57,7 +57,7 @@
                 }
             }
             &:nth-last-child(4) {
-                margin-bottom: 78px;
+                margin-bottom: 64px;
             }
             &:before {
                 content: '';
@@ -157,6 +157,7 @@
             padding-top: 52px;
         }
         nav {
+            margin-bottom: 52px;
             a {
                 padding: 0;
                 height: 52px;
@@ -176,56 +177,26 @@
             }
         }
         footer {
-            padding: 0 30px 25px;
+            padding: 0 0 52px;
             ul {
-                text-align: center;
-                font-size: 0;
-                line-height: 1;
-                padding-bottom: 25px;
-                border-bottom: 2px solid $color-base-10;
+                padding-bottom: 0;
+                border-bottom: none;
                 li {
-                    display: inline-block;
-                    margin-right: 30px;
-                    &:last-child {
-                        margin-right: 0;
-                    }
+                    display: block;
+                    margin-right: 0;
+                    margin-bottom: 0;
                     a {
-                        display: block;
-                        width: 30px;
-                        height: 24px;
-                        color: $color-dark-40;
+                        width: auto;
+                        height: 52px;
+                        padding: 14px 0;
                         &:hover, &:active {
-                            color: $color-accent;
-                        }
-                        svg {
-                            display: block !important;
+                            background: $color-extra-light;
                         }
                     }
                 }
             }
             .copyrights {
-                overflow: hidden;
-                padding-top: 25px;
-                p {
-                    line-height: 1;
-                    font: {
-                        size: 12px;
-                        weight: 400;
-                    }
-                    color: $color-light;
-                    a {
-                        color: $color-accent;
-                        &:hover, &:active {
-                            color: $color-base;
-                        }
-                    }
-                    &:first-child {
-                        float: left;
-                    }
-                    &:last-child {
-                        float: right;
-                    }
-                }
+                display: none;
             }
         }
     }

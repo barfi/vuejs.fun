@@ -472,7 +472,7 @@ svg {
   z-index: 10; }
   #app-sidebar .logo {
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 63px;
     display: block;
     height: 60px;
     width: 150px;
@@ -483,14 +483,14 @@ svg {
     height: 100%;
     padding-top: 46px; }
   #app-sidebar nav {
-    margin-bottom: 70px; }
+    margin-bottom: 63px; }
     #app-sidebar nav a {
       position: relative;
       padding-left: 116px;
       padding-right: 30px;
       display: block;
-      line-height: 26px;
-      margin-bottom: 26px; }
+      line-height: 40px;
+      margin-bottom: 12px; }
       #app-sidebar nav a.active {
         color: #00b6ad; }
       #app-sidebar nav a:last-child {
@@ -503,7 +503,7 @@ svg {
         #app-sidebar nav a:last-child:hover:before {
           background: #a875a7 !important; }
       #app-sidebar nav a:nth-last-child(4) {
-        margin-bottom: 78px; }
+        margin-bottom: 64px; }
       #app-sidebar nav a:before {
         content: '';
         display: block;
@@ -582,55 +582,36 @@ svg {
       display: none; }
     #app-sidebar.shorted .sbr-scroll {
       padding-top: 52px; }
-    #app-sidebar.shorted nav a {
-      padding: 0;
-      height: 52px;
-      margin-bottom: 0; }
-      #app-sidebar.shorted nav a span {
-        display: none; }
-      #app-sidebar.shorted nav a:hover, #app-sidebar.shorted nav a:active, #app-sidebar.shorted nav a.active {
-        background: #f6f6f7; }
-      #app-sidebar.shorted nav a:nth-last-child(4) {
-        margin-bottom: 52px; }
-      #app-sidebar.shorted nav a svg {
-        left: 20px; }
+    #app-sidebar.shorted nav {
+      margin-bottom: 52px; }
+      #app-sidebar.shorted nav a {
+        padding: 0;
+        height: 52px;
+        margin-bottom: 0; }
+        #app-sidebar.shorted nav a span {
+          display: none; }
+        #app-sidebar.shorted nav a:hover, #app-sidebar.shorted nav a:active, #app-sidebar.shorted nav a.active {
+          background: #f6f6f7; }
+        #app-sidebar.shorted nav a:nth-last-child(4) {
+          margin-bottom: 52px; }
+        #app-sidebar.shorted nav a svg {
+          left: 20px; }
     #app-sidebar.shorted footer {
-      padding: 0 30px 25px; }
+      padding: 0 0 52px; }
       #app-sidebar.shorted footer ul {
-        text-align: center;
-        font-size: 0;
-        line-height: 1;
-        padding-bottom: 25px;
-        border-bottom: 2px solid #eeeef0; }
+        padding-bottom: 0;
+        border-bottom: none; }
         #app-sidebar.shorted footer ul li {
-          display: inline-block;
-          margin-right: 30px; }
-          #app-sidebar.shorted footer ul li:last-child {
-            margin-right: 0; }
+          display: block;
+          margin-right: 0;
+          margin-bottom: 0; }
           #app-sidebar.shorted footer ul li a {
-            display: block;
-            width: 30px;
-            height: 24px;
-            color: #b1b1ba; }
+            width: auto;
+            height: 52px;
+            padding: 14px 0; }
             #app-sidebar.shorted footer ul li a:hover, #app-sidebar.shorted footer ul li a:active {
-              color: #00b6ad; }
-            #app-sidebar.shorted footer ul li a svg {
-              display: block !important; }
+              background: #f6f6f7; }
       #app-sidebar.shorted footer .copyrights {
-        overflow: hidden;
-        padding-top: 25px; }
-        #app-sidebar.shorted footer .copyrights p {
-          line-height: 1;
-          font-size: 12px;
-          font-weight: 400;
-          color: #888999; }
-          #app-sidebar.shorted footer .copyrights p a {
-            color: #00b6ad; }
-            #app-sidebar.shorted footer .copyrights p a:hover, #app-sidebar.shorted footer .copyrights p a:active {
-              color: #55576e; }
-          #app-sidebar.shorted footer .copyrights p:first-child {
-            float: left; }
-          #app-sidebar.shorted footer .copyrights p:last-child {
-            float: right; }
+        display: none; }
 
 /*# sourceMappingURL=main.css.map */
