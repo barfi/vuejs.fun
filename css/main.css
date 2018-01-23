@@ -235,10 +235,10 @@ a {
   outline: none;
   text-decoration: none;
   color: #55576e;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+  -webkit-transition: color .3s ease-in-out, background .3s ease-in-out, fill .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out, background .3s ease-in-out, fill .3s ease-in-out;
+  -o-transition: color .3s ease-in-out, background .3s ease-in-out, fill .3s ease-in-out;
+  transition: color .3s ease-in-out, background .3s ease-in-out, fill .3s ease-in-out; }
   a:hover, a:active {
     color: #00b6ad; }
 
@@ -467,32 +467,17 @@ svg {
     padding-top: 46px; }
   #app-sidebar nav {
     margin-bottom: 70px; }
-    #app-sidebar nav ul li {
+    #app-sidebar nav a {
       position: relative;
       padding-left: 116px;
+      display: block;
       line-height: 26px;
       margin-bottom: 26px; }
-      #app-sidebar nav ul li:last-child {
+      #app-sidebar nav a:last-child {
         margin-bottom: 0; }
-      #app-sidebar nav ul li:nth-last-child(4) {
+      #app-sidebar nav a:nth-last-child(4) {
         margin-bottom: 78px; }
-      #app-sidebar nav ul li:last-child > a, #app-sidebar nav ul li:last-child > svg {
-        color: #a875a7 !important; }
-      #app-sidebar nav ul li.active a:before {
-        background: #00b6ad;
-        visibility: visible; }
-      #app-sidebar nav ul li svg {
-        width: 26px;
-        height: 26px;
-        position: absolute;
-        left: 60px;
-        top: 0;
-        color: #b1b1ba;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out; }
-      #app-sidebar nav ul li a:before {
+      #app-sidebar nav a:before {
         content: '';
         display: block;
         width: 4px;
@@ -503,15 +488,27 @@ svg {
         margin-top: -20px;
         background: transparent;
         visibility: hidden;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out; }
-      #app-sidebar nav ul li a:hover ~ svg {
-        color: #00b6ad; }
-      #app-sidebar nav ul li a:hover:before {
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        -o-transition: background 0.3s ease-in-out;
+        transition: background 0.3s ease-in-out; }
+      #app-sidebar nav a:hover:before {
         background: #00b6ad;
         visibility: visible; }
+      #app-sidebar nav a svg {
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 50%;
+        left: 60px;
+        margin-top: -13px;
+        color: #b1b1ba;
+        -webkit-transition: color 0.3s ease-in-out;
+        -moz-transition: color 0.3s ease-in-out;
+        -o-transition: color 0.3s ease-in-out;
+        transition: color 0.3s ease-in-out; }
+      #app-sidebar nav a:hover > svg {
+        color: #00b6ad; }
   #app-sidebar footer {
     width: 100%;
     padding: 0 30px 25px; }
@@ -551,5 +548,42 @@ svg {
           float: left; }
         #app-sidebar footer .copyrights p:last-child {
           float: right; }
+  #app-sidebar.shorted {
+    width: 66px; }
+    #app-sidebar.shorted .logo {
+      display: none; }
+    #app-sidebar.shorted nav a {
+      padding-left: 66px;
+      line-height: 26px;
+      margin-bottom: 26px;
+      height: 26px; }
+      #app-sidebar.shorted nav a:last-child {
+        margin-bottom: 0; }
+      #app-sidebar.shorted nav a:nth-last-child(4) {
+        margin-bottom: 78px; }
+      #app-sidebar.shorted nav a:before {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 40px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -20px;
+        background: transparent;
+        visibility: hidden;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+      #app-sidebar.shorted nav a:hover:before {
+        background: #00b6ad;
+        visibility: visible; }
+      #app-sidebar.shorted nav a svg {
+        left: 20px; }
+      #app-sidebar.shorted nav a:hover > svg {
+        color: #00b6ad; }
+      #app-sidebar.shorted nav a span {
+        display: none; }
 
 /*# sourceMappingURL=main.css.map */

@@ -41,7 +41,10 @@ a {
     outline: none;
     text-decoration: none;
     color: $color-base;
-    @include transition-single(all, .3s, ease-in-out, null);
+    -webkit-transition: color .3s ease-in-out, background .3s ease-in-out, fill .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out, background .3s ease-in-out, fill .3s ease-in-out;
+    -o-transition: color .3s ease-in-out, background .3s ease-in-out, fill .3s ease-in-out;
+    transition: color .3s ease-in-out, background .3s ease-in-out, fill .3s ease-in-out;
     &:hover, &:active {
         color: $color-accent;
     }

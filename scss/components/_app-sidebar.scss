@@ -11,7 +11,7 @@
     width: 320px;
     @include box-shadow-single(2px, 0, 8px, 0, rgba(#000, .15));
     @include media(1023px) {
-        //display: none;
+
     }
     .logo {
         margin: 0 auto;
@@ -32,56 +32,47 @@
     // Sidebar navigation
     nav {
         margin-bottom: 70px;
-        ul {
-            li {
-                position: relative;
-                padding-left: 116px;
-                line-height: 26px;
-                margin-bottom: 26px;
-                &:last-child {
-                    margin-bottom: 0;
-                }
-                &:nth-last-child(4) {
-                    margin-bottom: 78px;
-                }
-                &:last-child > a, &:last-child > svg {
-                    color: $color-donate !important;
-                }
-                &.active a:before {
-                    background: $color-accent;
-                    visibility: visible;
-                }
-                svg {
-                    width: 26px;
-                    height: 26px;
-                    position: absolute;
-                    left: 60px;
-                    top: 0;
-                    color: $color-dark-40;
-                    @include transition-single(all, .3s, ease-in-out, null);
-                }
-                a {
-                    &:before {
-                        content: '';
-                        display: block;
-                        width: 4px;
-                        height: 40px;
-                        position: absolute;
-                        left: 0;
-                        top: 50%;
-                        margin-top: -20px;
-                        background: transparent;
-                        visibility: hidden;
-                        @include transition-single(all, .3s, ease-in-out, null);
-                    }
-                    &:hover ~ svg {
-                        color: $color-accent;
-                    }
-                    &:hover:before {
-                        background: $color-accent;
-                        visibility: visible;
-                    }
-                }
+        a {
+            position: relative;
+            padding-left: 116px;
+            display: block;
+            line-height: 26px;
+            margin-bottom: 26px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:nth-last-child(4) {
+                margin-bottom: 78px;
+            }
+            &:before {
+                content: '';
+                display: block;
+                width: 4px;
+                height: 40px;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                margin-top: -20px;
+                background: transparent;
+                visibility: hidden;
+                @include transition-single(background, .3s, ease-in-out, null);
+            }
+            &:hover:before {
+                background: $color-accent;
+                visibility: visible;
+            }
+            svg {
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                top: 50%;
+                left: 60px;
+                margin-top: -13px;
+                color: $color-dark-40;
+                @include transition-single(color, .3s, ease-in-out, null);
+            }
+            &:hover > svg {
+                color: $color-accent;
             }
         }
     }
@@ -136,6 +127,53 @@
                 }
                 &:last-child {
                     float: right;
+                }
+            }
+        }
+    }
+    // Sidebar shorted mode
+    &.shorted {
+        width: 66px;
+        .logo {
+            display: none;
+        }
+        nav {
+            a {
+                padding-left: 66px;
+                line-height: 26px;
+                margin-bottom: 26px;
+                height: 26px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &:nth-last-child(4) {
+                    margin-bottom: 78px;
+                }
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 4px;
+                    height: 40px;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    margin-top: -20px;
+                    background: transparent;
+                    visibility: hidden;
+                    @include transition-single(all, .3s, ease-in-out, null);
+                }
+                &:hover:before {
+                    background: $color-accent;
+                    visibility: visible;
+                }
+                svg {
+                    left: 20px;
+                }
+                &:hover > svg {
+                    color: $color-accent;
+                }
+                span {
+                    display: none;
                 }
             }
         }
