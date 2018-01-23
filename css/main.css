@@ -300,6 +300,7 @@ svg {
   left: 0;
   padding-left: 320px;
   overflow: hidden;
+  z-index: 9;
   -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1); }
@@ -307,6 +308,21 @@ svg {
     #app-header {
       padding-left: 0;
       min-height: 66px; } }
+
+.mini-logo {
+  float: left;
+  display: none;
+  height: 66px;
+  width: 66px;
+  padding: 13px; }
+  .mini-logo:hover, .mini-logo:active {
+    background: #f6f6f7; }
+  @media (max-width: 1023px) {
+    .mini-logo {
+      display: block; } }
+  @media (max-width: 767px) {
+    .mini-logo {
+      display: none; } }
 
 #app-breadcrumbs {
   float: left; }
@@ -452,7 +468,8 @@ svg {
   width: 320px;
   -webkit-box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.15); }
+  box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.15);
+  z-index: 10; }
   #app-sidebar .logo {
     margin: 0 auto;
     margin-bottom: 70px;
@@ -462,11 +479,6 @@ svg {
     color: #00b6ad; }
     #app-sidebar .logo:hover, #app-sidebar .logo:active {
       color: #55576e; }
-  #app-sidebar .mini-logo {
-    margin-bottom: 52px;
-    display: none;
-    height: 66px;
-    padding: 13px; }
   #app-sidebar .sbr-scroll {
     height: 100%;
     padding-top: 46px; }
@@ -525,7 +537,6 @@ svg {
       #app-sidebar nav a:hover > svg, #app-sidebar nav a.active > svg {
         color: #00b6ad; }
   #app-sidebar footer {
-    width: 100%;
     padding: 0 30px 25px; }
     #app-sidebar footer ul {
       text-align: center;
@@ -564,45 +575,62 @@ svg {
         #app-sidebar footer .copyrights p:last-child {
           float: right; }
   #app-sidebar.shorted {
-    width: 66px; }
+    width: 66px;
+    padding-top: 66px;
+    z-index: 8; }
     #app-sidebar.shorted .logo {
       display: none; }
-    #app-sidebar.shorted .mini-logo {
-      display: block; }
     #app-sidebar.shorted .sbr-scroll {
-      padding-top: 0; }
+      padding-top: 52px; }
     #app-sidebar.shorted nav a {
-      padding-left: 66px;
-      line-height: 26px;
-      margin-bottom: 26px;
-      height: 26px; }
-      #app-sidebar.shorted nav a:last-child {
-        margin-bottom: 0; }
-      #app-sidebar.shorted nav a:nth-last-child(4) {
-        margin-bottom: 78px; }
-      #app-sidebar.shorted nav a:before {
-        content: '';
-        display: block;
-        width: 4px;
-        height: 40px;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        margin-top: -20px;
-        background: transparent;
-        visibility: hidden;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out; }
-      #app-sidebar.shorted nav a:hover:before {
-        background: #00b6ad;
-        visibility: visible; }
-      #app-sidebar.shorted nav a svg {
-        left: 20px; }
-      #app-sidebar.shorted nav a:hover > svg {
-        color: #00b6ad; }
+      padding: 0;
+      height: 52px;
+      margin-bottom: 0; }
       #app-sidebar.shorted nav a span {
         display: none; }
+      #app-sidebar.shorted nav a:hover, #app-sidebar.shorted nav a:active, #app-sidebar.shorted nav a.active {
+        background: #f6f6f7; }
+      #app-sidebar.shorted nav a:nth-last-child(4) {
+        margin-bottom: 52px; }
+      #app-sidebar.shorted nav a svg {
+        left: 20px; }
+    #app-sidebar.shorted footer {
+      padding: 0 30px 25px; }
+      #app-sidebar.shorted footer ul {
+        text-align: center;
+        font-size: 0;
+        line-height: 1;
+        padding-bottom: 25px;
+        border-bottom: 2px solid #eeeef0; }
+        #app-sidebar.shorted footer ul li {
+          display: inline-block;
+          margin-right: 30px; }
+          #app-sidebar.shorted footer ul li:last-child {
+            margin-right: 0; }
+          #app-sidebar.shorted footer ul li a {
+            display: block;
+            width: 30px;
+            height: 24px;
+            color: #b1b1ba; }
+            #app-sidebar.shorted footer ul li a:hover, #app-sidebar.shorted footer ul li a:active {
+              color: #00b6ad; }
+            #app-sidebar.shorted footer ul li a svg {
+              display: block !important; }
+      #app-sidebar.shorted footer .copyrights {
+        overflow: hidden;
+        padding-top: 25px; }
+        #app-sidebar.shorted footer .copyrights p {
+          line-height: 1;
+          font-size: 12px;
+          font-weight: 400;
+          color: #888999; }
+          #app-sidebar.shorted footer .copyrights p a {
+            color: #00b6ad; }
+            #app-sidebar.shorted footer .copyrights p a:hover, #app-sidebar.shorted footer .copyrights p a:active {
+              color: #55576e; }
+          #app-sidebar.shorted footer .copyrights p:first-child {
+            float: left; }
+          #app-sidebar.shorted footer .copyrights p:last-child {
+            float: right; }
 
 /*# sourceMappingURL=main.css.map */

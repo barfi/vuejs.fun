@@ -11,10 +11,29 @@
     left: 0;
     padding-left: 320px;
     overflow: hidden;
+    z-index: 9;
     @include box-shadow-single(0, 2px, 8px, 0, rgba(#000, .1));
     @include media(1023px) {
         padding-left: 0;
         min-height: 66px;
+    }
+}
+
+// Mini logo
+.mini-logo {
+    float: left;
+    display: none;
+    height: 66px;
+    width: 66px;
+    padding: 13px;
+    &:hover, &:active {
+        background: $color-extra-light;
+    }
+    @include media(1023px) {
+        display: block;
+    }
+    @include media(767px) {
+        display: none;
     }
 }
 // App header breadcrumbs styles
