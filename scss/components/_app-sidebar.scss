@@ -10,6 +10,9 @@
     left: 0;
     width: 320px;
     @include box-shadow-single(2px, 0, 8px, 0, rgba(#000, .15));
+    @include media(1023px) {
+        //display: none;
+    }
     .logo {
         margin: 0 auto;
         margin-bottom: 70px;

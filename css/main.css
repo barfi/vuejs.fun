@@ -250,6 +250,12 @@ svg {
 #app {
   height: 100%;
   padding: 76px 0 0 320px; }
+  @media (max-width: 1023px) {
+    #app {
+      padding-left: 0; } }
+
+#app-content {
+  position: relative; }
 
 .afc-1 {
   color: #00b6ad; }
@@ -297,9 +303,16 @@ svg {
   -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1); }
+  @media (max-width: 1023px) {
+    #app-header {
+      padding-left: 0;
+      min-height: 66px; } }
 
 #app-breadcrumbs {
   float: left; }
+  @media (max-width: 1400px) {
+    #app-breadcrumbs {
+      display: none; } }
   #app-breadcrumbs ul {
     overflow: hidden;
     padding: 0 30px; }
@@ -346,6 +359,9 @@ svg {
   #app-user-area .guest {
     line-height: 76px;
     padding: 0 30px; }
+    @media (max-width: 1023px) {
+      #app-user-area .guest {
+        line-height: 66px; } }
     #app-user-area .guest a {
       text-transform: uppercase;
       display: inline-block;
@@ -361,54 +377,71 @@ svg {
       #app-user-area .guest a:hover, #app-user-area .guest a:active {
         color: #55576e;
         border: 2px solid #55576e; }
-  #app-user-area .authorized a {
-    display: block;
-    line-height: 76px;
-    float: left;
-    position: relative; }
-    #app-user-area .authorized a:first-child {
-      padding: 0 20px 0 87px;
-      color: #55576e;
-      font-weight: 500; }
-      #app-user-area .authorized a:first-child:hover, #app-user-area .authorized a:first-child:active {
-        background: #f6f6f7; }
-      #app-user-area .authorized a:first-child:hover > .avatar .level, #app-user-area .authorized a:first-child:active > .avatar .level {
-        border-color: #f6f6f7; }
-    #app-user-area .authorized a .avatar {
-      position: absolute;
-      top: 50%;
-      left: 20px;
-      margin-top: -26px;
-      width: 52px;
-      height: 52px; }
-      #app-user-area .authorized a .avatar .level {
+  #app-user-area .authorized {
+    overflow: hidden; }
+    #app-user-area .authorized a {
+      display: block;
+      line-height: 76px;
+      float: left;
+      position: relative; }
+      @media (max-width: 1023px) {
+        #app-user-area .authorized a {
+          line-height: 66px; } }
+      #app-user-area .authorized a:first-child {
+        padding: 0 20px 0 87px;
+        color: #55576e;
+        font-weight: 500; }
+        #app-user-area .authorized a:first-child:hover, #app-user-area .authorized a:first-child:active {
+          background: #f6f6f7; }
+        #app-user-area .authorized a:first-child:hover > .avatar .level, #app-user-area .authorized a:first-child:active > .avatar .level {
+          border-color: #f6f6f7; }
+        @media (max-width: 467px) {
+          #app-user-area .authorized a:first-child {
+            padding: 0 5px 0 87px;
+            height: 66px; } }
+        @media (max-width: 467px) {
+          #app-user-area .authorized a:first-child p {
+            display: none; } }
+      #app-user-area .authorized a .avatar {
         position: absolute;
-        display: block;
-        background: #00b6ad;
-        width: 20px;
-        height: 20px;
-        border: 2px solid #fff;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 18px;
-        bottom: 2px;
-        right: -9px;
-        font-size: 10px;
-        font-weight: 500;
-        color: #fff;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out; }
-    #app-user-area .authorized a:last-child {
-      height: 76px;
-      width: 76px;
-      padding: 22px;
-      background: #00b6ad; }
-      #app-user-area .authorized a:last-child:hover, #app-user-area .authorized a:last-child:active {
-        background: #55576e; }
+        top: 50%;
+        left: 20px;
+        margin-top: -26px;
+        width: 52px;
+        height: 52px; }
+        #app-user-area .authorized a .avatar .level {
+          position: absolute;
+          display: block;
+          background: #00b6ad;
+          width: 20px;
+          height: 20px;
+          border: 2px solid #fff;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 18px;
+          bottom: 2px;
+          right: -9px;
+          font-size: 10px;
+          font-weight: 500;
+          color: #fff;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+      #app-user-area .authorized a:last-child {
+        height: 76px;
+        width: 76px;
+        padding: 22px;
+        background: #00b6ad; }
+        @media (max-width: 1023px) {
+          #app-user-area .authorized a:last-child {
+            height: 66px;
+            width: 66px;
+            padding: 20px; } }
+        #app-user-area .authorized a:last-child:hover, #app-user-area .authorized a:last-child:active {
+          background: #55576e; }
 
 #app-sidebar {
   background: #fff;

@@ -55,6 +55,12 @@ svg {
 #app {
     height: 100%;
     padding: 76px 0 0 320px;
+    @include media(1023px) {
+        padding-left: 0;
+    }
+}
+#app-content {
+    position: relative;
 }
 
 // Avatars classes and colors generator

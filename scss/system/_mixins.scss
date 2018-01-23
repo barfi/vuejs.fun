@@ -10,3 +10,9 @@
 @import "../mixins/background-size";
 // Box-shadow mixins inc.
 @import "../mixins/box-shadow";
+// Media queries
+@mixin media($breakpoint){
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}

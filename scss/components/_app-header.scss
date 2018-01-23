@@ -12,11 +12,18 @@
     padding-left: 320px;
     overflow: hidden;
     @include box-shadow-single(0, 2px, 8px, 0, rgba(#000, .1));
+    @include media(1023px) {
+        padding-left: 0;
+        min-height: 66px;
+    }
 }
 // App header breadcrumbs styles
 
 #app-breadcrumbs {
     float: left;
+    @include media(1400px) {
+        display: none;
+    }
     ul {
         overflow: hidden;
         padding: 0 30px;
@@ -69,6 +76,9 @@
     .guest {
         line-height: 76px;
         padding: 0 30px;
+        @include media(1023px) {
+            line-height: 66px;
+        }
         a {
             text-transform: uppercase;
             display: inline-block;
@@ -91,11 +101,15 @@
     }
     // If you are authorized
     .authorized {
+        overflow: hidden;
         a {
             display: block;
             line-height: 76px;
             float: left;
             position: relative;
+            @include media(1023px) {
+                line-height: 66px;
+            }
             // Profile button
             &:first-child {
                 padding:0 20px 0 87px;
@@ -108,6 +122,15 @@
                 }
                 &:hover > .avatar .level, &:active > .avatar .level {
                     border-color: $color-extra-light;
+                }
+                @include media(467px) {
+                    padding:0 5px 0 87px;
+                    height: 66px;
+                }
+                p {
+                    @include media(467px) {
+                        display: none;
+                    }
                 }
             }
             .avatar {
@@ -145,6 +168,11 @@
                 width: 76px;
                 padding: 22px;
                 background: $color-accent;
+                @include media(1023px) {
+                    height: 66px;
+                    width: 66px;
+                    padding: 20px;
+                }
                 &:hover, &:active {
                     background: $color-base;
                 }
