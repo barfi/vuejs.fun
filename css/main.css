@@ -317,10 +317,10 @@ svg {
   padding-left: 320px;
   overflow: hidden;
   z-index: 9;
-  -webkit-transition: left 0.3s ease-in-out;
-  -moz-transition: left 0.3s ease-in-out;
-  -o-transition: left 0.3s ease-in-out;
-  transition: left 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1); }
@@ -329,7 +329,11 @@ svg {
       padding-left: 0;
       min-height: 66px; } }
   #app-header.sb-open {
-    left: 254px; }
+    -o-transform: translateX(254px);
+    -ms-transform: translateX(254px);
+    -moz-transform: translateX(254px);
+    -webkit-transform: translateX(254px);
+    transform: translateX(254px); }
 
 .mini-logo {
   float: left;

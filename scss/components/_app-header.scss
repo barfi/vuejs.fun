@@ -12,14 +12,14 @@
     padding-left: 320px;
     overflow: hidden;
     z-index: 9;
-    @include transition-single(left, .3s, ease-in-out);
+    @include transition-single(transform, .3s, ease-in-out);
     @include box-shadow-single(0, 2px, 8px, 0, rgba(#000, .1));
     @include media($mainUIFrom) {
         padding-left: 0;
         min-height: 66px;
     }
     &.sb-open {
-        left: $sideBarMobWidth;
+        @include translateX($sideBarMobWidth);
     }
 }
 
