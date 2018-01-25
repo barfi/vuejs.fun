@@ -490,10 +490,10 @@ svg {
   -moz-box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.15);
   z-index: 10;
-  -webkit-transition: margin-right 0.3s ease-in-out;
-  -moz-transition: margin-right 0.3s ease-in-out;
-  -o-transition: margin-right 0.3s ease-in-out;
-  transition: margin-right 0.3s ease-in-out; }
+  -webkit-transition: left 0.3s ease-in-out;
+  -moz-transition: left 0.3s ease-in-out;
+  -o-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out; }
   @media (min-width: 468px) and (max-width: 1500px) {
     #app-sidebar {
       width: 66px;
@@ -501,14 +501,13 @@ svg {
       z-index: 8; } }
   @media (max-width: 467px) {
     #app-sidebar {
-      left: auto;
-      right: 100%;
+      left: -254px;
       width: 254px;
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none; } }
   #app-sidebar.sb-open {
-    margin-right: -254px; }
+    left: 0; }
   #app-sidebar .logo {
     margin: 0 auto;
     margin-bottom: 63px;
