@@ -498,11 +498,18 @@ svg {
         width: 76px;
         padding: 22px;
         background: #00b6ad; }
+        #app-user-area .authorized a:last-child svg {
+          width: 32px;
+          height: 32px;
+          margin: 0 auto; }
         @media (max-width: 1500px) {
           #app-user-area .authorized a:last-child {
             height: 66px;
             width: 66px;
-            padding: 20px; } }
+            padding: 20px; }
+            #app-user-area .authorized a:last-child svg {
+              width: 26px;
+              height: 26px; } }
         #app-user-area .authorized a:last-child:hover, #app-user-area .authorized a:last-child:active {
           background: #55576e; }
 

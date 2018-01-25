@@ -194,10 +194,19 @@
                 width: 76px;
                 padding: 22px;
                 background: $color-accent;
+                svg {
+                    width: 32px;
+                    height: 32px;
+                    margin: 0 auto;
+                }
                 @include media($mainUIFrom) {
                     height: 66px;
                     width: 66px;
                     padding: 20px;
+                    svg {
+                        width: 26px;
+                        height: 26px;
+                    }
                 }
                 &:hover, &:active {
                     background: $color-base;
