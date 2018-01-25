@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
     <title>vuejs.fun | Welcome!</title>
     <!--Basic meta tags-->
     <meta name="description" content="Add description!">
@@ -28,7 +29,6 @@
                 <use xlink:href="img/sprite.svg#v-mini-logo"></use>
             </svg>
         </a>
-        <button id="burger">burger</button>
         <div id="app-breadcrumbs">
             <ul>
                 <li><a href="#">Главная</a></li>
@@ -61,6 +61,11 @@
         </div>
     </div>
     <div id="app-sidebar">
+        <button id="burger" type="button">
+            <span>
+                <span></span>
+            </span>
+        </button>
         <div class="sbr-scroll">
             <a href="#" class="logo">
                 <svg>
@@ -168,6 +173,7 @@
     <div id="app-content" style="height: 100%; padding: 30px">
         <div style="background: #ffffff; min-height: 100%"></div>
     </div>
+    <div id="overlay"></div>
 </div>
 <!--JavaScripts-->
 <script src="js/jquery-3.3.1.min.js"></script>

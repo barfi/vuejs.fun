@@ -69,6 +69,22 @@ svg {
     }
 
 }
+#overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(#000, .7);
+    z-index: 9;
+    visibility: hidden;
+    opacity: 0;
+    @include transition-single(all, .3s, ease-in-out);
+    &.sb-open {
+        visibility: visible;
+        opacity: 1;
+    }
+}
 #app-content {
     @include transition-single(transform, .3s, ease-in-out);
     position: relative;
