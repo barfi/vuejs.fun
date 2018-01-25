@@ -252,7 +252,7 @@ svg {
   overflow: hidden;
   height: 100%;
   padding: 76px 0 0 320px; }
-  @media (max-width: 1365px) {
+  @media (max-width: 1279px) {
     #app {
       padding-left: 66px;
       padding-top: 66px; } }
@@ -342,7 +342,7 @@ svg {
   -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1); }
-  @media (max-width: 1365px) {
+  @media (max-width: 1279px) {
     #app-header {
       padding-left: 0;
       min-height: 66px; } }
@@ -361,7 +361,7 @@ svg {
   padding: 13px; }
   .mini-logo:hover, .mini-logo:active {
     background: #f6f6f7; }
-  @media (min-width: 468px) and (max-width: 1365px) {
+  @media (min-width: 468px) and (max-width: 1279px) {
     .mini-logo {
       display: block; } }
 
@@ -373,7 +373,7 @@ svg {
   #app-breadcrumbs ul {
     overflow: hidden;
     padding: 0 30px; }
-    @media (max-width: 1365px) {
+    @media (max-width: 1279px) {
       #app-breadcrumbs ul {
         padding: 0 17px; } }
     #app-breadcrumbs ul li {
@@ -387,7 +387,7 @@ svg {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis; }
-      @media (max-width: 1365px) {
+      @media (max-width: 1279px) {
         #app-breadcrumbs ul li {
           line-height: 66px; } }
       #app-breadcrumbs ul li:after {
@@ -422,7 +422,7 @@ svg {
   #app-user-area .guest {
     line-height: 76px;
     padding: 0 30px; }
-    @media (max-width: 1365px) {
+    @media (max-width: 1279px) {
       #app-user-area .guest {
         line-height: 66px; } }
     #app-user-area .guest a {
@@ -447,7 +447,7 @@ svg {
       line-height: 76px;
       float: left;
       position: relative; }
-      @media (max-width: 1365px) {
+      @media (max-width: 1279px) {
         #app-user-area .authorized a {
           line-height: 66px; } }
       #app-user-area .authorized a:first-child {
@@ -502,7 +502,7 @@ svg {
           width: 32px;
           height: 32px;
           margin: 0 auto; }
-        @media (max-width: 1365px) {
+        @media (max-width: 1279px) {
           #app-user-area .authorized a:last-child {
             height: 66px;
             width: 66px;
@@ -528,7 +528,7 @@ svg {
   -moz-transition: transform 0.3s ease-in-out;
   -o-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out; }
-  @media (min-width: 468px) and (max-width: 1365px) {
+  @media (min-width: 468px) and (max-width: 1279px) {
     #app-sidebar {
       width: 66px;
       padding-top: 66px;
@@ -556,18 +556,18 @@ svg {
     color: #00b6ad; }
     #app-sidebar .logo:hover, #app-sidebar .logo:active {
       color: #55576e; }
-    @media (min-width: 468px) and (max-width: 1365px) {
+    @media (min-width: 468px) and (max-width: 1279px) {
       #app-sidebar .logo {
         display: none; } }
   #app-sidebar .sbr-scroll {
     height: 100%;
     padding-top: 46px; }
-    @media (min-width: 468px) and (max-width: 1365px) {
+    @media (min-width: 468px) and (max-width: 1279px) {
       #app-sidebar .sbr-scroll {
         padding-top: 40px; } }
   #app-sidebar nav {
     margin-bottom: 63px; }
-    @media (min-width: 468px) and (max-width: 1365px) {
+    @media (min-width: 468px) and (max-width: 1279px) {
       #app-sidebar nav {
         margin-bottom: 52px; } }
     #app-sidebar nav a {
@@ -577,7 +577,7 @@ svg {
       display: block;
       line-height: 40px;
       margin-bottom: 12px; }
-      @media (min-width: 468px) and (max-width: 1365px) {
+      @media (min-width: 468px) and (max-width: 1279px) {
         #app-sidebar nav a {
           padding: 0;
           height: 52px;
@@ -585,12 +585,12 @@ svg {
       @media (max-width: 467px) {
         #app-sidebar nav a {
           padding-left: 96px; } }
-      @media (min-width: 468px) and (max-width: 1365px) {
+      @media (min-width: 468px) and (max-width: 1279px) {
         #app-sidebar nav a span {
           display: none; } }
       #app-sidebar nav a.active {
         color: #00b6ad; }
-      @media (min-width: 468px) and (max-width: 1365px) {
+      @media (min-width: 468px) and (max-width: 1279px) {
         #app-sidebar nav a:hover, #app-sidebar nav a:active, #app-sidebar nav a.active {
           background: #f6f6f7; } }
       #app-sidebar nav a:last-child {
@@ -604,7 +604,7 @@ svg {
           background: #a875a7 !important; }
       #app-sidebar nav a:nth-last-child(4) {
         margin-bottom: 64px; }
-        @media (min-width: 468px) and (max-width: 1365px) {
+        @media (min-width: 468px) and (max-width: 1279px) {
           #app-sidebar nav a:nth-last-child(4) {
             margin-bottom: 52px; } }
       #app-sidebar nav a:before {
@@ -637,7 +637,7 @@ svg {
         -moz-transition: color 0.3s ease-in-out;
         -o-transition: color 0.3s ease-in-out;
         transition: color 0.3s ease-in-out; }
-        @media (min-width: 468px) and (max-width: 1365px) {
+        @media (min-width: 468px) and (max-width: 1279px) {
           #app-sidebar nav a svg {
             left: 20px; } }
         @media (max-width: 467px) {
@@ -647,7 +647,7 @@ svg {
         color: #00b6ad; }
   #app-sidebar footer {
     padding: 0 30px 25px; }
-    @media (min-width: 468px) and (max-width: 1365px) {
+    @media (min-width: 468px) and (max-width: 1279px) {
       #app-sidebar footer {
         padding: 0 0 40px; } }
     #app-sidebar footer ul {
@@ -656,7 +656,7 @@ svg {
       line-height: 1;
       padding-bottom: 25px;
       border-bottom: 2px solid #eeeef0; }
-      @media (min-width: 468px) and (max-width: 1365px) {
+      @media (min-width: 468px) and (max-width: 1279px) {
         #app-sidebar footer ul {
           padding-bottom: 0;
           border-bottom: none; } }
@@ -665,7 +665,7 @@ svg {
         margin-right: 30px; }
         #app-sidebar footer ul li:last-child {
           margin-right: 0; }
-        @media (min-width: 468px) and (max-width: 1365px) {
+        @media (min-width: 468px) and (max-width: 1279px) {
           #app-sidebar footer ul li {
             display: block;
             margin-right: 0;
@@ -680,7 +680,7 @@ svg {
           color: #b1b1ba; }
           #app-sidebar footer ul li a:hover, #app-sidebar footer ul li a:active {
             color: #00b6ad; }
-          @media (min-width: 468px) and (max-width: 1365px) {
+          @media (min-width: 468px) and (max-width: 1279px) {
             #app-sidebar footer ul li a {
               width: auto;
               height: 52px;
@@ -692,7 +692,7 @@ svg {
     #app-sidebar footer .copyrights {
       overflow: hidden;
       padding-top: 25px; }
-      @media (min-width: 468px) and (max-width: 1365px) {
+      @media (min-width: 468px) and (max-width: 1279px) {
         #app-sidebar footer .copyrights {
           display: none; } }
       #app-sidebar footer .copyrights p {
@@ -784,5 +784,25 @@ svg {
       -moz-transform: rotate(-45deg);
       -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg); }
+
+#app-content {
+  height: 100%; }
+  @media (max-width: 467px) {
+    #app-content {
+      padding: 30px 0 0 0; } }
+  #app-content .table {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    display: table; }
+    #app-content .table .table-row {
+      display: table-row;
+      height: 1px; }
+    #app-content .table .table-cell {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      display: table-cell;
+      vertical-align: middle; }
 
 /*# sourceMappingURL=main.css.map */

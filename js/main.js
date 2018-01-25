@@ -16,6 +16,9 @@ $(function () {
         elContent.toggleClass('sb-open');
         elSidebar.toggleClass('sb-open');
         elOverlay.toggleClass('sb-open');
+        setTimeout(function () {
+            elContent.getNiceScroll().resize();
+        }, 300);
     });
 
     // Window resize event reaction
@@ -31,6 +34,11 @@ $(function () {
 
     // Additional plugins init
     $('.sbr-scroll').niceScroll({
+        emulatetouch: true,
+        cursorcolor: "#b1b1ba",
+        grabcursorenabled: false // hide grab cursor!
+    });
+    $('.content-scroll').niceScroll({
         emulatetouch: true,
         cursorcolor: "#b1b1ba",
         grabcursorenabled: false // hide grab cursor!

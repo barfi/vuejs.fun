@@ -24,7 +24,7 @@
 <body>
 <div id="app">
     <div id="app-header">
-        <a href="#" class="mini-logo">
+        <a href="#" class="mini-logo" title="На главную">
             <svg>
                 <use xlink:href="img/sprite.svg#v-mini-logo"></use>
             </svg>
@@ -67,73 +67,73 @@
             </span>
         </button>
         <div class="sbr-scroll">
-            <a href="#" class="logo">
+            <a href="#" class="logo" title="На главную">
                 <svg>
                     <use xlink:href="img/sprite.svg#v-logo"></use>
                 </svg>
             </a>
             <nav>
-                <a href="#">
+                <a href="#" title="Web">
                     <svg>
                         <use xlink:href="img/sprite.svg#icon-web"></use>
                     </svg>
                     <span>Web</span>
                 </a>
-                <a href="#">
+                <a href="#" title="Mobile">
                     <svg>
                         <use xlink:href="img/sprite.svg#icon-mobile"></use>
                     </svg>
                     <span>Mobile</span>
                 </a>
-                <a href="#" class="active">
+                <a href="#" class="active" title="Desktop">
                     <svg>
                         <use xlink:href="img/sprite.svg#icon-desktop"></use>
                     </svg>
                     <span>Desktop</span>
                 </a>
-                <a href="#">
+                <a href="#" title="Server">
                     <svg>
                         <use xlink:href="img/sprite.svg#icon-server"></use>
                     </svg>
                     <span>Server</span>
                 </a>
-                <a href="#">
+                <a href="#" title="Babylon">
                     <svg>
                         <use xlink:href="img/sprite.svg#icon-babylon"></use>
                     </svg>
                     <span>Babylon</span>
                 </a>
-                <a href="#">
+                <a href="#" title="Env">
                     <svg>
                         <use xlink:href="img/sprite.svg#icon-env"></use>
                     </svg>
                     <span>Env</span>
                 </a>
-                <a href="#">
+                <a href="#" title="Game">
                     <svg>
                         <use xlink:href="img/sprite.svg#icon-game"></use>
                     </svg>
                     <span>Game</span>
                 </a>
-                <a href="#">
+                <a href="#" title="API">
                     <svg>
                         <use xlink:href="img/sprite.svg#icon-api"></use>
                     </svg>
                     <span>API</span>
                 </a>
-                <a href="#">
+                <a href="#" title="О нас">
                     <svg>
                         <use xlink:href="img/sprite.svg#icon-about"></use>
                     </svg>
                     <span>О нас</span>
                 </a>
-                <a href="#">
+                <a href="#" title="Обратная связь">
                     <svg>
                         <use xlink:href="img/sprite.svg#icon-contacts"></use>
                     </svg>
                     <span>Обратная связь</span>
                 </a>
-                <a href="#">
+                <a href="#" title="Поблагодарить">
                     <svg>
                         <use xlink:href="img/sprite.svg#icon-donate"></use>
                     </svg>
@@ -170,8 +170,31 @@
             </footer>
         </div>
     </div>
-    <div id="app-content" style="height: 100%; padding: 30px">
-        <div style="background: #ffffff; min-height: 100%"></div>
+    <div id="app-content" class="content-scroll">
+        <div class="table">
+            <div class="table-row">одна строка
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, dolore doloremque dolorum et fuga fugit harum impedit laborum magni, mollitia necessitatibus odit perferendis quasi sunt ullam voluptatibus! Accusantium, odio!
+            </div>
+            <div class="table-cell">
+                Мало контента но сам блок тянется на 100% высоты минус шапка
+                Если много например
+                <div style="height: auto">
+                    искуственный контент большой высоты наоборот надо чтоб он скроллился
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem, cum ipsum molestias, omnis perferendis quos rerum saepe sint veniam veritatis vitae? Consectetur cupiditate, fugiat odio quidem quisquam repellat sapiente?
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dicta ex minima officia soluta voluptas voluptatibus. Animi eligendi eos fuga hic, ipsam laudantium magni nemo, nulla quaerat, rem repellendus suscipit?
+                </div>
+            </div>
+        </div>
+        <!--<div class="heading">-->
+            <!--<h1>jjhj</h1>-->
+            <!--<button>jj</button>-->
+        <!--</div>-->
+        <!--<div class="inner">-->
+
+        <!--</div>-->
     </div>
     <div id="overlay"></div>
 </div>
