@@ -713,17 +713,20 @@ svg {
   position: absolute;
   top: 0;
   left: 100%;
-  display: block;
   width: 66px;
   height: 66px;
   background: transparent;
   border: none;
   outline: none;
   padding: 20px;
+  display: none;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
+  @media (max-width: 467px) {
+    #burger {
+      display: block; } }
   #burger > span {
     display: block;
     position: relative;
