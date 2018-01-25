@@ -16,3 +16,8 @@
         @content;
     }
 }
+@mixin media_range($to, $from) {
+    @media (min-width: $to) and (max-width: $from) {
+        @content;
+    }
+}

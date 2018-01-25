@@ -10,13 +10,18 @@ $(function () {
 
     // Get elements for re-using
     var elSidebar = $('#app-sidebar');
-
-    // Basic params init while document first loading
-    sidebarMode(getViewPortWidth(), elSidebar);
-
+    var elHeader = $('#app-header');
+    var elContent = $('#app-content');
+    var elBurger = $('#burger');
+    elBurger.click(function () {
+        elBurger.toggleClass('sb-open');
+        elHeader.toggleClass('sb-open');
+        elContent.toggleClass('sb-open');
+        elSidebar.toggleClass('sb-open')
+    });
     // Window resize event reaction
     $(window).resize(function () {
-        sidebarMode(getViewPortWidth(), elSidebar);
+        // sidebarMode(getViewPortWidth(), elSidebar);
     });
 
     // Additional plugins init
@@ -32,14 +37,4 @@ $(function () {
 // Get current viewPort width
 function getViewPortWidth() {
     return $(window).width();
-}
-
-// Sidebar mode switcher
-function sidebarMode(curWinWidth, elSidebar) {
-    if (curWinWidth > 767 && curWinWidth < 1024 && !elSidebar.hasClass('shorted')) {
-        elSidebar.addClass('shorted');
-    }
-    if (curWinWidth <= 767 || curWinWidth >= 1024 && elSidebar.hasClass('shorted')) {
-        elSidebar.removeClass('shorted');
-    }
 }

@@ -11,8 +11,22 @@
     width: 320px;
     @include box-shadow-single(2px, 0, 8px, 0, rgba(#000, .15));
     z-index: 10;
-    @include media(1023px) {
-
+    @include transition-single(margin-right, .3s, ease-in-out);
+    @include media_range($mainUITo, $mainUIFrom) {
+        width: 66px;
+        padding-top: 66px;
+        z-index: 8;
+    }
+    @include media($mainUITo - 1) {
+        left: auto;
+        right: 100%;
+        width: $sideBarMobWidth;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+    &.sb-open {
+        margin-right: -$sideBarMobWidth;
     }
     .logo {
         margin: 0 auto;
@@ -24,15 +38,24 @@
         &:hover, &:active {
             color: $color-base;
         }
+        @include media_range($mainUITo, $mainUIFrom) {
+            display: none;
+        }
     }
     // Scroll plugin selector
     .sbr-scroll {
         height: 100%;
         padding-top: 46px;
+        @include media_range($mainUITo, $mainUIFrom) {
+            padding-top: 40px;
+        }
     }
     // Sidebar navigation
     nav {
         margin-bottom: 63px;
+        @include media_range($mainUITo, $mainUIFrom) {
+            margin-bottom: 52px;
+        }
         a {
             position: relative;
             padding-left: 116px;
@@ -40,8 +63,26 @@
             display: block;
             line-height: 40px;
             margin-bottom: 12px;
+            @include media_range($mainUITo, $mainUIFrom) {
+                padding: 0;
+                height: 52px;
+                margin-bottom: 0;
+            }
+            @include media($mainUITo - 1) {
+                padding-left: 96px;
+            }
+            span {
+                @include media_range($mainUITo, $mainUIFrom) {
+                    display: none;
+                }
+            }
             &.active {
                 color: $color-accent;
+            }
+            &:hover, &:active, &.active {
+                @include media_range($mainUITo, $mainUIFrom) {
+                    background: $color-extra-light;
+                }
             }
             &:last-child {
                 margin-bottom: 0;
@@ -58,6 +99,9 @@
             }
             &:nth-last-child(4) {
                 margin-bottom: 64px;
+                @include media_range($mainUITo, $mainUIFrom) {
+                    margin-bottom: 52px;
+                }
             }
             &:before {
                 content: '';
@@ -85,6 +129,12 @@
                 margin-top: -13px;
                 color: $color-dark-40;
                 @include transition-single(color, .3s, ease-in-out, null);
+                @include media_range($mainUITo, $mainUIFrom) {
+                    left: 20px;
+                }
+                @include media($mainUITo - 1) {
+                    left: 40px;
+                }
             }
             &:hover > svg, &.active > svg {
                 color: $color-accent;
@@ -94,17 +144,32 @@
     // Footer styles
     footer {
         padding: 0 30px 25px;
+        @include media_range($mainUITo, $mainUIFrom) {
+            padding: 0 0 40px;
+        }
         ul {
             text-align: center;
             font-size: 0;
             line-height: 1;
             padding-bottom: 25px;
             border-bottom: 2px solid $color-base-10;
+            @include media_range($mainUITo, $mainUIFrom) {
+                padding-bottom: 0;
+                border-bottom: none;
+            }
             li {
                 display: inline-block;
                 margin-right: 30px;
                 &:last-child {
                     margin-right: 0;
+                }
+                @include media_range($mainUITo, $mainUIFrom) {
+                    display: block;
+                    margin-right: 0;
+                    margin-bottom: 0;
+                }
+                @include media($mainUITo - 1) {
+                    margin-right: 24px;
                 }
                 a {
                     display: block;
@@ -113,6 +178,14 @@
                     color: $color-dark-40;
                     &:hover, &:active {
                         color: $color-accent;
+                    }
+                    @include media_range($mainUITo, $mainUIFrom) {
+                        width: auto;
+                        height: 52px;
+                        padding: 14px 0;
+                        &:hover, &:active {
+                            background: $color-extra-light;
+                        }
                     }
                     svg {
                         display: block !important;
@@ -123,6 +196,9 @@
         .copyrights {
             overflow: hidden;
             padding-top: 25px;
+            @include media_range($mainUITo, $mainUIFrom) {
+                display: none;
+            }
             p {
                 line-height: 1;
                 font: {
@@ -142,61 +218,6 @@
                 &:last-child {
                     float: right;
                 }
-            }
-        }
-    }
-    // Sidebar shorted mode
-    &.shorted {
-        width: 66px;
-        padding-top: 66px;
-        z-index: 8;
-        .logo {
-            display: none;
-        }
-        .sbr-scroll {
-            padding-top: 52px;
-        }
-        nav {
-            margin-bottom: 52px;
-            a {
-                padding: 0;
-                height: 52px;
-                margin-bottom: 0;
-                span {
-                    display: none;
-                }
-                &:hover, &:active, &.active {
-                    background: $color-extra-light;
-                }
-                &:nth-last-child(4) {
-                    margin-bottom: 52px;
-                }
-                svg {
-                    left: 20px;
-                }
-            }
-        }
-        footer {
-            padding: 0 0 52px;
-            ul {
-                padding-bottom: 0;
-                border-bottom: none;
-                li {
-                    display: block;
-                    margin-right: 0;
-                    margin-bottom: 0;
-                    a {
-                        width: auto;
-                        height: 52px;
-                        padding: 14px 0;
-                        &:hover, &:active {
-                            background: $color-extra-light;
-                        }
-                    }
-                }
-            }
-            .copyrights {
-                display: none;
             }
         }
     }

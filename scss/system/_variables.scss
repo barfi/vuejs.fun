@@ -40,3 +40,10 @@ $avatars-second-colors: (
 $font-rubik: 'Rubik', Arial, Tahoma, sans-serif;
 
 // Devices points for media queries
+
+// Main app UI media queries points
+$mainUIFrom: 1500px;
+$mainUITo: 468px;
+$maimUIBcHide: 1023px; // Hide breadcrumbs
+
+$sideBarMobWidth: 254px;

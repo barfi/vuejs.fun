@@ -7,15 +7,19 @@
     background: $color-white;
     position: fixed;
     top: 0;
-    right: 0;
+    width: 100%;
     left: 0;
     padding-left: 320px;
     overflow: hidden;
     z-index: 9;
+    @include transition-single(left, .3s, ease-in-out);
     @include box-shadow-single(0, 2px, 8px, 0, rgba(#000, .1));
-    @include media(1023px) {
+    @include media($mainUIFrom) {
         padding-left: 0;
         min-height: 66px;
+    }
+    &.sb-open {
+        left: $sideBarMobWidth;
     }
 }
 
@@ -29,23 +33,23 @@
     &:hover, &:active {
         background: $color-extra-light;
     }
-    @include media(1023px) {
+    @include media_range($mainUITo, $mainUIFrom) {
         display: block;
-    }
-    @include media(767px) {
-        display: none;
     }
 }
 // App header breadcrumbs styles
 
 #app-breadcrumbs {
     float: left;
-    @include media(1400px) {
+    @include media($maimUIBcHide) {
         display: none;
     }
     ul {
         overflow: hidden;
         padding: 0 30px;
+        @include media($mainUIFrom) {
+            padding: 0 17px;
+        }
         li {
             line-height: 76px;
             float: left;
@@ -57,6 +61,9 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+            @include media($mainUIFrom) {
+                line-height: 66px;
+            }
             &:after {
                 content: '';
                 display: block;
@@ -95,7 +102,7 @@
     .guest {
         line-height: 76px;
         padding: 0 30px;
-        @include media(1023px) {
+        @include media($mainUIFrom) {
             line-height: 66px;
         }
         a {
@@ -126,7 +133,7 @@
             line-height: 76px;
             float: left;
             position: relative;
-            @include media(1023px) {
+            @include media($mainUIFrom) {
                 line-height: 66px;
             }
             // Profile button
@@ -142,12 +149,12 @@
                 &:hover > .avatar .level, &:active > .avatar .level {
                     border-color: $color-extra-light;
                 }
-                @include media(467px) {
+                @include media($mainUITo - 1) {
                     padding:0 5px 0 87px;
                     height: 66px;
                 }
                 p {
-                    @include media(467px) {
+                    @include media($mainUITo - 1) {
                         display: none;
                     }
                 }
@@ -187,7 +194,7 @@
                 width: 76px;
                 padding: 22px;
                 background: $color-accent;
-                @include media(1023px) {
+                @include media($mainUIFrom) {
                     height: 66px;
                     width: 66px;
                     padding: 20px;

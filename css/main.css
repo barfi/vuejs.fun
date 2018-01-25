@@ -248,14 +248,27 @@ svg {
   height: 100%; }
 
 #app {
+  width: 100%;
+  overflow: hidden;
   height: 100%;
   padding: 76px 0 0 320px; }
-  @media (max-width: 1023px) {
+  @media (max-width: 1500px) {
+    #app {
+      padding-left: 66px;
+      padding-top: 66px; } }
+  @media (max-width: 467px) {
     #app {
       padding-left: 0; } }
 
 #app-content {
-  position: relative; }
+  position: relative;
+  left: 0;
+  -webkit-transition: left 0.3s ease-in-out;
+  -moz-transition: left 0.3s ease-in-out;
+  -o-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out; }
+  #app-content.sb-open {
+    left: 254px; }
 
 .afc-1 {
   color: #00b6ad; }
@@ -296,18 +309,24 @@ svg {
   background: #fff;
   position: fixed;
   top: 0;
-  right: 0;
+  width: 100%;
   left: 0;
   padding-left: 320px;
   overflow: hidden;
   z-index: 9;
+  -webkit-transition: left 0.3s ease-in-out;
+  -moz-transition: left 0.3s ease-in-out;
+  -o-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
   -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1); }
-  @media (max-width: 1023px) {
+  @media (max-width: 1500px) {
     #app-header {
       padding-left: 0;
       min-height: 66px; } }
+  #app-header.sb-open {
+    left: 254px; }
 
 .mini-logo {
   float: left;
@@ -317,21 +336,21 @@ svg {
   padding: 13px; }
   .mini-logo:hover, .mini-logo:active {
     background: #f6f6f7; }
-  @media (max-width: 1023px) {
+  @media (min-width: 468px) and (max-width: 1500px) {
     .mini-logo {
       display: block; } }
-  @media (max-width: 767px) {
-    .mini-logo {
-      display: none; } }
 
 #app-breadcrumbs {
   float: left; }
-  @media (max-width: 1400px) {
+  @media (max-width: 1023px) {
     #app-breadcrumbs {
       display: none; } }
   #app-breadcrumbs ul {
     overflow: hidden;
     padding: 0 30px; }
+    @media (max-width: 1500px) {
+      #app-breadcrumbs ul {
+        padding: 0 17px; } }
     #app-breadcrumbs ul li {
       line-height: 76px;
       float: left;
@@ -343,6 +362,9 @@ svg {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis; }
+      @media (max-width: 1500px) {
+        #app-breadcrumbs ul li {
+          line-height: 66px; } }
       #app-breadcrumbs ul li:after {
         content: '';
         display: block;
@@ -375,7 +397,7 @@ svg {
   #app-user-area .guest {
     line-height: 76px;
     padding: 0 30px; }
-    @media (max-width: 1023px) {
+    @media (max-width: 1500px) {
       #app-user-area .guest {
         line-height: 66px; } }
     #app-user-area .guest a {
@@ -400,7 +422,7 @@ svg {
       line-height: 76px;
       float: left;
       position: relative; }
-      @media (max-width: 1023px) {
+      @media (max-width: 1500px) {
         #app-user-area .authorized a {
           line-height: 66px; } }
       #app-user-area .authorized a:first-child {
@@ -451,7 +473,7 @@ svg {
         width: 76px;
         padding: 22px;
         background: #00b6ad; }
-        @media (max-width: 1023px) {
+        @media (max-width: 1500px) {
           #app-user-area .authorized a:last-child {
             height: 66px;
             width: 66px;
@@ -469,7 +491,26 @@ svg {
   -webkit-box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.15);
-  z-index: 10; }
+  z-index: 10;
+  -webkit-transition: margin-right 0.3s ease-in-out;
+  -moz-transition: margin-right 0.3s ease-in-out;
+  -o-transition: margin-right 0.3s ease-in-out;
+  transition: margin-right 0.3s ease-in-out; }
+  @media (min-width: 468px) and (max-width: 1500px) {
+    #app-sidebar {
+      width: 66px;
+      padding-top: 66px;
+      z-index: 8; } }
+  @media (max-width: 467px) {
+    #app-sidebar {
+      left: auto;
+      right: 100%;
+      width: 254px;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none; } }
+  #app-sidebar.sb-open {
+    margin-right: -254px; }
   #app-sidebar .logo {
     margin: 0 auto;
     margin-bottom: 63px;
@@ -479,11 +520,20 @@ svg {
     color: #00b6ad; }
     #app-sidebar .logo:hover, #app-sidebar .logo:active {
       color: #55576e; }
+    @media (min-width: 468px) and (max-width: 1500px) {
+      #app-sidebar .logo {
+        display: none; } }
   #app-sidebar .sbr-scroll {
     height: 100%;
     padding-top: 46px; }
+    @media (min-width: 468px) and (max-width: 1500px) {
+      #app-sidebar .sbr-scroll {
+        padding-top: 40px; } }
   #app-sidebar nav {
     margin-bottom: 63px; }
+    @media (min-width: 468px) and (max-width: 1500px) {
+      #app-sidebar nav {
+        margin-bottom: 52px; } }
     #app-sidebar nav a {
       position: relative;
       padding-left: 116px;
@@ -491,8 +541,22 @@ svg {
       display: block;
       line-height: 40px;
       margin-bottom: 12px; }
+      @media (min-width: 468px) and (max-width: 1500px) {
+        #app-sidebar nav a {
+          padding: 0;
+          height: 52px;
+          margin-bottom: 0; } }
+      @media (max-width: 467px) {
+        #app-sidebar nav a {
+          padding-left: 96px; } }
+      @media (min-width: 468px) and (max-width: 1500px) {
+        #app-sidebar nav a span {
+          display: none; } }
       #app-sidebar nav a.active {
         color: #00b6ad; }
+      @media (min-width: 468px) and (max-width: 1500px) {
+        #app-sidebar nav a:hover, #app-sidebar nav a:active, #app-sidebar nav a.active {
+          background: #f6f6f7; } }
       #app-sidebar nav a:last-child {
         margin-bottom: 0;
         color: #a875a7; }
@@ -504,6 +568,9 @@ svg {
           background: #a875a7 !important; }
       #app-sidebar nav a:nth-last-child(4) {
         margin-bottom: 64px; }
+        @media (min-width: 468px) and (max-width: 1500px) {
+          #app-sidebar nav a:nth-last-child(4) {
+            margin-bottom: 52px; } }
       #app-sidebar nav a:before {
         content: '';
         display: block;
@@ -534,21 +601,42 @@ svg {
         -moz-transition: color 0.3s ease-in-out;
         -o-transition: color 0.3s ease-in-out;
         transition: color 0.3s ease-in-out; }
+        @media (min-width: 468px) and (max-width: 1500px) {
+          #app-sidebar nav a svg {
+            left: 20px; } }
+        @media (max-width: 467px) {
+          #app-sidebar nav a svg {
+            left: 40px; } }
       #app-sidebar nav a:hover > svg, #app-sidebar nav a.active > svg {
         color: #00b6ad; }
   #app-sidebar footer {
     padding: 0 30px 25px; }
+    @media (min-width: 468px) and (max-width: 1500px) {
+      #app-sidebar footer {
+        padding: 0 0 40px; } }
     #app-sidebar footer ul {
       text-align: center;
       font-size: 0;
       line-height: 1;
       padding-bottom: 25px;
       border-bottom: 2px solid #eeeef0; }
+      @media (min-width: 468px) and (max-width: 1500px) {
+        #app-sidebar footer ul {
+          padding-bottom: 0;
+          border-bottom: none; } }
       #app-sidebar footer ul li {
         display: inline-block;
         margin-right: 30px; }
         #app-sidebar footer ul li:last-child {
           margin-right: 0; }
+        @media (min-width: 468px) and (max-width: 1500px) {
+          #app-sidebar footer ul li {
+            display: block;
+            margin-right: 0;
+            margin-bottom: 0; } }
+        @media (max-width: 467px) {
+          #app-sidebar footer ul li {
+            margin-right: 24px; } }
         #app-sidebar footer ul li a {
           display: block;
           width: 30px;
@@ -556,11 +644,21 @@ svg {
           color: #b1b1ba; }
           #app-sidebar footer ul li a:hover, #app-sidebar footer ul li a:active {
             color: #00b6ad; }
+          @media (min-width: 468px) and (max-width: 1500px) {
+            #app-sidebar footer ul li a {
+              width: auto;
+              height: 52px;
+              padding: 14px 0; }
+              #app-sidebar footer ul li a:hover, #app-sidebar footer ul li a:active {
+                background: #f6f6f7; } }
           #app-sidebar footer ul li a svg {
             display: block !important; }
     #app-sidebar footer .copyrights {
       overflow: hidden;
       padding-top: 25px; }
+      @media (min-width: 468px) and (max-width: 1500px) {
+        #app-sidebar footer .copyrights {
+          display: none; } }
       #app-sidebar footer .copyrights p {
         line-height: 1;
         font-size: 12px;
@@ -574,44 +672,5 @@ svg {
           float: left; }
         #app-sidebar footer .copyrights p:last-child {
           float: right; }
-  #app-sidebar.shorted {
-    width: 66px;
-    padding-top: 66px;
-    z-index: 8; }
-    #app-sidebar.shorted .logo {
-      display: none; }
-    #app-sidebar.shorted .sbr-scroll {
-      padding-top: 52px; }
-    #app-sidebar.shorted nav {
-      margin-bottom: 52px; }
-      #app-sidebar.shorted nav a {
-        padding: 0;
-        height: 52px;
-        margin-bottom: 0; }
-        #app-sidebar.shorted nav a span {
-          display: none; }
-        #app-sidebar.shorted nav a:hover, #app-sidebar.shorted nav a:active, #app-sidebar.shorted nav a.active {
-          background: #f6f6f7; }
-        #app-sidebar.shorted nav a:nth-last-child(4) {
-          margin-bottom: 52px; }
-        #app-sidebar.shorted nav a svg {
-          left: 20px; }
-    #app-sidebar.shorted footer {
-      padding: 0 0 52px; }
-      #app-sidebar.shorted footer ul {
-        padding-bottom: 0;
-        border-bottom: none; }
-        #app-sidebar.shorted footer ul li {
-          display: block;
-          margin-right: 0;
-          margin-bottom: 0; }
-          #app-sidebar.shorted footer ul li a {
-            width: auto;
-            height: 52px;
-            padding: 14px 0; }
-            #app-sidebar.shorted footer ul li a:hover, #app-sidebar.shorted footer ul li a:active {
-              background: #f6f6f7; }
-      #app-sidebar.shorted footer .copyrights {
-        display: none; }
 
 /*# sourceMappingURL=main.css.map */

@@ -56,14 +56,25 @@ svg {
 }
 // App entry styles
 #app {
+    width: 100%;
+    overflow: hidden;
     height: 100%;
     padding: 76px 0 0 320px;
-    @include media(1023px) {
+    @include media($mainUIFrom) {
+        padding-left: 66px;
+        padding-top: 66px;
+    }
+    @include media($mainUITo - 1) {
         padding-left: 0;
     }
 }
 #app-content {
     position: relative;
+    left: 0;
+    @include transition-single(left, .3s, ease-in-out);
+    &.sb-open {
+        left: $sideBarMobWidth;
+    }
 }
 
 // Avatars classes and colors generator
