@@ -11,21 +11,22 @@
     width: 320px;
     @include box-shadow-single(2px, 0, 8px, 0, rgba(#000, .15));
     z-index: 10;
-    @include transition-single(left, .3s, ease-in-out);
+    @include transition-single(transform, .3s, ease-in-out);
     @include media_range($mainUITo, $mainUIFrom) {
         width: 66px;
         padding-top: 66px;
         z-index: 8;
     }
     @include media($mainUITo - 1) {
-        left: -$sideBarMobWidth;
+        left: auto;
+        right: 100%;
         width: $sideBarMobWidth;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
     }
     &.sb-open {
-        left: 0;
+        @include translateX($sideBarMobWidth);
     }
     .logo {
         margin: 0 auto;

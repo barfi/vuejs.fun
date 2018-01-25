@@ -251,12 +251,6 @@ svg {
   width: 100%;
   overflow: hidden;
   height: 100%;
-  position: relative;
-  left: 0;
-  -webkit-transition: left 0.3s ease-in-out;
-  -moz-transition: left 0.3s ease-in-out;
-  -o-transition: left 0.3s ease-in-out;
-  transition: left 0.3s ease-in-out;
   padding: 76px 0 0 320px; }
   @media (max-width: 1500px) {
     #app {
@@ -265,8 +259,19 @@ svg {
   @media (max-width: 467px) {
     #app {
       padding-left: 0; } }
-  #app.sb-open {
-    left: 254px; }
+
+#app-content {
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  position: relative; }
+  #app-content.sb-open {
+    -o-transform: translateX(254px);
+    -ms-transform: translateX(254px);
+    -moz-transform: translateX(254px);
+    -webkit-transform: translateX(254px);
+    transform: translateX(254px); }
 
 .afc-1 {
   color: #00b6ad; }
@@ -490,10 +495,10 @@ svg {
   -moz-box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.15);
   z-index: 10;
-  -webkit-transition: left 0.3s ease-in-out;
-  -moz-transition: left 0.3s ease-in-out;
-  -o-transition: left 0.3s ease-in-out;
-  transition: left 0.3s ease-in-out; }
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out; }
   @media (min-width: 468px) and (max-width: 1500px) {
     #app-sidebar {
       width: 66px;
@@ -501,13 +506,18 @@ svg {
       z-index: 8; } }
   @media (max-width: 467px) {
     #app-sidebar {
-      left: -254px;
+      left: auto;
+      right: 100%;
       width: 254px;
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none; } }
   #app-sidebar.sb-open {
-    left: 0; }
+    -o-transform: translateX(254px);
+    -ms-transform: translateX(254px);
+    -moz-transform: translateX(254px);
+    -webkit-transform: translateX(254px);
+    transform: translateX(254px); }
   #app-sidebar .logo {
     margin: 0 auto;
     margin-bottom: 63px;
