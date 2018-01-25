@@ -11,12 +11,12 @@ $(function () {
     // Get elements for re-using
     var elSidebar = $('#app-sidebar');
     var elHeader = $('#app-header');
-    var elContent = $('#app-content');
+    var elApp = $('#app');
     var elBurger = $('#burger');
     elBurger.click(function () {
         elBurger.toggleClass('sb-open');
         elHeader.toggleClass('sb-open');
-        elContent.toggleClass('sb-open');
+        elApp.toggleClass('sb-open');
         elSidebar.toggleClass('sb-open')
     });
     // Window resize event reaction

@@ -251,6 +251,12 @@ svg {
   width: 100%;
   overflow: hidden;
   height: 100%;
+  position: relative;
+  left: 0;
+  -webkit-transition: left 0.3s ease-in-out;
+  -moz-transition: left 0.3s ease-in-out;
+  -o-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
   padding: 76px 0 0 320px; }
   @media (max-width: 1500px) {
     #app {
@@ -259,15 +265,7 @@ svg {
   @media (max-width: 467px) {
     #app {
       padding-left: 0; } }
-
-#app-content {
-  position: relative;
-  left: 0;
-  -webkit-transition: left 0.3s ease-in-out;
-  -moz-transition: left 0.3s ease-in-out;
-  -o-transition: left 0.3s ease-in-out;
-  transition: left 0.3s ease-in-out; }
-  #app-content.sb-open {
+  #app.sb-open {
     left: 254px; }
 
 .afc-1 {

@@ -59,6 +59,9 @@ svg {
     width: 100%;
     overflow: hidden;
     height: 100%;
+    position: relative;
+    left: 0;
+    @include transition-single(left, .3s, ease-in-out);
     padding: 76px 0 0 320px;
     @include media($mainUIFrom) {
         padding-left: 66px;
@@ -67,14 +70,12 @@ svg {
     @include media($mainUITo - 1) {
         padding-left: 0;
     }
-}
-#app-content {
-    position: relative;
-    left: 0;
-    @include transition-single(left, .3s, ease-in-out);
     &.sb-open {
         left: $sideBarMobWidth;
     }
+}
+#app-content {
+
 }
 
 // Avatars classes and colors generator
