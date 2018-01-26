@@ -874,11 +874,17 @@ svg {
     padding: 0 15px; }
 #app-home-page .about {
   width: 50%; }
+  @media (max-width: 1699px) {
+    #app-home-page .about {
+      width: 100%; } }
   #app-home-page .about .statistic {
     position: relative;
     background: #fbfbfb;
     padding-top: 30px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; }
     #app-home-page .about .statistic:before, #app-home-page .about .statistic:after {
       content: '';
       display: block;
@@ -970,11 +976,18 @@ svg {
         border: 2px solid #55576e; }
 #app-home-page .top {
   width: 25%; }
+  @media (max-width: 1699px) {
+    #app-home-page .top {
+      width: 50%; } }
   #app-home-page .top ul li {
     padding: 10px;
     position: relative;
     background: #fbfbfb;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    height: 72px; }
     #app-home-page .top ul li:before, #app-home-page .top ul li:after {
       content: '';
       display: block;
@@ -998,5 +1011,56 @@ svg {
       -moz-transform: scale(-1, -1);
       -webkit-transform: scale(-1, -1);
       transform: scale(-1, -1); }
+    #app-home-page .top ul li .ava {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 52px;
+      height: 52px; }
+      #app-home-page .top ul li .ava .level {
+        position: absolute;
+        display: block;
+        background: #00b6ad;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #fbfbfb;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 18px;
+        bottom: 2px;
+        right: -9px;
+        font-size: 10px;
+        font-weight: 500;
+        color: #fff; }
+    #app-home-page .top ul li .info {
+      padding-left: 72px;
+      padding-top: 9px; }
+      #app-home-page .top ul li .info h3 {
+        font-size: 14px;
+        font-weight: 500;
+        color: #55576e;
+        line-height: 1;
+        margin-bottom: 8px; }
+      #app-home-page .top ul li .info p {
+        font-size: 12px;
+        font-weight: 400;
+        color: #7f818e;
+        line-height: 1; }
+        #app-home-page .top ul li .info p span {
+          font-weight: 500;
+          color: #3b3d52; }
+    #app-home-page .top ul li .rank {
+      font-size: 30px;
+      font-weight: 500;
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+      line-height: 36px;
+      color: #ced0d8; }
 
 /*# sourceMappingURL=main.css.map */

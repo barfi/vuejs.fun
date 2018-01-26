@@ -29,11 +29,17 @@
     }
     .about {
         width: 50%;
+        @include media(1699px) {
+            width: 100%;
+        }
         .statistic {
             position: relative;
             background: $color-light-special;
             padding-top: 30px;
             margin-bottom: 30px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
             &:before, &:after {
                 content: '';
                 display: block;
@@ -133,12 +139,19 @@
     }
     .top {
         width: 25%;
+        @include media(1699px) {
+            width: 50%;
+        }
         ul {
             li {
                 padding: 10px;
                 position: relative;
                 background: $color-light-special;
                 margin-bottom: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                height: 72px;
                 &:before, &:after {
                     content: '';
                     display: block;
@@ -160,6 +173,72 @@
                     bottom: -1px;
                     right: -1px;
                     @include scaleXY(-1, -1);
+                }
+                .ava {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    width: 52px;
+                    height: 52px;
+                    .level {
+                        position: absolute;
+                        display: block;
+                        background: $color-accent;
+                        width: 20px;
+                        height: 20px;
+                        border: 2px solid $color-light-special;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 18px;
+                        bottom: 2px;
+                        right: -9px;
+                        font: {
+                            size: 10px;
+                            weight: 500;
+                        }
+                        color: $color-white;
+                    }
+                }
+                .info {
+                    padding-left: 72px;
+                    padding-top: 9px;
+                    h3 {
+                        font: {
+                            size: 14px;
+                            weight: 500;
+                        }
+                        color: $color-base;
+                        line-height: 1;
+                        margin-bottom: 8px;
+                    }
+                    p {
+                        font: {
+                            size: 12px;
+                            weight: 400;
+                        }
+                        color: $color-dark-65;
+                        line-height: 1;
+                        span {
+                            font-weight: 500;
+                            color: $color-dark;
+                        }
+                    }
+                }
+                .rank {
+                    font: {
+                        size: 30px;
+                        weight: 500;
+                    }
+                    position: absolute;
+                    width: 36px;
+                    height: 36px;
+                    bottom: 0;
+                    right: 0;
+                    text-align: center;
+                    line-height: 36px;
+                    color: #ced0d8;
                 }
             }
         }
