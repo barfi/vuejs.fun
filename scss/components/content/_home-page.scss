@@ -1,0 +1,167 @@
+@charset "UTF-8";
+#app-home-page {
+    // Global classes for home page
+    h2 {
+        font: {
+            size: 16px;
+            weight: 500;
+        }
+        line-height: 1;
+        color: $color-dark;
+        margin-bottom: 30px;
+    }
+    .typography {
+        padding-bottom: 30px;
+        a {
+            color: $color-accent;
+            &:hover, &:active {
+                color: $color-dark-65;
+            }
+        }
+    }
+    .row {
+        margin: 0 -15px;
+        > .col {
+            float: left;
+            min-height: 1px;
+            padding: 0 15px;
+        }
+    }
+    .about {
+        width: 50%;
+        .statistic {
+            position: relative;
+            background: $color-light-special;
+            padding-top: 30px;
+            margin-bottom: 30px;
+            &:before, &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                border: 2px solid $color-base-10;
+                -webkit-border-top-left-radius: 10px;
+                -moz-border-radius-topleft: 10px;
+                border-top-left-radius: 10px;
+                border-bottom: none;
+                border-right: none;
+            }
+            &:before {
+                top: -1px;
+                left: -1px;
+            }
+            &:after {
+                bottom: -1px;
+                right: -1px;
+                @include scaleXY(-1, -1);
+            }
+            .box {
+                width: 25%;
+                margin-bottom: 30px;
+                .icon {
+                    margin: 0 auto 10px auto;
+                    position: relative;
+                    width: 100px;
+                    height: 100px;
+                    background: $color-base-10;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    color: $color-base;
+                    @include transition-single(color, .3s, ease-in-out);
+                    &:hover {
+                        color: $color-accent;
+                    }
+                    svg {
+                        height: 48px;
+                        width: 48px;
+                        margin: 0 auto;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        @include translate(-50%, -50%);
+                    }
+                }
+                p {
+                    text-align: center;
+                    font: {
+                        size: 40px;
+                        weight: 400;
+                    }
+                    line-height: 1;
+                    span {
+                        font-size: 20px;
+                        display: block;
+                    }
+                }
+            }
+        }
+        footer {
+            margin-bottom: 30px;
+            overflow: hidden;
+            p {
+                float: left;
+                width: 100%;
+                margin-right: -178px;
+                padding-right: 208px;
+            }
+            a {
+                float: right;
+                width: 178px;
+                text-align: center;
+                display: block;
+                color: $color-accent;
+                border: 2px solid $color-accent;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+                font: {
+                    size: 14px;
+                    weight: 500;
+                }
+                text-transform: uppercase;
+                line-height: 1;
+                padding: 9px 0 7px 0;
+                &:hover, &:active {
+                    color: $color-base;
+                    border: 2px solid $color-base;
+                }
+            }
+        }
+    }
+    .top {
+        width: 25%;
+        ul {
+            li {
+                padding: 10px;
+                position: relative;
+                background: $color-light-special;
+                margin-bottom: 10px;
+                &:before, &:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 36px;
+                    height: 36px;
+                    border: 2px solid $color-base-10;
+                    -webkit-border-top-left-radius: 10px;
+                    -moz-border-radius-topleft: 10px;
+                    border-top-left-radius: 10px;
+                    border-bottom: none;
+                    border-right: none;
+                }
+                &:before {
+                    top: -1px;
+                    left: -1px;
+                }
+                &:after {
+                    bottom: -1px;
+                    right: -1px;
+                    @include scaleXY(-1, -1);
+                }
+            }
+        }
+    }
+}
