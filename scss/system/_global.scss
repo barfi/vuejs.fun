@@ -86,6 +86,7 @@ svg {
     }
 }
 #app-content {
+    overflow: auto;
     @include transition-single(transform, .3s, ease-in-out);
     position: relative;
     &.sb-open {

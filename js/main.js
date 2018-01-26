@@ -35,9 +35,10 @@ $(function () {
         cursorcolor: "#b1b1ba",
         grabcursorenabled: false // hide grab cursor!
     });
-    $('.content-scroll').niceScroll({
-        emulatetouch: true,
-        cursorcolor: "#b1b1ba",
-        grabcursorenabled: false // hide grab cursor!
-    });
+
+    // $('.content-scroll').niceScroll({
+    //     emulatetouch: true,
+    //     cursorcolor: "#b1b1ba",
+    //     grabcursorenabled: false // hide grab cursor!
+    // });
 });
