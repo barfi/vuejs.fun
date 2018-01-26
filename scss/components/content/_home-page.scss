@@ -65,6 +65,9 @@
             .box {
                 width: 25%;
                 margin-bottom: 30px;
+                @include media(767px) {
+                    width: 50%;
+                }
                 .icon {
                     margin: 0 auto 10px auto;
                     position: relative;
@@ -107,11 +110,19 @@
         footer {
             margin-bottom: 30px;
             overflow: hidden;
+            text-align: center;
             p {
+                text-align: left;
                 float: left;
                 width: 100%;
                 margin-right: -178px;
                 padding-right: 208px;
+                @include media(767px) {
+                    float: none;
+                    margin-right: 0;
+                    padding-right: 0;
+                    margin-bottom: 30px;
+                }
             }
             a {
                 float: right;
@@ -134,13 +145,21 @@
                     color: $color-base;
                     border: 2px solid $color-base;
                 }
+                @include media(767px) {
+                    float: none;
+                    display: inline-block;
+                }
             }
         }
     }
     .top {
         width: 25%;
+        margin-bottom: 30px;
         @include media(1699px) {
             width: 50%;
+        }
+        @include media(767px) {
+            width: 100%;
         }
         ul {
             li {
@@ -152,6 +171,9 @@
                 -moz-border-radius: 10px;
                 border-radius: 10px;
                 height: 72px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
                 &:before, &:after {
                     content: '';
                     display: block;
