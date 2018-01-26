@@ -65,11 +65,14 @@
             background: #fff;
             padding: 30px;
             display: table-cell; // min height 100% - height of heading row
-            vertical-align: middle;
+            vertical-align: top; // some pages needs middle for vertical centering
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             border-radius: 4px;
             @include box-shadow-single(0, 0, 8px, 0, rgba(#000, .15));
+            &.middle {
+                vertical-align: middle;
+            }
             @include media(767px) {
                 padding: 30px 15px;
             }

@@ -843,13 +843,15 @@ svg {
       background: #fff;
       padding: 30px;
       display: table-cell;
-      vertical-align: middle;
+      vertical-align: top;
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       border-radius: 4px;
       -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
       -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
       box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15); }
+      #app-content > .inner .content-row.middle {
+        vertical-align: middle; }
       @media (max-width: 767px) {
         #app-content > .inner .content-row {
           padding: 30px 15px; } }
@@ -1091,5 +1093,65 @@ svg {
       text-align: center;
       line-height: 36px;
       color: #ced0d8; }
+#app-home-page .popular-video, #app-home-page .new-video {
+  margin-bottom: 30px; }
+#app-home-page .video-row {
+  overflow: hidden;
+  margin: 0 -5px; }
+  #app-home-page .video-row .video-item {
+    padding: 0 5px;
+    width: 20%;
+    display: block;
+    float: left;
+    position: relative; }
+    #app-home-page .video-row .video-item img {
+      display: block;
+      width: 100%;
+      height: auto; }
+    #app-home-page .video-row .video-item .info {
+      position: absolute;
+      height: 34px;
+      right: 5px;
+      bottom: 0;
+      left: 5px;
+      background: rgba(0, 0, 0, 0.6);
+      line-height: 34px;
+      overflow: hidden;
+      padding: 0 10px;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 12px;
+      font-weight: 500; }
+      #app-home-page .video-row .video-item .info p {
+        float: left; }
+      #app-home-page .video-row .video-item .info div {
+        float: right; }
+    #app-home-page .video-row .video-item .overlay {
+      position: absolute;
+      top: 0;
+      right: 5px;
+      bottom: 0;
+      left: 5px;
+      background: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      -webkit-transition: opacity 0.3s ease-in-out;
+      -moz-transition: opacity 0.3s ease-in-out;
+      -o-transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.3s ease-in-out; }
+      #app-home-page .video-row .video-item .overlay span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: rgba(255, 255, 255, 0.9);
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1; }
+    #app-home-page .video-row .video-item:hover .overlay {
+      opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */
