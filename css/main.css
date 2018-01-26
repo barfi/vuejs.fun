@@ -1093,88 +1093,111 @@ svg {
       text-align: center;
       line-height: 36px;
       color: #ced0d8; }
-#app-home-page .popular-video, #app-home-page .new-video {
-  margin-bottom: 30px; }
 #app-home-page .video-row {
   overflow: hidden;
   margin: 0 -5px; }
   #app-home-page .video-row .video-item {
     padding: 0 5px;
     width: 20%;
-    display: block;
     float: left;
-    position: relative; }
-    #app-home-page .video-row .video-item img {
-      display: block;
-      width: 100%;
-      height: auto; }
-    #app-home-page .video-row .video-item .info {
-      position: absolute;
-      height: 34px;
-      right: 5px;
-      bottom: 0;
-      left: 5px;
-      background: rgba(0, 0, 0, 0.6);
-      line-height: 34px;
+    margin-bottom: 30px; }
+    @media (max-width: 1699px) {
+      #app-home-page .video-row .video-item {
+        width: 25%; } }
+    @media (max-width: 1499px) {
+      #app-home-page .video-row .video-item {
+        width: 33.3333%; } }
+    @media (max-width: 1023px) {
+      #app-home-page .video-row .video-item {
+        width: 50%; } }
+    @media (max-width: 639px) {
+      #app-home-page .video-row .video-item {
+        width: 100%; } }
+    #app-home-page .video-row .video-item h3 {
+      font-weight: 500;
+      font-size: 14px;
+      height: 40px;
       overflow: hidden;
-      padding: 0 10px;
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 12px;
-      font-weight: 500; }
-      #app-home-page .video-row .video-item .info p {
-        float: left; }
-      #app-home-page .video-row .video-item .info div {
-        float: right; }
-        #app-home-page .video-row .video-item .info div svg {
-          display: inline-block;
-          width: 20px;
-          height: 12px; }
-        #app-home-page .video-row .video-item .info div .views {
-          vertical-align: middle; }
-          #app-home-page .video-row .video-item .info div .views svg {
-            position: relative;
-            top: 1px; }
-        #app-home-page .video-row .video-item .info div .likes {
-          vertical-align: middle; }
-          #app-home-page .video-row .video-item .info div .likes svg {
-            -o-transform: scaleY(-1);
-            -ms-transform: scaleY(-1);
-            -moz-transform: scaleY(-1);
-            -webkit-transform: scaleY(-1);
-            transform: scaleY(-1);
-            position: relative; }
-        #app-home-page .video-row .video-item .info div .dislikes {
-          vertical-align: middle; }
-          #app-home-page .video-row .video-item .info div .dislikes svg {
-            position: relative;
-            top: 3px; }
-    #app-home-page .video-row .video-item .overlay {
-      position: absolute;
-      top: 0;
-      right: 5px;
-      bottom: 0;
-      left: 5px;
-      background: rgba(0, 0, 0, 0.6);
-      opacity: 0;
-      -webkit-transition: opacity 0.3s ease-in-out;
-      -moz-transition: opacity 0.3s ease-in-out;
-      -o-transition: opacity 0.3s ease-in-out;
-      transition: opacity 0.3s ease-in-out; }
-      #app-home-page .video-row .video-item .overlay span {
+      text-overflow: ellipsis; }
+      #app-home-page .video-row .video-item h3 a {
+        color: #7f818e; }
+        #app-home-page .video-row .video-item h3 a:hover, #app-home-page .video-row .video-item h3 a:active {
+          color: #3b3d52; }
+    #app-home-page .video-row .video-item a {
+      display: block;
+      position: relative;
+      margin-bottom: 10px; }
+      #app-home-page .video-row .video-item a img {
+        display: block;
+        width: 100%;
+        height: auto; }
+      #app-home-page .video-row .video-item a .info {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        -o-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        color: rgba(255, 255, 255, 0.9);
-        text-transform: uppercase;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1; }
-    #app-home-page .video-row .video-item:hover .overlay {
-      opacity: 1; }
+        height: 34px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        line-height: 34px;
+        overflow: hidden;
+        padding: 0 10px;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 12px;
+        font-weight: 500; }
+        #app-home-page .video-row .video-item a .info p {
+          float: left; }
+        #app-home-page .video-row .video-item a .info div {
+          float: right; }
+          #app-home-page .video-row .video-item a .info div svg {
+            display: inline-block;
+            width: 20px;
+            height: 12px; }
+          #app-home-page .video-row .video-item a .info div .views {
+            vertical-align: middle; }
+            #app-home-page .video-row .video-item a .info div .views svg {
+              position: relative;
+              top: 1px; }
+          #app-home-page .video-row .video-item a .info div .likes {
+            vertical-align: middle; }
+            #app-home-page .video-row .video-item a .info div .likes svg {
+              -o-transform: scaleY(-1);
+              -ms-transform: scaleY(-1);
+              -moz-transform: scaleY(-1);
+              -webkit-transform: scaleY(-1);
+              transform: scaleY(-1);
+              position: relative; }
+          #app-home-page .video-row .video-item a .info div .dislikes {
+            vertical-align: middle; }
+            #app-home-page .video-row .video-item a .info div .dislikes svg {
+              position: relative;
+              top: 3px; }
+      #app-home-page .video-row .video-item a .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out; }
+        #app-home-page .video-row .video-item a .overlay span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -o-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          color: rgba(255, 255, 255, 0.9);
+          text-transform: uppercase;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1; }
+      #app-home-page .video-row .video-item a:hover .overlay {
+        opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */

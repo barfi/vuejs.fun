@@ -266,7 +266,7 @@
         }
     }
     .popular-video, .new-video {
-        margin-bottom: 30px;
+
     }
     .video-row {
         overflow: hidden;
@@ -274,87 +274,118 @@
         .video-item {
             padding: 0 5px;
             width: 20%;
-            display: block;
             float: left;
-            position: relative;
-            img {
-                display: block;
+            margin-bottom: 30px;
+            @include media(1699px) {
+                width: 25%;
+            }
+            @include media(1499px) {
+                width: 33.3333%;
+            }
+            @include media(1023px) {
+                width: 50%;
+            }
+            @include media(639px) {
                 width: 100%;
-                height: auto;
             }
-            .info {
-                position: absolute;
-                height: 34px;
-                right: 5px;
-                bottom: 0;
-                left: 5px;
-                background: rgba(#000, .6);
-                line-height: 34px;
-                overflow: hidden;
-                padding: 0 10px;
-                color: rgba(#fff, .8);
+            h3 {
                 font: {
-                    size: 12px;
                     weight: 500;
+                    size: 14px;
                 }
-                p {
-                    float: left;
-                }
-                div {
-                    float: right;
-                    svg {
-                        display: inline-block;
-                        width: 20px;
-                        height: 12px;
-                    }
-                    .views {
-                        vertical-align: middle;
-                        svg {
-                            position: relative;
-                            top: 1px;
-                        }
-                    }
-                    .likes {
-                        vertical-align: middle;
-                        svg {
-                            @include scaleY(-1);
-                            position: relative;
-                        }
-                    }
-                    .dislikes {
-                        vertical-align: middle;
-                        svg {
-                            position: relative;
-                            top: 3px;
-                        }
+                height: 40px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                a {
+                    color: $color-dark-65;
+                    &:hover, &:active {
+                        color: $color-dark;
                     }
                 }
             }
-            .overlay {
-                position: absolute;
-                top: 0;
-                right: 5px;
-                bottom: 0;
-                left: 5px;
-                background: rgba(#000, .6);
-                opacity: 0;
-                @include transition-single(opacity, .3s, ease-in-out);
-                span {
+            a {
+                display: block;
+                position: relative;
+                margin-bottom: 10px;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+                .info {
                     position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    @include translate(-50%, -50%);
-                    color: rgba(#fff, .9);
-                    text-transform: uppercase;
+                    height: 34px;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background: rgba(#000, .6);
+                    line-height: 34px;
+                    overflow: hidden;
+                    padding: 0 10px;
+                    color: rgba(#fff, .8);
                     font: {
-                        size: 14px;
+                        size: 12px;
                         weight: 500;
                     }
-                    line-height: 1;
+                    p {
+                        float: left;
+                    }
+                    div {
+                        float: right;
+                        svg {
+                            display: inline-block;
+                            width: 20px;
+                            height: 12px;
+                        }
+                        .views {
+                            vertical-align: middle;
+                            svg {
+                                position: relative;
+                                top: 1px;
+                            }
+                        }
+                        .likes {
+                            vertical-align: middle;
+                            svg {
+                                @include scaleY(-1);
+                                position: relative;
+                            }
+                        }
+                        .dislikes {
+                            vertical-align: middle;
+                            svg {
+                                position: relative;
+                                top: 3px;
+                            }
+                        }
+                    }
                 }
-            }
-            &:hover .overlay {
-                opacity: 1;
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background: rgba(#000, .6);
+                    opacity: 0;
+                    @include transition-single(opacity, .3s, ease-in-out);
+                    span {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        @include translate(-50%, -50%);
+                        color: rgba(#fff, .9);
+                        text-transform: uppercase;
+                        font: {
+                            size: 14px;
+                            weight: 500;
+                        }
+                        line-height: 1;
+                    }
+                }
+                &:hover .overlay {
+                    opacity: 1;
+                }
             }
         }
     }
