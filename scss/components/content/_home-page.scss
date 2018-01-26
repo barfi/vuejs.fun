@@ -302,6 +302,32 @@
                 }
                 div {
                     float: right;
+                    svg {
+                        display: inline-block;
+                        width: 20px;
+                        height: 12px;
+                    }
+                    .views {
+                        vertical-align: middle;
+                        svg {
+                            position: relative;
+                            top: 1px;
+                        }
+                    }
+                    .likes {
+                        vertical-align: middle;
+                        svg {
+                            @include scaleY(-1);
+                            position: relative;
+                        }
+                    }
+                    .dislikes {
+                        vertical-align: middle;
+                        svg {
+                            position: relative;
+                            top: 3px;
+                        }
+                    }
                 }
             }
             .overlay {

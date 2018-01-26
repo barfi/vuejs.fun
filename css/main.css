@@ -1125,6 +1125,29 @@ svg {
         float: left; }
       #app-home-page .video-row .video-item .info div {
         float: right; }
+        #app-home-page .video-row .video-item .info div svg {
+          display: inline-block;
+          width: 20px;
+          height: 12px; }
+        #app-home-page .video-row .video-item .info div .views {
+          vertical-align: middle; }
+          #app-home-page .video-row .video-item .info div .views svg {
+            position: relative;
+            top: 1px; }
+        #app-home-page .video-row .video-item .info div .likes {
+          vertical-align: middle; }
+          #app-home-page .video-row .video-item .info div .likes svg {
+            -o-transform: scaleY(-1);
+            -ms-transform: scaleY(-1);
+            -moz-transform: scaleY(-1);
+            -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+            position: relative; }
+        #app-home-page .video-row .video-item .info div .dislikes {
+          vertical-align: middle; }
+          #app-home-page .video-row .video-item .info div .dislikes svg {
+            position: relative;
+            top: 3px; }
     #app-home-page .video-row .video-item .overlay {
       position: absolute;
       top: 0;
