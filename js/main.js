@@ -17,7 +17,7 @@ $(function () {
         elSidebar.toggleClass('sb-open');
         elOverlay.toggleClass('sb-open');
         setTimeout(function () {
-            elContent.getNiceScroll().resize();
+            elContent.getNiceScroll().resize(); // TODO: edit this iPhone lags
         }, 300);
     });
 
