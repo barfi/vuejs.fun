@@ -1687,4 +1687,105 @@ svg {
               #app-add-video-page form .field ul li input:checked + label:before, #app-add-video-page form .field ul li input:checked + label:after {
                 border-color: #55576e; }
 
+#app-profile-page {
+  max-width: 870px;
+  margin: 0 auto; }
+  #app-profile-page .user, #app-profile-page .collection, #app-profile-page .files {
+    float: left;
+    width: 33.3333%;
+    min-height: 500px;
+    position: relative; }
+    #app-profile-page .user:before, #app-profile-page .collection:before, #app-profile-page .files:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border: 2px solid #eeeef0;
+      -webkit-border-top-left-radius: 10px;
+      -moz-border-radius-topleft: 10px;
+      border-top-left-radius: 10px;
+      border-bottom: none;
+      border-right: none;
+      -webkit-transition: border .3s ease-in-out;
+      -moz-transition: border .3s ease-in-out;
+      -o-transition: border .3s ease-in-out;
+      transition: border .3s ease-in-out; }
+    #app-profile-page .user:before, #app-profile-page .collection:before, #app-profile-page .files:before {
+      top: -1px;
+      left: -1px; }
+  #app-profile-page .collection:before, #app-profile-page .files:before {
+    top: auto;
+    left: auto;
+    bottom: -1px;
+    right: -1px;
+    -o-transform: scale(-1, -1);
+    -ms-transform: scale(-1, -1);
+    -moz-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1); }
+  #app-profile-page .collection:after, #app-profile-page .files:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 90%;
+    top: 10px;
+    left: -1px;
+    background: #eeeef0; }
+  #app-profile-page .collection:before {
+    display: none; }
+  #app-profile-page .user {
+    padding-top: 50px; }
+    #app-profile-page .user .avatar {
+      margin: 0 auto 20px auto;
+      width: 104px;
+      height: 104px;
+      position: relative; }
+      #app-profile-page .user .avatar .level {
+        overflow: hidden;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border: 3px solid #fff;
+        background: #00b6ad;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        line-height: 27px;
+        text-align: center;
+        bottom: 11px;
+        left: -12px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff; }
+      #app-profile-page .user .avatar .money {
+        overflow: hidden;
+        position: absolute;
+        height: 24px;
+        top: 15px;
+        left: 100%;
+        margin-left: 10px;
+        background: #eeeef0;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        padding: 0 8px 0 24px;
+        line-height: 26px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #55576e; }
+        #app-profile-page .user .avatar .money svg {
+          position: absolute;
+          width: 18px;
+          height: 18px;
+          top: 3px;
+          left: 3px; }
+    #app-profile-page .user h2 {
+      font-size: 14px;
+      font-weight: 500;
+      color: #3b3d52;
+      text-align: center;
+      line-height: 1; }
+
 /*# sourceMappingURL=main.css.map */
