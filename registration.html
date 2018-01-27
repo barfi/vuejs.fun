@@ -174,13 +174,58 @@
         <div class="inner">
             <div class="heading-row">
                 <div>
-                    <h1>Добро пожаловать на vuejs.fun, регистрируемся.</h1>
+                    <h1>Регистрация на проекте vuejs.fun</h1>
                     <a href="#" id="add-video" title="Добавить пользовательское видео">+добавить видео</a>
                 </div>
             </div>
             <!-- Add special class for content-row "middle" for vertical centering -->
-            <div class="content-row">
+            <div class="content-row middle">
                 <!-- Page content here -->
+                <div id="app-auth-page">
+                    <a href="#" class="logo">
+                        <svg><use xlink:href="img/sprite.svg#v-logo"></use></svg>
+                    </a>
+                    <h2>Регистрация на vuejs.fun</h2>
+                    <p>Воспользуйтесь формой регистрации ниже</p>
+                    <form action="#" method="post">
+                        <div class="field">
+                            <svg><use xlink:href="img/sprite.svg#icon-info"></use></svg>
+                            <input type="text" placeholder="Ваше имя" title="Введите ваше имя">
+                        </div>
+                        <div class="field">
+                            <svg><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
+                            <input type="email" placeholder="Email адрес" title="Введите ваш почтовый адрес">
+                        </div>
+                        <div class="field">
+                            <svg><use xlink:href="img/sprite.svg#icon-password"></use></svg>
+                            <input type="password" placeholder="Пароль" title="Введите ваш пароль">
+                        </div>
+                        <div class="field">
+                            <svg><use xlink:href="img/sprite.svg#icon-password"></use></svg>
+                            <input type="password" placeholder="Повторите пароль" title="Повторите ваш пароль">
+                        </div>
+                        <div class="field">
+                            <button type="submit">Зарегистрироваться</button>
+                        </div>
+                    </form>
+                    <p>Есть аккаунт? <a href="auth.html">Войти на сайт</a></p>
+                    <div class="divider">
+                        <span>или</span>
+                    </div>
+                    <h2>Войти через</h2>
+                    <div class="socials">
+                        <a href="#" class="gth">
+                            <svg><use xlink:href="img/sprite.svg#icon-github"></use></svg>
+                            <span>Github</span>
+                        </a>
+                        <a href="#" class="ggl">
+                            <span>Google <sup>+</sup></span>
+                        </a>
+                        <a href="#" class="vk">
+                            <span>Вконтакте</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
