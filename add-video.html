@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+    <title>vuejs.fun | Add video</title>
+    <!--Basic meta tags-->
+    <meta name="description" content="Add description!">
+    <meta name="keywords" content="Add keywords">
+    <meta name="author" content="vuejs.fun">
+    <!--Favicon, by https://realfavicongenerator.net/-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#00b6ad">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="app">
+    <div id="app-header">
+        <a href="#" class="mini-logo" title="На главную">
+            <svg>
+                <use xlink:href="img/sprite.svg#v-mini-logo"></use>
+            </svg>
+        </a>
+        <div id="app-breadcrumbs">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Desktop</a></li>
+                <li>Название видео если очень длинное например такое</li>
+            </ul>
+        </div>
+        <div id="app-user-area">
+            <!--Is authorized-->
+            <div class="authorized">
+                <a href="#">
+                    <div class="avatar">
+                        <svg class="afc-1 asc-1">
+                            <use xlink:href="img/sprite.svg#ava-special-1"></use>
+                        </svg>
+                        <span class="level">18</span>
+                    </div>
+                    <p>Андрей Нежный</p>
+                </a>
+                <a href="#">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-exit"></use>
+                    </svg>
+                </a>
+            </div>
+            <!--Guest-->
+            <!--<div class="guest">-->
+            <!--<a href="#">вход / регистрация</a>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <div id="app-sidebar">
+        <button id="burger" type="button">
+            <span>
+                <span></span>
+            </span>
+        </button>
+        <div class="sbr-scroll">
+            <a href="#" class="logo" title="На главную">
+                <svg>
+                    <use xlink:href="img/sprite.svg#v-logo"></use>
+                </svg>
+            </a>
+            <nav>
+                <a href="#" title="Web">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-web"></use>
+                    </svg>
+                    <span>Web</span>
+                </a>
+                <a href="#" title="Mobile">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-mobile"></use>
+                    </svg>
+                    <span>Mobile</span>
+                </a>
+                <a href="#" class="active" title="Desktop">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-desktop"></use>
+                    </svg>
+                    <span>Desktop</span>
+                </a>
+                <a href="#" title="Server">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-server"></use>
+                    </svg>
+                    <span>Server</span>
+                </a>
+                <a href="#" title="Babylon">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-babylon"></use>
+                    </svg>
+                    <span>Babylon</span>
+                </a>
+                <a href="#" title="Env">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-env"></use>
+                    </svg>
+                    <span>Env</span>
+                </a>
+                <a href="#" title="Game">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-game"></use>
+                    </svg>
+                    <span>Game</span>
+                </a>
+                <a href="#" title="API">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-api"></use>
+                    </svg>
+                    <span>API</span>
+                </a>
+                <a href="#" title="О нас">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-about"></use>
+                    </svg>
+                    <span>О нас</span>
+                </a>
+                <a href="#" title="Обратная связь">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-contacts"></use>
+                    </svg>
+                    <span>Обратная связь</span>
+                </a>
+                <a href="#" title="Поблагодарить">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-donate"></use>
+                    </svg>
+                    <span>Поблагодарить</span>
+                </a>
+            </nav>
+            <footer>
+                <ul>
+                    <li><a href="#" class="youtube">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                        </svg>
+                    </a></li>
+                    <li><a href="#" class="github">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-github"></use>
+                        </svg>
+                    </a></li>
+                    <li><a href="#" class="discord">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-discord"></use>
+                        </svg>
+                    </a></li>
+                    <li><a href="#" class="vk">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-vk"></use>
+                        </svg>
+                    </a></li>
+                </ul>
+                <div class="copyrights">
+                    <p>&copy; vuejs.fun 2018</p>
+                    <p>by <a href="http://barfi.ru" target="_blank">Barfi</a></p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div id="app-content" class="content-scroll">
+        <div class="inner">
+            <div class="heading-row">
+                <div>
+                    <h1>Добро пожаловать на vuejs.fun, регистрируемся.</h1>
+                    <a href="#" id="add-video" title="Добавить пользовательское видео">+добавить видео</a>
+                </div>
+            </div>
+            <!-- Add special class for content-row "middle" for vertical centering -->
+            <div class="content-row">
+                <!-- Page content here -->
+            </div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+</div>
+<!--JavaScripts-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

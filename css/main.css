@@ -1304,4 +1304,201 @@ svg {
       #app-playlists-page .playlists-row .video-item a:hover .overlay {
         opacity: 1; }
 
+#app-auth-page {
+  width: 260px;
+  margin: 0 auto; }
+  @media (max-width: 467px) {
+    #app-auth-page {
+      width: auto;
+      margin: 0; } }
+  #app-auth-page .logo {
+    display: block;
+    margin: 0 auto 40px auto;
+    width: 150px;
+    height: 60px;
+    color: #00b6ad; }
+    #app-auth-page .logo:hover, #app-auth-page .logo:active {
+      color: #55576e; }
+  #app-auth-page h2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3b3d52;
+    line-height: 1;
+    margin-bottom: 10px; }
+  #app-auth-page p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #7f818e;
+    line-height: 1;
+    margin-bottom: 20px; }
+    #app-auth-page p a {
+      font-weight: 500;
+      color: #00b6ad;
+      margin-left: 4px; }
+      #app-auth-page p a:hover, #app-auth-page p a:active {
+        color: #55576e; }
+  #app-auth-page form {
+    margin-bottom: 20px; }
+    #app-auth-page form .field {
+      position: relative;
+      margin-bottom: 10px; }
+      #app-auth-page form .field:nth-last-child(2) {
+        margin-bottom: 20px; }
+      #app-auth-page form .field svg {
+        position: absolute;
+        top: 7px;
+        left: 19px;
+        margin-left: -10px;
+        width: 20px;
+        height: 15px;
+        color: rgba(85, 87, 110, 0.65); }
+      #app-auth-page form .field input {
+        display: block;
+        width: 100%;
+        outline: none;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        border: none;
+        height: 30px;
+        line-height: 30px;
+        background: #eeeef0;
+        padding: 0 60px 0 36px;
+        font-size: 12px;
+        font-weight: 500;
+        font-family: "Rubik", Arial, Tahoma, sans-serif;
+        color: #3b3d52; }
+        #app-auth-page form .field input::-webkit-input-placeholder {
+          /* Chrome/Opera/Safari */
+          color: rgba(85, 87, 110, 0.75);
+          font-size: 12px;
+          font-weight: 400;
+          font-family: inherit; }
+        #app-auth-page form .field input::-moz-placeholder {
+          /* Firefox 19+ */
+          color: rgba(85, 87, 110, 0.75);
+          font-size: 12px;
+          font-weight: 400;
+          font-family: inherit; }
+        #app-auth-page form .field input:-ms-input-placeholder {
+          /* IE 10+ */
+          color: rgba(85, 87, 110, 0.75);
+          font-size: 12px;
+          font-weight: 400;
+          font-family: inherit; }
+        #app-auth-page form .field input:-moz-placeholder {
+          /* Firefox 18- */
+          color: rgba(85, 87, 110, 0.75);
+          font-size: 12px;
+          font-weight: 400;
+          font-family: inherit; }
+      #app-auth-page form .field a {
+        font-size: 10px;
+        font-weight: 500;
+        color: #00b6ad;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        line-height: 1;
+        -o-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%); }
+        #app-auth-page form .field a:hover, #app-auth-page form .field a:active {
+          color: #55576e; }
+      #app-auth-page form .field button {
+        display: block;
+        margin: 0;
+        outline: none;
+        padding: 0;
+        background: transparent;
+        border: 2px solid #00b6ad;
+        color: #00b6ad;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        height: 40px;
+        width: 100%;
+        line-height: 36px;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 500;
+        font-family: "Rubik", Arial, Tahoma, sans-serif;
+        cursor: pointer;
+        -webkit-transition: color .3s ease-in-out, border .3s ease-in-out;
+        -moz-transition: color .3s ease-in-out, border .3s ease-in-out;
+        -o-transition: color .3s ease-in-out, border .3s ease-in-out;
+        transition: color .3s ease-in-out, border .3s ease-in-out; }
+        #app-auth-page form .field button:hover, #app-auth-page form .field button:active {
+          border-color: #55576e;
+          color: #55576e; }
+  #app-auth-page .divider {
+    font-size: 10px;
+    font-weight: 500;
+    color: #7f818e;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    line-height: 1;
+    margin-bottom: 20px; }
+    #app-auth-page .divider:before {
+      content: '';
+      display: block;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      margin-top: -1px;
+      background: #f6f6f7; }
+    #app-auth-page .divider span {
+      position: relative;
+      background: #fff;
+      padding: 0 5px; }
+  #app-auth-page .socials {
+    text-align: center;
+    font-size: 0;
+    padding: 5px 0 10px; }
+    #app-auth-page .socials a {
+      display: inline-block;
+      margin-right: 10px;
+      width: 80px;
+      height: 36px;
+      line-height: 36px;
+      vertical-align: middle;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #fff;
+      opacity: 1;
+      -webkit-transition: opacity .3s ease-in-out;
+      -moz-transition: opacity .3s ease-in-out;
+      -o-transition: opacity .3s ease-in-out;
+      transition: opacity .3s ease-in-out; }
+      #app-auth-page .socials a:last-child {
+        margin-right: 0; }
+      #app-auth-page .socials a.gth {
+        background: #333333; }
+      #app-auth-page .socials a.ggl {
+        background: #d34836; }
+      #app-auth-page .socials a.vk {
+        background: #4a76a8; }
+      #app-auth-page .socials a:hover, #app-auth-page .socials a:active {
+        opacity: 0.8; }
+      #app-auth-page .socials a svg {
+        display: inline-block;
+        position: relative;
+        bottom: -4px;
+        height: 18px;
+        width: 22px; }
+      #app-auth-page .socials a span {
+        display: inline;
+        line-height: 1; }
+
 /*# sourceMappingURL=main.css.map */
