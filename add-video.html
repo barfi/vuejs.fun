@@ -174,13 +174,82 @@
         <div class="inner">
             <div class="heading-row">
                 <div>
-                    <h1>Добро пожаловать на vuejs.fun, регистрируемся.</h1>
+                    <h1>Добавить пользовательское видео</h1>
                     <a href="#" id="add-video" title="Добавить пользовательское видео">+добавить видео</a>
                 </div>
             </div>
             <!-- Add special class for content-row "middle" for vertical centering -->
-            <div class="content-row">
+            <div class="content-row middle">
                 <!-- Page content here -->
+                <div id="app-add-video-page">
+                    <a href="#" class="logo">
+                        <svg><use xlink:href="img/sprite.svg#v-logo"></use></svg>
+                    </a>
+                    <h2>Добавить свое видео</h2>
+                    <p>Добавьте ссылку и выберите категорию</p>
+                    <form action="#" method="post">
+                        <div class="field">
+                            <svg><use xlink:href="img/sprite.svg#icon-youtube"></use></svg>
+                            <input type="text" placeholder="https://youtu.be/DBotK6XxlsM" title="Ссылка на видео youtube">
+                        </div>
+                        <div class="field field-special">
+                            <ul class="clear">
+                                <li>
+                                    <input id="cat-1" name="category" type="radio" checked  value="web">
+                                    <label for="cat-1">
+                                        <svg><use xlink:href="img/sprite.svg#icon-web"></use></svg>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="cat-2" name="category" type="radio" value="mobile">
+                                    <label for="cat-2">
+                                        <svg><use xlink:href="img/sprite.svg#icon-mobile"></use></svg>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="cat-3" name="category" type="radio" value="desktop">
+                                    <label for="cat-3">
+                                        <svg><use xlink:href="img/sprite.svg#icon-desktop"></use></svg>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="cat-4" name="category" type="radio" value="server">
+                                    <label for="cat-4">
+                                        <svg><use xlink:href="img/sprite.svg#icon-server"></use></svg>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="cat-5" name="category" type="radio" value="babylon">
+                                    <label for="cat-5">
+                                        <svg><use xlink:href="img/sprite.svg#icon-babylon"></use></svg>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="cat-6" name="category" type="radio" value="env">
+                                    <label for="cat-6">
+                                        <svg><use xlink:href="img/sprite.svg#icon-env"></use></svg>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="cat-7" name="category" type="radio" value="game">
+                                    <label for="cat-7">
+                                        <svg><use xlink:href="img/sprite.svg#icon-game"></use></svg>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="cat-8" name="category" type="radio" value="api">
+                                    <label for="cat-8">
+                                        <svg><use xlink:href="img/sprite.svg#icon-api"></use></svg>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="field">
+                            <button type="submit">Добавить видео</button>
+                        </div>
+                    </form>
+                    <p>*Добавление видео доступно раз в сутки</p>
+                </div>
             </div>
         </div>
     </div>
