@@ -274,6 +274,8 @@
                     color: $color-dark-65;
                     &:disabled {
                         color: $color-dark-65 !important;
+                        -webkit-text-fill-color: $color-dark-65;
+                        -webkit-opacity:1;
                     }
                     &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
                         color: rgba($color-base, .75);

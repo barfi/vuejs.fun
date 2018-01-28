@@ -1922,7 +1922,9 @@ svg {
           font-family: "Rubik", Arial, Tahoma, sans-serif;
           color: #7f818e; }
           #app-profile-page .user form .field input:disabled {
-            color: #7f818e !important; }
+            color: #7f818e !important;
+            -webkit-text-fill-color: #7f818e;
+            -webkit-opacity: 1; }
           #app-profile-page .user form .field input::-webkit-input-placeholder {
             /* Chrome/Opera/Safari */
             color: rgba(85, 87, 110, 0.75);
