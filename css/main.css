@@ -1786,6 +1786,192 @@ svg {
       font-weight: 500;
       color: #3b3d52;
       text-align: center;
-      line-height: 1; }
+      line-height: 1;
+      margin-bottom: 20px; }
+    #app-profile-page .user .info {
+      font-size: 0;
+      text-align: center;
+      margin-bottom: 15px; }
+      #app-profile-page .user .info .comments, #app-profile-page .user .info .sympathy, #app-profile-page .user .info .views {
+        display: inline-block;
+        position: relative;
+        padding-left: 27px;
+        padding-right: 12px;
+        margin-right: 12px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #3b3d52; }
+        #app-profile-page .user .info .comments:after, #app-profile-page .user .info .sympathy:after, #app-profile-page .user .info .views:after {
+          content: '';
+          display: block;
+          width: 2px;
+          height: 18px;
+          position: absolute;
+          right: -1px;
+          top: 50%;
+          margin-top: -9px;
+          background: #eeeef0; }
+        #app-profile-page .user .info .comments svg, #app-profile-page .user .info .sympathy svg, #app-profile-page .user .info .views svg {
+          position: absolute;
+          width: 22px;
+          height: 22px;
+          top: 50%;
+          left: 0;
+          margin-top: -12px; }
+      #app-profile-page .user .info .views {
+        margin-right: 0;
+        padding-right: 0; }
+        #app-profile-page .user .info .views:after {
+          display: none; }
+    #app-profile-page .user .exp {
+      max-width: 220px;
+      margin: 0 auto 30px auto; }
+      #app-profile-page .user .exp .bar {
+        position: relative;
+        height: 10px;
+        background: #55576e;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        padding: 2px;
+        margin-bottom: 15px; }
+        #app-profile-page .user .exp .bar:before {
+          content: '';
+          position: absolute;
+          display: block;
+          top: 2px;
+          left: 2px;
+          right: 2px;
+          bottom: 2px;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+          background: rgba(255, 255, 255, 0.15); }
+        #app-profile-page .user .exp .bar .progress {
+          background: #00b6ad;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+          position: relative;
+          height: 6px;
+          -webkit-transition: width 0.3s ease-in-out;
+          -moz-transition: width 0.3s ease-in-out;
+          -o-transition: width 0.3s ease-in-out;
+          transition: width 0.3s ease-in-out; }
+        #app-profile-page .user .exp .bar .point {
+          position: absolute;
+          width: 2px;
+          height: 12px;
+          background: #55576e;
+          top: 50%;
+          left: 50%;
+          margin-top: -6px;
+          margin-left: -1px; }
+          #app-profile-page .user .exp .bar .point:before, #app-profile-page .user .exp .bar .point:after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 2px;
+            height: 12px;
+            top: 0;
+            background: #55576e; }
+          #app-profile-page .user .exp .bar .point:before {
+            left: -53px; }
+          #app-profile-page .user .exp .bar .point:after {
+            right: -53px; }
+      #app-profile-page .user .exp p {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+        color: #7f818e; }
+    #app-profile-page .user form {
+      max-width: 220px;
+      margin: 0 auto 100px auto; }
+      #app-profile-page .user form .field {
+        position: relative; }
+        #app-profile-page .user form .field input {
+          display: block;
+          width: 100%;
+          outline: none;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+          border: none;
+          height: 30px;
+          line-height: 30px;
+          background: #eeeef0;
+          padding: 0 30px 0 13px;
+          font-size: 12px;
+          font-weight: 500;
+          font-family: "Rubik", Arial, Tahoma, sans-serif;
+          color: #7f818e; }
+          #app-profile-page .user form .field input::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: rgba(85, 87, 110, 0.75);
+            font-size: 12px;
+            font-weight: 400;
+            font-family: inherit; }
+          #app-profile-page .user form .field input::-moz-placeholder {
+            /* Firefox 19+ */
+            color: rgba(85, 87, 110, 0.75);
+            font-size: 12px;
+            font-weight: 400;
+            font-family: inherit; }
+          #app-profile-page .user form .field input:-ms-input-placeholder {
+            /* IE 10+ */
+            color: rgba(85, 87, 110, 0.75);
+            font-size: 12px;
+            font-weight: 400;
+            font-family: inherit; }
+          #app-profile-page .user form .field input:-moz-placeholder {
+            /* Firefox 18- */
+            color: rgba(85, 87, 110, 0.75);
+            font-size: 12px;
+            font-weight: 400;
+            font-family: inherit; }
+        #app-profile-page .user form .field button.edit {
+          display: block;
+          position: absolute;
+          top: 50%;
+          margin-top: -8px;
+          right: 7px;
+          background: transparent;
+          outline: none;
+          border: none;
+          width: 16px;
+          height: 16px;
+          color: #7f818e;
+          padding: 0;
+          cursor: not-allowed; }
+    #app-profile-page .user footer {
+      padding: 0 15px; }
+      #app-profile-page .user footer p {
+        border-top: 2px solid #eeeef0;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+        color: #3b3d52; }
+        #app-profile-page .user footer p button {
+          display: inline-block;
+          padding: 0;
+          outline: none;
+          background: transparent;
+          border: none;
+          font-family: "Rubik", Arial, Tahoma, sans-serif;
+          font-size: 12px;
+          font-weight: 500;
+          color: #b1b1ba;
+          text-transform: uppercase;
+          cursor: pointer;
+          margin-left: 10px;
+          -webkit-transition: color 0.3s ease-in-out;
+          -moz-transition: color 0.3s ease-in-out;
+          -o-transition: color 0.3s ease-in-out;
+          transition: color 0.3s ease-in-out; }
+          #app-profile-page .user footer p button.cancel {
+            color: #00b6ad; }
+          #app-profile-page .user footer p button:hover, #app-profile-page .user footer p button:active {
+            color: #55576e; }
 
 /*# sourceMappingURL=main.css.map */
