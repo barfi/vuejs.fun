@@ -184,25 +184,35 @@
                 <div id="app-profile-page" class="clear">
                     <div class="user">
                         <div class="avatar">
-                            <svg class="afc-1 asc-1"><use xlink:href="img/sprite.svg#ava-special-1"></use></svg>
+                            <svg class="afc-1 asc-1">
+                                <use xlink:href="img/sprite.svg#ava-special-1"></use>
+                            </svg>
                             <div class="level">99</div>
                             <div class="money">
-                                <svg><use xlink:href="img/sprite.svg#icon-coin"></use></svg>
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#icon-coin"></use>
+                                </svg>
                                 999
                             </div>
                         </div>
                         <h2>Андрей Нежный</h2>
                         <div class="info">
                             <div class="comments">
-                                <svg><use xlink:href="img/sprite.svg#icon-comments"></use></svg>
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#icon-comments"></use>
+                                </svg>
                                 999
                             </div>
                             <div class="sympathy">
-                                <svg><use xlink:href="img/sprite.svg#icon-sympathy"></use></svg>
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#icon-sympathy"></use>
+                                </svg>
                                 999
                             </div>
                             <div class="views">
-                                <svg><use xlink:href="img/sprite.svg#icon-views"></use></svg>
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#icon-views"></use>
+                                </svg>
                                 999
                             </div>
                         </div>
@@ -217,7 +227,11 @@
                         <form action="#" method="post">
                             <div class="field">
                                 <input type="email" value="sweeta*****@gmail.com" disabled>
-                                <button class="edit" type="button" disabled><svg><use xlink:href="img/sprite.svg#icon-edit"></use></svg></button>
+                                <button class="edit" type="button" disabled>
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-edit"></use>
+                                    </svg>
+                                </button>
                             </div>
                         </form>
                         <footer>
@@ -228,12 +242,267 @@
                             </p>
                         </footer>
                     </div>
-
-
-
-
-                    <div class="collection"></div>
-                    <div class="files"></div>
+                    <div class="collection">
+                        <h3>Мой стиль <span>&laquo; <em>Абордажник</em> &raquo;</span></h3>
+                        <form class="customize" action="#" method="post">
+                            <div class="colors">
+                                <div class="first">
+                                    <!-- Watch the position of inputs and labels! Only this variant is working with css!!! -->
+                                    <input type="radio" id="cfc-1" name="cfc" checked>
+                                    <label for="cfc-1" class="fcc-1"></label>
+                                    <input type="radio" id="cfc-2" name="cfc">
+                                    <label for="cfc-2" class="fcc-2"></label>
+                                    <input type="radio" id="cfc-3" name="cfc">
+                                    <label for="cfc-3" class="fcc-3"></label>
+                                    <input type="radio" id="cfc-4" name="cfc">
+                                    <label for="cfc-4" class="fcc-4"></label>
+                                    <input type="radio" id="cfc-5" name="cfc">
+                                    <label for="cfc-5" class="fcc-5"></label>
+                                    <input type="radio" id="cfc-6" name="cfc">
+                                    <label for="cfc-6" class="fcc-6"></label>
+                                    <input type="radio" id="cfc-7" name="cfc">
+                                    <label for="cfc-7" class="fcc-7"></label>
+                                    <input type="radio" id="cfc-8" name="cfc">
+                                    <label for="cfc-8" class="fcc-8"></label>
+                                </div>
+                                <br>
+                                <div class="second">
+                                    <!-- Watch the position of inputs and labels! Only this variant is working with css!!! -->
+                                    <input type="radio" id="csc-1" name="csc" checked>
+                                    <label for="csc-1" class="scc-1"></label>
+                                    <input type="radio" id="csc-2" name="csc">
+                                    <label for="csc-2" class="scc-2"></label>
+                                    <input type="radio" id="csc-3" name="csc">
+                                    <label for="csc-3" class="scc-3"></label>
+                                    <input type="radio" id="csc-4" name="csc">
+                                    <label for="csc-4" class="scc-4"></label>
+                                    <input type="radio" id="csc-5" name="csc">
+                                    <label for="csc-5" class="scc-5"></label>
+                                    <input type="radio" id="csc-6" name="csc">
+                                    <label for="csc-6" class="scc-6"></label>
+                                    <input type="radio" id="csc-7" name="csc">
+                                    <label for="csc-7" class="scc-7"></label>
+                                    <input type="radio" id="csc-8" name="csc">
+                                    <label for="csc-8" class="scc-8"></label>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <button type="reset">Сбросить</button>
+                                <button type="submit">Применить</button>
+                            </div>
+                        </form>
+                        <h3>Моя коллекция</h3>
+                        <!-- purchased avatars -->
+                        <ul class="purchased">
+                            <li>
+                                <div class="avatar">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#ava-default"></use>
+                                    </svg>
+                                </div>
+                                <h4>Юнга</h4>
+                                <p>Доступно</p>
+                                <button>Установить</button>
+                            </li>
+                            <li>
+                                <div class="avatar">
+                                    <svg class="afc-1 asc-1">
+                                        <use xlink:href="img/sprite.svg#ava-special-1"></use>
+                                    </svg>
+                                </div>
+                                <h4>Абордажник</h4>
+                                <p>Текущий</p>
+                                <button disabled>Установлен</button>
+                            </li>
+                        </ul>
+                        <!-- avatars for-sale -->
+                        <ul class="for-sale">
+                            <li>
+                                <div class="avatar">
+                                    <svg class="afc-1 asc-1">
+                                        <use xlink:href="img/sprite.svg#ava-special-2"></use>
+                                    </svg>
+                                </div>
+                                <h4>Квартирмейстер</h4>
+                                <div class="money">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-coin"></use>
+                                    </svg>
+                                    999
+                                </div>
+                                <button class="test">Примерить</button>
+                                <button>Купить</button>
+                            </li>
+                            <li>
+                                <div class="avatar">
+                                    <svg class="afc-1 asc-1">
+                                        <use xlink:href="img/sprite.svg#ava-special-3"></use>
+                                    </svg>
+                                </div>
+                                <h4>Старпом</h4>
+                                <div class="money">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-coin"></use>
+                                    </svg>
+                                    999
+                                </div>
+                                <button class="test">Примерить</button>
+                                <button>Купить</button>
+                            </li>
+                        </ul>
+                        <h3>Поблагодарить</h3>
+                        <div class="donate">
+                            <p>Сделав скромный взнос в общее дело вы получите немного золота капитана</p>
+                            <form action="#" method="post">
+                                <div class="bar">
+                                    <div class="track" style="padding-left: 32%">
+                                        <div class="handle" style="left: 32%;"></div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="currencies">
+                                        <div class="coins">
+                                            <svg>
+                                                <use xlink:href="img/sprite.svg#icon-coin"></use>
+                                            </svg>
+                                            1000
+                                        </div>
+                                        <div class="rubels">
+                                            &#8381; 1000
+                                        </div>
+                                    </div>
+                                    <button>Купить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="files">
+                        <h3>Мои файлы</h3>
+                        <!-- User files -->
+                        <ul class="user-files">
+                            <li>
+                                <div class="pic">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-api"></use>
+                                    </svg>
+                                </div>
+                                <p>Исходный код серверной стороны на node.js + MySQL</p>
+                                <a class="to-course" href="#">Перейти к курсу</a>
+                                <a class="download" href="#">Скачать</a>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-game"></use>
+                                    </svg>
+                                </div>
+                                <p>Исходный код серверной стороны на node.js + MySQL</p>
+                                <a class="to-course" href="#">Перейти к курсу</a>
+                                <a class="download" href="#">Скачать</a>
+                            </li>
+                        </ul>
+                        <div class="divider"></div>
+                        <!-- For sale -->
+                        <ul class="for-sale">
+                            <li>
+                                <div class="pic">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-mobile"></use>
+                                    </svg>
+                                </div>
+                                <p>Исходный код серверной стороны на node.js + MySQL</p>
+                                <div class="money">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-coin"></use>
+                                    </svg>
+                                    999
+                                </div>
+                                <button>Купить</button>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-env"></use>
+                                    </svg>
+                                </div>
+                                <p>Исходный код серверной стороны на node.js + MySQL</p>
+                                <div class="money">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-coin"></use>
+                                    </svg>
+                                    999
+                                </div>
+                                <button>Купить</button>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-web"></use>
+                                    </svg>
+                                </div>
+                                <p>Исходный код серверной стороны на node.js + MySQL</p>
+                                <div class="money">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-coin"></use>
+                                    </svg>
+                                    999
+                                </div>
+                                <button>Купить</button>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-server"></use>
+                                    </svg>
+                                </div>
+                                <p>Исходный код серверной стороны на node.js + MySQL</p>
+                                <div class="money">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-coin"></use>
+                                    </svg>
+                                    999
+                                </div>
+                                <button>Купить</button>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-babylon"></use>
+                                    </svg>
+                                </div>
+                                <p>Исходный код серверной стороны на node.js + MySQL</p>
+                                <div class="money">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-coin"></use>
+                                    </svg>
+                                    999
+                                </div>
+                                <button>Купить</button>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-desktop"></use>
+                                    </svg>
+                                </div>
+                                <p>Исходный код серверной стороны на node.js + MySQL</p>
+                                <div class="money">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#icon-coin"></use>
+                                    </svg>
+                                    999
+                                </div>
+                                <button>Купить</button>
+                            </li>
+                        </ul>
+                        <!-- Pagination -->
+                        <div class="pagination">
+                            <a href="#" class="current">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">В конец</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

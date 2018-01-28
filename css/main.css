@@ -1693,8 +1693,16 @@ svg {
   #app-profile-page .user, #app-profile-page .collection, #app-profile-page .files {
     float: left;
     width: 33.3333%;
-    min-height: 500px;
+    min-height: 630px;
     position: relative; }
+    @media (max-width: 1023px) {
+      #app-profile-page .user, #app-profile-page .collection, #app-profile-page .files {
+        width: 50%;
+        min-height: 300px;
+        margin-bottom: 30px; } }
+    @media (max-width: 767px) {
+      #app-profile-page .user, #app-profile-page .collection, #app-profile-page .files {
+        width: 100%; } }
     #app-profile-page .user:before, #app-profile-page .collection:before, #app-profile-page .files:before {
       content: '';
       display: block;
@@ -1729,7 +1737,7 @@ svg {
     display: block;
     position: absolute;
     width: 2px;
-    height: 90%;
+    height: 96%;
     top: 10px;
     left: -1px;
     background: #eeeef0; }
@@ -1737,6 +1745,11 @@ svg {
     display: none; }
   #app-profile-page .user {
     padding-top: 50px; }
+    @media (max-width: 767px) {
+      #app-profile-page .user {
+        padding-top: 20px; }
+        #app-profile-page .user:before {
+          display: none; } }
     #app-profile-page .user .avatar {
       margin: 0 auto 20px auto;
       width: 104px;
@@ -1887,6 +1900,9 @@ svg {
     #app-profile-page .user form {
       max-width: 220px;
       margin: 0 auto 100px auto; }
+      @media (max-width: 767px) {
+        #app-profile-page .user form {
+          margin-bottom: 30px; } }
       #app-profile-page .user form .field {
         position: relative; }
         #app-profile-page .user form .field input {
@@ -1973,5 +1989,513 @@ svg {
             color: #00b6ad; }
           #app-profile-page .user footer p button:hover, #app-profile-page .user footer p button:active {
             color: #55576e; }
+  #app-profile-page .collection {
+    padding: 0 15px; }
+    @media (max-width: 767px) {
+      #app-profile-page .collection {
+        width: 100%;
+        padding: 0 5px 0 0; }
+        #app-profile-page .collection:after {
+          display: none; } }
+    #app-profile-page .collection h3 {
+      font-size: 14px;
+      font-weight: 500;
+      color: #55576e;
+      position: relative;
+      line-height: 1;
+      margin-bottom: 20px; }
+      #app-profile-page .collection h3 span {
+        position: absolute;
+        font-size: 12px;
+        color: #7f818e;
+        right: 0;
+        top: 1px; }
+        #app-profile-page .collection h3 span em {
+          font-style: normal; }
+    #app-profile-page .collection .customize {
+      padding-top: 10px; }
+      #app-profile-page .collection .customize .colors {
+        text-align: center;
+        line-height: 1;
+        font-size: 0; }
+        #app-profile-page .collection .customize .colors .first, #app-profile-page .collection .customize .colors .second {
+          height: 28px;
+          background: #eeeef0;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+          margin-bottom: 4px;
+          padding: 4px 0 4px 4px;
+          overflow: hidden;
+          display: inline-block; }
+          #app-profile-page .collection .customize .colors .first input, #app-profile-page .collection .customize .colors .second input {
+            display: none; }
+            #app-profile-page .collection .customize .colors .first input:checked + label:before, #app-profile-page .collection .customize .colors .second input:checked + label:before {
+              background: #55576e; }
+          #app-profile-page .collection .customize .colors .first label, #app-profile-page .collection .customize .colors .second label {
+            outline: none;
+            cursor: pointer;
+            float: left;
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-right: 4px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            border: 2px solid #55576e;
+            position: relative; }
+            #app-profile-page .collection .customize .colors .first label:before, #app-profile-page .collection .customize .colors .second label:before {
+              content: '';
+              display: block;
+              width: 10px;
+              height: 10px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -5px;
+              margin-top: -5px;
+              background: transparent;
+              -webkit-border-radius: 2px;
+              -moz-border-radius: 2px;
+              border-radius: 2px;
+              -webkit-transition: background 0.3s ease-in-out;
+              -moz-transition: background 0.3s ease-in-out;
+              -o-transition: background 0.3s ease-in-out;
+              transition: background 0.3s ease-in-out; }
+        #app-profile-page .collection .customize .colors .first label.fcc-1 {
+          background: #00b6ad; }
+        #app-profile-page .collection .customize .colors .first label.fcc-2 {
+          background: #dc626f; }
+        #app-profile-page .collection .customize .colors .first label.fcc-3 {
+          background: #8199a3; }
+        #app-profile-page .collection .customize .colors .first label.fcc-4 {
+          background: #08aac7; }
+        #app-profile-page .collection .customize .colors .first label.fcc-5 {
+          background: #7d7870; }
+        #app-profile-page .collection .customize .colors .first label.fcc-6 {
+          background: #726680; }
+        #app-profile-page .collection .customize .colors .first label.fcc-7 {
+          background: #66CC99; }
+        #app-profile-page .collection .customize .colors .first label.fcc-8 {
+          background: #44BBFF; }
+        #app-profile-page .collection .customize .colors .second label.scc-1 {
+          background: #fcb941; }
+        #app-profile-page .collection .customize .colors .second label.scc-2 {
+          background: #ff7055; }
+        #app-profile-page .collection .customize .colors .second label.scc-3 {
+          background: #7d7870; }
+        #app-profile-page .collection .customize .colors .second label.scc-4 {
+          background: #08aac7; }
+        #app-profile-page .collection .customize .colors .second label.scc-5 {
+          background: #726680; }
+        #app-profile-page .collection .customize .colors .second label.scc-6 {
+          background: #BE8B5C; }
+        #app-profile-page .collection .customize .colors .second label.scc-7 {
+          background: #9E58DC; }
+        #app-profile-page .collection .customize .colors .second label.scc-8 {
+          background: #409C97; }
+      #app-profile-page .collection .customize .btns {
+        padding-top: 20px;
+        font-size: 0;
+        text-align: center;
+        padding-bottom: 25px; }
+        #app-profile-page .collection .customize .btns button {
+          line-height: 1;
+          outline: none;
+          border: none;
+          background: transparent;
+          padding: 0;
+          display: inline-block;
+          margin-right: 20px;
+          font-size: 12px;
+          font-weight: 500;
+          font-family: "Rubik", Arial, Tahoma, sans-serif;
+          color: #7f818e;
+          text-transform: uppercase;
+          cursor: pointer;
+          -webkit-transition: color 0.3s ease-in-out;
+          -moz-transition: color 0.3s ease-in-out;
+          -o-transition: color 0.3s ease-in-out;
+          transition: color 0.3s ease-in-out; }
+          #app-profile-page .collection .customize .btns button:hover, #app-profile-page .collection .customize .btns button:active {
+            color: #55576e; }
+          #app-profile-page .collection .customize .btns button:last-child {
+            margin-right: 0;
+            color: #00b6ad; }
+            #app-profile-page .collection .customize .btns button:last-child:hover, #app-profile-page .collection .customize .btns button:last-child:active {
+              color: inherit; }
+    #app-profile-page .collection .purchased {
+      border-bottom: 2px solid #eeeef0; }
+      #app-profile-page .collection .purchased li {
+        margin-bottom: 15px;
+        position: relative;
+        height: 52px;
+        padding-left: 66px;
+        padding-top: 8px; }
+        #app-profile-page .collection .purchased li .avatar {
+          width: 52px;
+          height: 52px;
+          position: absolute;
+          top: 0;
+          left: 0; }
+        #app-profile-page .collection .purchased li h4 {
+          line-height: 1;
+          margin-bottom: 8px;
+          font-size: 14px;
+          font-weight: 500;
+          color: #55576e; }
+        #app-profile-page .collection .purchased li p {
+          line-height: 1;
+          font-size: 13px;
+          font-weight: 400;
+          color: #7f818e; }
+        #app-profile-page .collection .purchased li button {
+          line-height: 1;
+          outline: none;
+          border: none;
+          background: transparent;
+          padding: 0;
+          display: inline;
+          position: absolute;
+          right: 0;
+          bottom: 9px;
+          font-size: 12px;
+          font-weight: 500;
+          font-family: "Rubik", Arial, Tahoma, sans-serif;
+          color: #00b6ad;
+          text-transform: uppercase;
+          cursor: pointer;
+          -webkit-transition: color 0.3s ease-in-out;
+          -moz-transition: color 0.3s ease-in-out;
+          -o-transition: color 0.3s ease-in-out;
+          transition: color 0.3s ease-in-out; }
+          #app-profile-page .collection .purchased li button:hover, #app-profile-page .collection .purchased li button:active {
+            color: #55576e; }
+          #app-profile-page .collection .purchased li button:disabled {
+            color: #7f818e;
+            cursor: default; }
+    #app-profile-page .collection .for-sale {
+      padding-top: 15px;
+      border-bottom: 2px solid #eeeef0;
+      margin-bottom: 15px; }
+      #app-profile-page .collection .for-sale li {
+        margin-bottom: 15px;
+        position: relative;
+        height: 52px;
+        padding-left: 66px;
+        padding-top: 8px; }
+        #app-profile-page .collection .for-sale li .avatar {
+          width: 52px;
+          height: 52px;
+          position: absolute;
+          top: 0;
+          left: 0; }
+        #app-profile-page .collection .for-sale li h4 {
+          line-height: 1;
+          margin-bottom: 8px;
+          font-size: 14px;
+          font-weight: 500;
+          color: #55576e; }
+        #app-profile-page .collection .for-sale li button {
+          line-height: 1;
+          outline: none;
+          border: none;
+          background: transparent;
+          padding: 0;
+          display: inline;
+          position: absolute;
+          right: 0;
+          bottom: 6px;
+          font-size: 12px;
+          font-weight: 500;
+          font-family: "Rubik", Arial, Tahoma, sans-serif;
+          color: #00b6ad;
+          text-transform: uppercase;
+          cursor: pointer;
+          -webkit-transition: color 0.3s ease-in-out;
+          -moz-transition: color 0.3s ease-in-out;
+          -o-transition: color 0.3s ease-in-out;
+          transition: color 0.3s ease-in-out; }
+          #app-profile-page .collection .for-sale li button:hover, #app-profile-page .collection .for-sale li button:active {
+            color: #55576e; }
+          #app-profile-page .collection .for-sale li button:disabled {
+            color: #7f818e;
+            cursor: default; }
+          #app-profile-page .collection .for-sale li button.test {
+            font-weight: 400;
+            color: #7f818e;
+            text-transform: lowercase;
+            bottom: auto;
+            top: 8px; }
+            #app-profile-page .collection .for-sale li button.test:hover, #app-profile-page .collection .for-sale li button.test:active {
+              color: #55576e; }
+        #app-profile-page .collection .for-sale li .money {
+          overflow: hidden;
+          position: absolute;
+          height: 20px;
+          bottom: 2px;
+          left: 63px;
+          background: #eeeef0;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+          padding: 0 8px 0 20px;
+          line-height: 21px;
+          font-size: 12px;
+          font-weight: 500;
+          color: #55576e; }
+          #app-profile-page .collection .for-sale li .money svg {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            top: 3px;
+            left: 3px; }
+    #app-profile-page .collection .donate {
+      margin-top: -10px; }
+      #app-profile-page .collection .donate p {
+        font-size: 12px;
+        font-weight: 400;
+        color: #7f818e;
+        margin-bottom: 15px; }
+      #app-profile-page .collection .donate form .bar {
+        max-width: 254px;
+        margin: 0 auto; }
+        #app-profile-page .collection .donate form .bar .track {
+          position: relative;
+          border: 2px solid #55576e;
+          background: #00b6ad;
+          height: 10px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px; }
+          #app-profile-page .collection .donate form .bar .track:before {
+            content: '';
+            display: block;
+            height: 6px;
+            width: 100%;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            background: #6e7084; }
+          #app-profile-page .collection .donate form .bar .track .handle {
+            border: 2px solid #55576e;
+            background: #eeeef0;
+            position: absolute;
+            top: 50%;
+            margin-top: -9px;
+            margin-left: -4px;
+            width: 18px;
+            height: 18px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            cursor: pointer; }
+      #app-profile-page .collection .donate form .footer {
+        overflow: hidden;
+        padding-top: 18px; }
+        #app-profile-page .collection .donate form .footer .currencies {
+          float: left; }
+          #app-profile-page .collection .donate form .footer .currencies .coins {
+            float: left;
+            overflow: hidden;
+            position: relative;
+            height: 24px;
+            background: #eeeef0;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            border-radius: 12px;
+            padding: 0 8px 0 24px;
+            line-height: 25px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #55576e;
+            margin-right: 5px; }
+            #app-profile-page .collection .donate form .footer .currencies .coins svg {
+              position: absolute;
+              width: 18px;
+              height: 18px;
+              top: 3px;
+              left: 3px; }
+          #app-profile-page .collection .donate form .footer .currencies .rubels {
+            float: left;
+            height: 24px;
+            background: #eeeef0;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            border-radius: 12px;
+            padding: 0 8px 0 8px;
+            line-height: 25px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #55576e; }
+        #app-profile-page .collection .donate form .footer button {
+          float: right;
+          line-height: 1;
+          outline: none;
+          border: none;
+          background: transparent;
+          padding: 0;
+          display: inline;
+          margin-top: 6px;
+          font-size: 12px;
+          font-weight: 500;
+          font-family: "Rubik", Arial, Tahoma, sans-serif;
+          color: #00b6ad;
+          text-transform: uppercase;
+          cursor: pointer;
+          -webkit-transition: color 0.3s ease-in-out;
+          -moz-transition: color 0.3s ease-in-out;
+          -o-transition: color 0.3s ease-in-out;
+          transition: color 0.3s ease-in-out; }
+          #app-profile-page .collection .donate form .footer button:hover, #app-profile-page .collection .donate form .footer button:active {
+            color: #55576e; }
+  #app-profile-page .files {
+    padding: 0 15px; }
+    @media (max-width: 1023px) {
+      #app-profile-page .files {
+        width: 100%;
+        padding: 0 15px 0 0; }
+        #app-profile-page .files:after {
+          display: none; } }
+    @media (max-width: 767px) {
+      #app-profile-page .files {
+        width: 100%;
+        padding: 0 5px 0 0;
+        margin-bottom: 0; }
+        #app-profile-page .files:before {
+          display: none; } }
+    #app-profile-page .files h3 {
+      font-size: 14px;
+      font-weight: 500;
+      color: #55576e;
+      position: relative;
+      line-height: 1;
+      margin-bottom: 20px; }
+    #app-profile-page .files ul.for-sale {
+      padding-top: 15px;
+      margin-bottom: 20px; }
+    #app-profile-page .files ul li {
+      position: relative;
+      margin-bottom: 15px;
+      height: 52px;
+      padding: 0 0 0 66px; }
+      #app-profile-page .files ul li .pic {
+        width: 52px;
+        height: 52px;
+        background: #eeeef0;
+        position: absolute;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        overflow: hidden;
+        top: 0;
+        left: 0; }
+        #app-profile-page .files ul li .pic svg {
+          width: 32px;
+          height: 32px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -o-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          color: #ced0d8; }
+      #app-profile-page .files ul li p {
+        line-height: 1.3;
+        font-size: 12px;
+        font-weight: 500;
+        color: #55576e;
+        height: 34px;
+        overflow: hidden; }
+      #app-profile-page .files ul li .to-course {
+        line-height: 1;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 4px;
+        left: 66px;
+        font-size: 10px;
+        font-weight: 400;
+        color: #7f818e; }
+        #app-profile-page .files ul li .to-course:hover, #app-profile-page .files ul li .to-course:active {
+          color: #55576e; }
+      #app-profile-page .files ul li .download {
+        line-height: 1;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 3px;
+        right: 0;
+        font-size: 12px;
+        font-weight: 500;
+        color: #00b6ad; }
+        #app-profile-page .files ul li .download:hover, #app-profile-page .files ul li .download:active {
+          color: #55576e; }
+      #app-profile-page .files ul li .money {
+        overflow: hidden;
+        position: absolute;
+        height: 20px;
+        bottom: 0;
+        left: 63px;
+        background: #eeeef0;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        padding: 0 8px 0 20px;
+        line-height: 21px;
+        font-size: 12px;
+        font-weight: 500;
+        color: #55576e; }
+        #app-profile-page .files ul li .money svg {
+          position: absolute;
+          width: 14px;
+          height: 14px;
+          top: 3px;
+          left: 3px; }
+      #app-profile-page .files ul li button {
+        line-height: 1;
+        outline: none;
+        border: none;
+        background: transparent;
+        padding: 0;
+        display: inline;
+        position: absolute;
+        right: 0;
+        bottom: 4px;
+        font-size: 12px;
+        font-weight: 500;
+        font-family: "Rubik", Arial, Tahoma, sans-serif;
+        color: #00b6ad;
+        text-transform: uppercase;
+        cursor: pointer;
+        -webkit-transition: color 0.3s ease-in-out;
+        -moz-transition: color 0.3s ease-in-out;
+        -o-transition: color 0.3s ease-in-out;
+        transition: color 0.3s ease-in-out; }
+        #app-profile-page .files ul li button:hover, #app-profile-page .files ul li button:active {
+          color: #55576e; }
+        #app-profile-page .files ul li button:disabled {
+          color: #7f818e;
+          cursor: default; }
+    #app-profile-page .files .divider {
+      height: 2px;
+      background: #eeeef0; }
+    #app-profile-page .files .pagination {
+      text-align: center;
+      margin-bottom: 30px; }
+      @media (max-width: 767px) {
+        #app-profile-page .files .pagination {
+          margin-bottom: 0; } }
+      #app-profile-page .files .pagination a {
+        margin-right: 4px;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #00b6ad; }
+        #app-profile-page .files .pagination a:hover, #app-profile-page .files .pagination a:active, #app-profile-page .files .pagination a.current {
+          color: #7f818e; }
+        #app-profile-page .files .pagination a:last-child {
+          margin-right: 0; }
 
 /*# sourceMappingURL=main.css.map */
