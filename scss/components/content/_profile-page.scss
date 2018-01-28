@@ -272,6 +272,9 @@
                         family: $font-rubik;
                     }
                     color: $color-dark-65;
+                    &:disabled {
+                        color: $color-dark-65 !important;
+                    }
                     &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
                         color: rgba($color-base, .75);
                         font: {
