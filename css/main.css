@@ -242,6 +242,9 @@ a {
   a:hover, a:active {
     color: #00b6ad; }
 
+em {
+  font-style: normal; }
+
 svg {
   display: block;
   width: 100%;
@@ -2686,6 +2689,12 @@ svg {
         position: relative;
         padding: 0 10px 0 67px;
         margin-bottom: 10px; }
+        @media (max-width: 767px) {
+          #app-video-inner-page .main .comments .my-post {
+            padding: 0 0 0 67px; } }
+        @media (max-width: 459px) {
+          #app-video-inner-page .main .comments .my-post {
+            padding-left: 65px; } }
         #app-video-inner-page .main .comments .my-post .icon {
           position: absolute;
           height: 30px;
@@ -2711,6 +2720,9 @@ svg {
           padding: 5px;
           margin-bottom: 15px;
           overflow: hidden;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
           font-family: "Rubik", Arial, Tahoma, sans-serif;
           font-size: 14px;
           font-weight: 400;
@@ -2769,6 +2781,12 @@ svg {
         position: relative;
         min-height: 52px;
         padding: 6px 10px 0 67px; }
+        @media (max-width: 767px) {
+          #app-video-inner-page .main .comments .user-posts-list .user-post {
+            padding: 6px 0 0 67px; } }
+        @media (max-width: 459px) {
+          #app-video-inner-page .main .comments .user-posts-list .user-post {
+            padding-left: 65px; } }
         #app-video-inner-page .main .comments .user-posts-list .user-post .ava {
           position: absolute;
           height: 52px;
@@ -2785,6 +2803,11 @@ svg {
             font-size: 12px;
             font-weight: 400;
             color: #7f818e; }
+            @media (max-width: 559px) {
+              #app-video-inner-page .main .comments .user-posts-list .user-post h4 span {
+                display: block;
+                padding-top: 5px;
+                padding-left: 0; } }
         #app-video-inner-page .main .comments .user-posts-list .user-post p {
           margin-bottom: 5px;
           color: #55576e; }
@@ -2871,6 +2894,9 @@ svg {
               color: #00b6ad; }
               #app-video-inner-page .main .comments .user-posts-list .user-post footer .replies:hover:after, #app-video-inner-page .main .comments .user-posts-list .user-post footer .replies:active:after {
                 border-color: #00b6ad; }
+            @media (max-width: 767px) {
+              #app-video-inner-page .main .comments .user-posts-list .user-post footer .replies em {
+                display: none; } }
             #app-video-inner-page .main .comments .user-posts-list .user-post footer .replies:after {
               content: '';
               display: block;
@@ -2895,6 +2921,9 @@ svg {
               transition: border 0.3s ease-in-out; }
         #app-video-inner-page .main .comments .user-posts-list .user-post .post-replies {
           margin-left: -20px; }
+          @media (max-width: 767px) {
+            #app-video-inner-page .main .comments .user-posts-list .user-post .post-replies {
+              margin-left: -40px; } }
   #app-video-inner-page .additional {
     width: 40%; }
     @media (max-width: 1599px) {
@@ -2906,10 +2935,20 @@ svg {
       font-weight: 500;
       color: #3b3d52;
       margin-bottom: 20px; }
+      @media (max-width: 549px) {
+        #app-video-inner-page .additional h3 {
+          margin-bottom: 10px; } }
       #app-video-inner-page .additional h3 span {
         position: absolute;
         top: 0;
         right: 0; }
+        @media (max-width: 549px) {
+          #app-video-inner-page .additional h3 span {
+            display: block;
+            position: relative;
+            margin-bottom: 20px; }
+            #app-video-inner-page .additional h3 span.spec {
+              padding-left: 20px; } }
         #app-video-inner-page .additional h3 span a {
           text-transform: uppercase;
           font-size: 12px;
@@ -2923,6 +2962,9 @@ svg {
             left: -21px;
             width: 16px;
             height: 16px; }
+            @media (max-width: 549px) {
+              #app-video-inner-page .additional h3 span a svg {
+                left: 0; } }
     #app-video-inner-page .additional .video-item {
       margin-bottom: 10px;
       overflow: hidden; }
@@ -2933,6 +2975,10 @@ svg {
         width: 230px;
         display: block;
         position: relative; }
+        @media (max-width: 767px) {
+          #app-video-inner-page .additional .video-item > a {
+            width: 100%;
+            margin-bottom: 10px; } }
         #app-video-inner-page .additional .video-item > a img {
           display: block;
           width: 100%;
@@ -2970,6 +3016,10 @@ svg {
         width: 100%;
         margin-left: -230px;
         padding-left: 245px; }
+        @media (max-width: 767px) {
+          #app-video-inner-page .additional .video-item .desc {
+            margin-left: 0;
+            padding-left: 0; } }
         #app-video-inner-page .additional .video-item .desc h4 {
           font-size: 14px;
           font-weight: 500;

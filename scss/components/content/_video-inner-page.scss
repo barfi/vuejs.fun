@@ -220,6 +220,12 @@
                 position: relative;
                 padding: 0 10px 0 67px;
                 margin-bottom: 10px;
+                @include media(767px) {
+                    padding: 0 0 0 67px;
+                }
+                @include media(459px) {
+                    padding-left: 65px;
+                }
                 .icon {
                     position: absolute;
                     height: 30px;
@@ -242,6 +248,9 @@
                     padding: 5px;
                     margin-bottom: 15px;
                     overflow:hidden;
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    border-radius: 0;
                     font: {
                         family: $font-rubik;
                         size: 14px;
@@ -317,6 +326,12 @@
                     position: relative;
                     min-height: 52px;
                     padding: 6px 10px 0 67px;
+                    @include media(767px) {
+                        padding: 6px 0 0 67px;
+                    }
+                    @include media(459px) {
+                        padding-left: 65px;
+                    }
                     .ava {
                         position: absolute;
                         height: 52px;
@@ -338,6 +353,11 @@
                                 weight: 400;
                             }
                             color: $color-dark-65;
+                            @include media(559px) {
+                                display: block;
+                                padding-top: 5px;
+                                padding-left: 0;
+                            }
                         }
                     }
                     p {
@@ -429,6 +449,11 @@
                                     border-color: $color-accent;
                                 }
                             }
+                            em {
+                                @include media(767px) {
+                                    display: none;
+                                }
+                            }
                             &:after {
                                 content: '';
                                 display: block;
@@ -449,6 +474,9 @@
                     }
                     .post-replies {
                         margin-left: -20px;
+                        @include media(767px) {
+                            margin-left: -40px;
+                        }
                     }
                 }
             }
@@ -467,10 +495,21 @@
             }
             color: $color-dark;
             margin-bottom: 20px;
+            @include media(549px) {
+                margin-bottom: 10px;
+            }
             span {
                 position: absolute;
                 top: 0;
                 right: 0;
+                @include media(549px) {
+                    display: block;
+                    position: relative;
+                    margin-bottom: 20px;
+                    &.spec {
+                        padding-left: 20px;
+                    }
+                }
                 a {
                     text-transform: uppercase;
                     font: {
@@ -487,6 +526,9 @@
                         left: -21px;
                         width: 16px;
                         height: 16px;
+                        @include media(549px) {
+                            left: 0;
+                        }
                     }
                 }
             }
@@ -502,6 +544,10 @@
                 width: 230px;
                 display: block;
                 position: relative;
+                @include media(767px) {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
                 img {
                     display: block;
                     width: 100%;
@@ -539,6 +585,10 @@
                 width: 100%;
                 margin-left: -230px;
                 padding-left: 245px;
+                @include media(767px) {
+                    margin-left: 0;
+                    padding-left: 0;
+                }
                 h4 {
                     font: {
                         size: 14px;
