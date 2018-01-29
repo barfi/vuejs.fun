@@ -1,0 +1,521 @@
+@charset "UTF-8";
+#app-video-inner-page {
+    overflow: hidden;
+    margin: 0 -15px;
+    .main, .additional {
+        float: left;
+        padding: 0 15px;
+    }
+    .main {
+        width: 60%;
+        .thumb-wrap {
+            position: relative;
+            padding-bottom: 56%;
+            padding-top: 2px;
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 20px;
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        h2 {
+            font: {
+                size: 16px;
+                weight: 500;
+            }
+            color: $color-dark;
+            max-height: 44px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        .video-info {
+            overflow: hidden;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid $color-base-10;
+            .date {
+                float: left;
+                font: {
+                    size: 16px;
+                    weight: 400;
+                }
+                color: $color-dark-65;
+            }
+            .statistics {
+                float: right;
+                .views {
+                    font: {
+                        size: 16px;
+                        weight: 400;
+                    }
+                    color: $color-dark-65;
+                    display: inline;
+                }
+                .likes {
+                    button {
+                        margin-top: -12px;
+                        @include scaleY(-1);
+                    }
+                }
+                .dislikes {
+                    button {
+                        margin-top: -10px;
+                    }
+                }
+                .likes, .dislikes {
+                    padding-left: 25px;
+                    display: inline;
+                    position: relative;
+                    margin-left: 2px;
+                    button {
+                        @include transition-single(color, .3s, ease-in-out);
+                        color: $color-dark-65;
+                        display: block;
+                        position: absolute;
+                        padding: 0;
+                        top: 50%;
+                        left: 0;
+                        border: none;
+                        background: transparent;
+                        outline: none;
+                        width: 24px;
+                        height: 24px;
+                        cursor: pointer;
+                        &:hover, &:active {
+                            color: $color-dark;
+                        }
+                    }
+                }
+            }
+        }
+        .heading {
+            margin-bottom: 20px;
+            h3 {
+                float: left;
+                font: {
+                    size: 16px;
+                    weight: 500;
+                }
+                color: $color-dark;
+            }
+            .special-links {
+                float: right;
+                li {
+                    display: inline;
+                    border-left: 2px solid $color-base-10;
+                    margin-right: 10px;
+                    &:first-child {
+                        border-left: none;
+                    }
+                    a {
+                        font: {
+                            size: 12px;
+                            weight: 500;
+                        }
+                        color: rgba($color-base, .9);
+                        position: relative;
+                        padding-left: 50px;
+                        &:hover, &:active {
+                            color: $color-accent;
+                        }
+                        svg {
+                            position: absolute;
+                            top: -4px;
+                            left: 15px;
+                            width: 25px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+            button {
+                cursor: pointer;
+                border: none;
+                line-height: 22px;
+                float: right;
+                display: inline;
+                text-transform: uppercase;
+                font: {
+                    family: $font-rubik;
+                    size: 12px;
+                    weight: 500;
+                }
+                color: $color-dark-65;
+                padding: 0;
+                outline: none;
+                background: transparent;
+                @include transition-single(color, .3s, ease-in-out);
+                &:hover, &:active {
+                    color: $color-accent;
+                }
+            }
+        }
+        .typography {
+            margin-bottom: 20px;
+            a {
+                color: $color-accent;
+                &:hover, &:active {
+                    color: $color-dark-65;
+                }
+            }
+        }
+
+        // Comments styles
+        .comments {
+            padding-top: 10px;
+            padding-bottom: 30px;
+            .my-post {
+                position: relative;
+                padding: 0 10px 0 67px;
+                margin-bottom: 10px;
+                .icon {
+                    position: absolute;
+                    height: 30px;
+                    width: 42px;
+                    top: 0;
+                    left: 6px;
+                    @include scaleX(-1);
+                }
+                textarea {
+                    display: block;
+                    width: 100%;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 2px solid $color-base;
+                    min-height: 30px;
+                    height: 30px;
+                    outline: none;
+                    -webkit-appearance: none;
+                    resize: none;
+                    padding: 5px;
+                    margin-bottom: 15px;
+                    overflow:hidden;
+                    font: {
+                        family: $font-rubik;
+                        size: 14px;
+                        weight: 400;
+                    }
+                    color: $color-dark;
+                    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                        color: rgba($color-base, .75);
+                        font: {
+                            size: 14px;
+                            weight: 400;
+                            family: inherit;
+                        }
+                    }
+                    &::-moz-placeholder { /* Firefox 19+ */
+                        color: rgba($color-base, .75);
+                        font: {
+                            size: 14px;
+                            weight: 400;
+                            family: inherit;
+                        }
+                    }
+                    &:-ms-input-placeholder { /* IE 10+ */
+                        color: rgba($color-base, .75);
+                        font: {
+                            size: 14px;
+                            weight: 400;
+                            family: inherit;
+                        }
+                    }
+                    &:-moz-placeholder { /* Firefox 18- */
+                        color: rgba($color-base, .75);
+                        font: {
+                            size: 14px;
+                            weight: 400;
+                            family: inherit;
+                        }
+                    }
+                }
+                .btns {
+                    text-align: right;
+                    button {
+                        cursor: pointer;
+                        border: none;
+                        line-height: 1;
+                        display: inline;
+                        text-transform: uppercase;
+                        font: {
+                            family: $font-rubik;
+                            size: 12px;
+                            weight: 500;
+                        }
+                        color: $color-dark-65;
+                        padding: 0;
+                        outline: none;
+                        background: transparent;
+                        @include transition-single(color, .3s, ease-in-out);
+                        &:hover, &:active {
+                            color: $color-dark;
+                        }
+                        &.post-it {
+                            margin-left: 15px;
+                            color: $color-accent;
+                            &:hover, &:active {
+                                color: $color-dark;
+                            }
+                        }
+                    }
+                }
+            }
+            .user-posts-list {
+                .user-post {
+                    position: relative;
+                    min-height: 52px;
+                    padding: 6px 10px 0 67px;
+                    .ava {
+                        position: absolute;
+                        height: 52px;
+                        width: 52px;
+                        top: 0;
+                        left: 0;
+                    }
+                    h4 {
+                        font: {
+                            size: 14px;
+                            weight: 500;
+                        }
+                        color: $color-dark;
+                        margin-bottom: 2px;
+                        span {
+                            padding-left: 5px;
+                            font: {
+                                size: 12px;
+                                weight: 400;
+                            }
+                            color: $color-dark-65;
+                        }
+                    }
+                    p {
+                        margin-bottom: 5px;
+                        color: $color-base;
+                    }
+                    footer {
+                        position: relative;
+                        padding-bottom: 20px;
+                        button.reply {
+                            cursor: pointer;
+                            border: none;
+                            line-height: 1;
+                            display: inline;
+                            text-transform: uppercase;
+                            font: {
+                                family: $font-rubik;
+                                size: 12px;
+                                weight: 500;
+                            }
+                            color: $color-dark-65;
+                            padding: 0;
+                            outline: none;
+                            background: transparent;
+                            @include transition-single(color, .3s, ease-in-out);
+                            &:hover, &:active {
+                                color: $color-accent;
+                            }
+                        }
+                        .sympathy {
+                            margin-left: 12px;
+                            display: inline;
+                            position: relative;
+                            padding: 0 20px;
+                            font: {
+                                size: 12px;
+                                weight: 500;
+                            }
+                            color: $color-dark-65;
+                            button {
+                                position: absolute;
+                                width: 18px;
+                                height: 18px;
+                                cursor: pointer;
+                                border: none;
+                                display: block;
+                                color: $color-dark-65;
+                                padding: 0;
+                                outline: none;
+                                background: transparent;
+                                @include transition-single(color, .3s, ease-in-out);
+                                &:hover, &:active {
+                                    color: $color-accent;
+                                }
+                                &:first-child {
+                                    top: -3px;
+                                    left: 0;
+                                    @include scaleY(-1);
+                                }
+                                & + button {
+                                    top: -1px;
+                                    right: 0;
+                                }
+                            }
+                        }
+                        .replies {
+                            cursor: pointer;
+                            border: none;
+                            line-height: 1;
+                            display: inline;
+                            position: absolute;
+                            top: 4px;
+                            right: 0;
+                            text-transform: uppercase;
+                            font: {
+                                family: $font-rubik;
+                                size: 12px;
+                                weight: 500;
+                            }
+                            color: $color-dark;
+                            padding: 0;
+                            padding-right: 13px;
+                            outline: none;
+                            background: transparent;
+                            @include transition-single(color, .3s, ease-in-out);
+                            &:hover, &:active {
+                                color: $color-accent;
+                                &:after {
+                                    border-color: $color-accent;
+                                }
+                            }
+                            &:after {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                top: 0;
+                                right: 1px;
+                                width: 8px;
+                                height: 8px;
+                                border-top: 2px solid $color-dark;
+                                border-right: 2px solid $color-dark;
+                                -webkit-border-top-right-radius: 4px;
+                                -moz-border-radius-topright: 4px;
+                                border-top-right-radius: 4px;
+                                @include rotate(135);
+                                @include transition-single(border, .3s, ease-in-out);
+                            }
+                        }
+                    }
+                    .post-replies {
+                        margin-left: -20px;
+                    }
+                }
+            }
+        }
+    }
+    .additional {
+        width: 40%;
+        h3 {
+            position: relative;
+            font: {
+                size: 16px;
+                weight: 500;
+            }
+            color: $color-dark;
+            margin-bottom: 20px;
+            span {
+                position: absolute;
+                top: 0;
+                right: 0;
+                a {
+                    text-transform: uppercase;
+                    font: {
+                        size: 12px;
+                        weight: 500;
+                    }
+                    color: $color-dark-65;
+                    &:hover, &:active {
+                        color: $color-accent;
+                    }
+                    svg {
+                        position: absolute;
+                        top: 3px;
+                        left: -21px;
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+        }
+        .video-item {
+            margin-bottom: 10px;
+            overflow: hidden;
+            &:last-child {
+                margin-bottom: 30px;
+            }
+            > a {
+                float: left;
+                width: 230px;
+                display: block;
+                position: relative;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background: rgba(#000, .6);
+                    opacity: 0;
+                    @include transition-single(opacity, .3s, ease-in-out);
+                    span {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        @include translate(-50%, -50%);
+                        color: rgba(#fff, .9);
+                        text-transform: uppercase;
+                        font: {
+                            size: 14px;
+                            weight: 500;
+                        }
+                        line-height: 1;
+                    }
+                }
+                &:hover .overlay {
+                    opacity: 1;
+                }
+            }
+            .desc {
+                float: right;
+                width: 100%;
+                margin-left: -230px;
+                padding-left: 245px;
+                h4 {
+                    font: {
+                        size: 14px;
+                        weight: 500;
+                    }
+                    max-height: 80px;
+                    overflow: hidden;
+                    margin-bottom: 5px;
+                    a {
+                        color: $color-dark;
+                        &:hover, &:active {
+                            color: $color-dark-65;
+                        }
+                    }
+                }
+                p {
+                    font: {
+                        size: 14px;
+                        weight: 400;
+                    }
+                    color: $color-dark-65;
+                    margin-bottom: 2px;
+                }
+            }
+            &.video-current > a .overlay {
+                opacity: 1;
+            }
+        }
+    }
+}

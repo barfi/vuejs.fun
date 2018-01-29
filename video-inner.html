@@ -174,13 +174,404 @@
         <div class="inner">
             <div class="heading-row">
                 <div>
-                    <h1>Добро пожаловать на vuejs.fun, регистрируемся.</h1>
+                    <h1>Видеозапись с таким-то названием</h1>
                     <a href="#" id="add-video" title="Добавить пользовательское видео">+добавить видео</a>
                 </div>
             </div>
             <!-- Add special class for content-row "middle" for vertical centering -->
             <div class="content-row">
                 <!-- Page content here -->
+                <div id="app-video-inner-page">
+                    <div class="main">
+                        <!-- Youtube player with adaptive width -->
+                        <div class="thumb-wrap">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PQMfrg__bzA"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <h2>#5. Название видеозаписи, может быть в две строки. Название видеозаписи, может быть в две
+                            строки, без шуток, серьезно!</h2>
+                        <div class="video-info">
+                            <p class="date">
+                                добавлено 3 дня назад
+                            </p>
+                            <div class="statistics">
+                                <p class="views">165 524 просмотра</p>
+                                <p class="likes">
+                                    <button>
+                                        <svg>
+                                            <use xlink:href="img/sprite.svg#icon-like"></use>
+                                        </svg>
+                                    </button>
+                                    255
+                                </p>
+                                <p class="dislikes">
+                                    <button>
+                                        <svg>
+                                            <use xlink:href="img/sprite.svg#icon-like"></use>
+                                        </svg>
+                                    </button>
+                                    78
+                                </p>
+                            </div>
+                        </div>
+                        <div class="heading clear">
+                            <h3>Описание видеозаписи</h3>
+                            <ul class="special-links">
+                                <li><a href="#">
+                                    <svg><use xlink:href="img/sprite.svg#icon-github"></use></svg>
+                                    Проект на Github
+                                </a></li>
+                                <li><a href="#">
+                                    <svg><use xlink:href="img/sprite.svg#icon-site"></use></svg>
+                                    Сайт проекта
+                                </a></li>
+                                <li><a href="#">
+                                    <svg><use xlink:href="img/sprite.svg#icon-download"></use></svg>
+                                    Скачать файлы
+                                </a></li>
+                            </ul>
+                        </div>
+                        <p class="typography">
+                            Donec vitae dignissim purus. Nunc condimentum nunc in mi fringilla, vel iaculis eros cursus.
+                            Curabitur metus purus, ullamcorper ut finibus a, tincidunt sed lorem. Mauris volutpat
+                            rhoncus mollis. Integer at condimentum urna. Fusce nunc enim, eleifend et turpis a, interdum
+                            rhoncus turpis. Vestibulum interdum ex nec ipsum ultricies tincidunt. Curabitur cursus,
+                            dolor in venenatis vulputate, ex nisl laoreet dui, vitae ultrices arcu libero ac ligula.
+                            Aliquam bibendum, elit et laoreet fringilla, neque turpis mattis nisi, non feugiat risus
+                            arcu quis ligula. Etiam at cursus purus. Sed auctor consectetur tellus nec congue. Nam
+                            mattis efficitur erat sodales euismod. Vivamus pretium, ligula id maximus imperdiet, eros
+                            enim tincidunt nunc, nec lacinia felis erat non lorem.
+                        </p>
+                        <div class="heading clear">
+                            <h3>Комментарии <span>(92 комментария)</span></h3>
+                            <button class="show-comment-input">оставить комментарий</button>
+                        </div>
+                        <div class="comments">
+                            <!-- Show this after click 'show-comment-input' -->
+                            <div class="my-post">
+                                <div class="icon">
+                                    <svg><use xlink:href="img/sprite.svg#icon-reply"></use></svg>
+                                </div>
+                                <textarea placeholder="Мой комментарий" style="height: 30px"></textarea>
+                                <div class="btns">
+                                    <button class="cancel">Отмена</button>
+                                    <button class="post-it">Комментировать</button>
+                                </div>
+                            </div>
+                            <div class="user-posts-list">
+                                <div class="user-post">
+                                    <div class="ava">
+                                        <svg><use xlink:href="img/sprite.svg#ava-default"></use></svg>
+                                    </div>
+                                    <h4>Нежный Андрей<span>25 секунд назад</span></h4>
+                                    <p>Aliquam bibendum, elit et laoreet fringilla, neque turpis mattis nisi, non feugiat risus arcu quis ligula.</p>
+                                    <footer>
+                                        <button class="reply">Ответить</button>
+                                        <div class="sympathy">
+                                            <button><svg><use xlink:href="img/sprite.svg#icon-like"></use></svg></button>
+                                            <button><svg><use xlink:href="img/sprite.svg#icon-like"></use></svg></button>
+                                            <span>99</span>
+                                        </div>
+                                        <button class="replies">Все ответы (<span>99</span>)</button>
+                                    </footer>
+                                    <!-- If has replies -->
+                                    <div class="post-replies">
+                                        <!-- Input for reply -->
+                                        <div class="my-post">
+                                            <div class="icon">
+                                                <svg><use xlink:href="img/sprite.svg#icon-reply"></use></svg>
+                                            </div>
+                                            <textarea placeholder="Мой комментарий" style="height: 30px"></textarea>
+                                            <div class="btns">
+                                                <button class="cancel">Отмена</button>
+                                                <button class="post-it">Комментировать</button>
+                                            </div>
+                                        </div>
+                                        <!-- Replies -->
+                                        <div class="user-post">
+                                            <div class="ava">
+                                                <svg class="afc-1 asc-1"><use xlink:href="img/sprite.svg#ava-special-1"></use></svg>
+                                            </div>
+                                            <h4>Робкий Виталий<span>25 секунд назад</span></h4>
+                                            <p>Aliquam bibendum, elit et laoreet fringilla, neque turpis mattis nisi, non feugiat risus arcu quis ligula.</p>
+                                            <footer>
+                                                <button class="reply">Ответить</button>
+                                                <div class="sympathy">
+                                                    <button><svg><use xlink:href="img/sprite.svg#icon-like"></use></svg></button>
+                                                    <button><svg><use xlink:href="img/sprite.svg#icon-like"></use></svg></button>
+                                                    <span>99</span>
+                                                </div>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-post">
+                                    <div class="ava">
+                                        <svg class="afc-3 asc-1"><use xlink:href="img/sprite.svg#ava-special-2"></use></svg>
+                                    </div>
+                                    <h4>Ласковый Константин<span>25 секунд назад</span></h4>
+                                    <p>Aliquam bibendum, elit et laoreet fringilla, neque turpis mattis nisi, non feugiat risus arcu quis ligula.</p>
+                                    <footer>
+                                        <button class="reply">Ответить</button>
+                                        <div class="sympathy">
+                                            <button><svg><use xlink:href="img/sprite.svg#icon-like"></use></svg></button>
+                                            <button><svg><use xlink:href="img/sprite.svg#icon-like"></use></svg></button>
+                                            <span>99</span>
+                                        </div>
+                                        <button class="replies">Все ответы (<span>99</span>)</button>
+                                    </footer>
+                                </div>
+                                <div class="user-post">
+                                    <div class="ava">
+                                        <svg class="afc-1 asc-1"><use xlink:href="img/sprite.svg#ava-special-2"></use></svg>
+                                    </div>
+                                    <h4>Навальный Алексей<span>25 секунд назад</span></h4>
+                                    <p>Aliquam bibendum, elit et laoreet fringilla, neque turpis mattis nisi, non feugiat risus arcu quis ligula.</p>
+                                    <footer>
+                                        <button class="reply">Ответить</button>
+                                        <div class="sympathy">
+                                            <button><svg><use xlink:href="img/sprite.svg#icon-like"></use></svg></button>
+                                            <button><svg><use xlink:href="img/sprite.svg#icon-like"></use></svg></button>
+                                            <span>99</span>
+                                        </div>
+                                        <button class="replies">Все ответы (<span>99</span>)</button>
+                                    </footer>
+                                    <!-- If has replies -->
+                                    <div class="post-replies">
+                                        <!-- Replies -->
+                                        <div class="user-post">
+                                            <div class="ava">
+                                                <svg class="afc-3 asc-1"><use xlink:href="img/sprite.svg#ava-special-3"></use></svg>
+                                            </div>
+                                            <h4>Дудь Юрий<span>25 секунд назад</span></h4>
+                                            <p>Aliquam bibendum, elit et laoreet fringilla, neque turpis mattis nisi, non feugiat risus arcu quis ligula.</p>
+                                            <footer>
+                                                <button class="reply">Ответить</button>
+                                                <div class="sympathy">
+                                                    <button><svg><use xlink:href="img/sprite.svg#icon-like"></use></svg></button>
+                                                    <button><svg><use xlink:href="img/sprite.svg#icon-like"></use></svg></button>
+                                                    <span>99</span>
+                                                </div>
+                                            </footer>
+                                        </div>
+                                        <div class="user-post">
+                                            <div class="ava">
+                                                <svg class="afc-2 asc-2"><use xlink:href="img/sprite.svg#ava-special-1"></use></svg>
+                                            </div>
+                                            <h4>Хабенский Константин<span>25 секунд назад</span></h4>
+                                            <p>Aliquam bibendum, elit et laoreet fringilla, neque turpis mattis nisi, non feugiat risus arcu quis ligula.</p>
+                                            <footer>
+                                                <button class="reply">Ответить</button>
+                                                <div class="sympathy">
+                                                    <button><svg><use xlink:href="img/sprite.svg#icon-like"></use></svg></button>
+                                                    <button><svg><use xlink:href="img/sprite.svg#icon-like"></use></svg></button>
+                                                    <span>99</span>
+                                                </div>
+                                            </footer>
+                                        </div>
+                                        <!-- Sub reply -->
+                                        <div class="my-post">
+                                            <div class="icon">
+                                                <svg><use xlink:href="img/sprite.svg#icon-reply"></use></svg>
+                                            </div>
+                                            <textarea placeholder="Мой комментарий" style="height: 30px"></textarea>
+                                            <div class="btns">
+                                                <button class="cancel">Отмена</button>
+                                                <button class="post-it">Комментировать</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-post">
+                                    <div class="ava">
+                                        <svg class="afc-7 asc-1"><use xlink:href="img/sprite.svg#ava-special-1"></use></svg>
+                                    </div>
+                                    <h4>Соболев Николай<span>25 секунд назад</span></h4>
+                                    <p>Aliquam bibendum, elit et laoreet fringilla, neque turpis mattis nisi, non feugiat risus arcu quis ligula.</p>
+                                    <footer>
+                                        <button class="reply">Ответить</button>
+                                        <div class="sympathy">
+                                            <button><svg><use xlink:href="img/sprite.svg#icon-like"></use></svg></button>
+                                            <button><svg><use xlink:href="img/sprite.svg#icon-like"></use></svg></button>
+                                            <span>99</span>
+                                        </div>
+                                        <button class="replies">Все ответы (<span>99</span>)</button>
+                                    </footer>
+                                </div>
+                                <div class="user-post">
+                                    <div class="ava">
+                                        <svg><use xlink:href="img/sprite.svg#ava-default"></use></svg>
+                                    </div>
+                                    <h4>Задумчивая Юлия<span>25 секунд назад</span></h4>
+                                    <p>Aliquam bibendum, elit et laoreet fringilla, neque turpis mattis nisi, non feugiat risus arcu quis ligula.</p>
+                                    <footer>
+                                        <button class="reply">Ответить</button>
+                                        <div class="sympathy">
+                                            <button><svg><use xlink:href="img/sprite.svg#icon-like"></use></svg></button>
+                                            <button><svg><use xlink:href="img/sprite.svg#icon-like"></use></svg></button>
+                                            <span>99</span>
+                                        </div>
+                                        <button class="replies">Все ответы (<span>99</span>)</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="additional">
+                        <div class="from-playlist">
+                            <h3>
+                                Видеозаписи этого плейлиста
+                                <span><a href="#">к плейлисту</a></span>
+                            </h3>
+                            <div class="video-item">
+                                <a href="#">
+                                    <img src="img/previews/img-1.png" alt="video preview">
+                                    <div class="overlay">
+                                        <span>воспроизвести</span>
+                                    </div>
+                                </a>
+                                <div class="desc">
+                                    <h4><a href="#">#3. Suspendisse potenti. Donec molestie a mi et ullamcorper molestie
+                                        a mi et ullamcorper. Nullam scele scelerisque se...</a></h4>
+                                    <p><span>871 672</span> просмотра</p>
+                                    <p>30 минут назад</p>
+                                </div>
+                            </div>
+                            <div class="video-item">
+                                <a href="#">
+                                    <img src="img/previews/img-1.png" alt="video preview">
+                                    <div class="overlay">
+                                        <span>воспроизвести</span>
+                                    </div>
+                                </a>
+                                <div class="desc">
+                                    <h4><a href="#">#3. Suspendisse potenti. Donec molestie a mi et ullamcorper molestie
+                                        a mi et ullamcorper. Nullam scele scelerisque se...</a></h4>
+                                    <p><span>121 677</span> просмотров</p>
+                                    <p>30 минут назад</p>
+                                </div>
+                            </div>
+                            <div class="video-item video-current">
+                                <a href="#">
+                                    <img src="img/previews/img-1.png" alt="video preview">
+                                    <div class="overlay">
+                                        <span>проигрывается</span>
+                                    </div>
+                                </a>
+                                <div class="desc">
+                                    <h4><a href="#">#3. Suspendisse potenti. Donec molestie a mi et ullamcorper molestie
+                                        a mi et ullamcorper. Nullam scele scelerisque se...</a></h4>
+                                    <p><span>121 677</span> просмотров</p>
+                                    <p>30 минут назад</p>
+                                </div>
+                            </div>
+                            <div class="video-item">
+                                <a href="#">
+                                    <img src="img/previews/img-1.png" alt="video preview">
+                                    <div class="overlay">
+                                        <span>воспроизвести</span>
+                                    </div>
+                                </a>
+                                <div class="desc">
+                                    <h4><a href="#">#3. Suspendisse potenti. Donec molestie a mi et ullamcorper molestie
+                                        a mi et ullamcorper. Nullam scele scelerisque se...</a></h4>
+                                    <p><span>121 677</span> просмотров</p>
+                                    <p>30 минут назад</p>
+                                </div>
+                            </div>
+                            <div class="video-item">
+                                <a href="#">
+                                    <img src="img/previews/img-1.png" alt="video preview">
+                                    <div class="overlay">
+                                        <span>воспроизвести</span>
+                                    </div>
+                                </a>
+                                <div class="desc">
+                                    <h4><a href="#">#3. Suspendisse potenti. Donec molestie a mi et ullamcorper molestie
+                                        a mi et ullamcorper. Nullam scele scelerisque se...</a></h4>
+                                    <p><span>121 677</span> просмотров</p>
+                                    <p>30 минут назад</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <h3>
+                                Случайные видеозаписи категории
+                                <span><a href="#"><svg><use xlink:href="img/sprite.svg#icon-shuffle"></use></svg>показать еще</a></span>
+                            </h3>
+                            <div class="video-item">
+                                <a href="#">
+                                    <img src="img/previews/img-2.png" alt="video preview">
+                                    <div class="overlay">
+                                        <span>воспроизвести</span>
+                                    </div>
+                                </a>
+                                <div class="desc">
+                                    <h4><a href="#">#3. Suspendisse potenti. Donec molestie a mi et ullamcorper molestie
+                                        a mi et ullamcorper. Nullam scele scelerisque se...</a></h4>
+                                    <p><span>871 672</span> просмотра</p>
+                                    <p>30 минут назад</p>
+                                </div>
+                            </div>
+                            <div class="video-item">
+                                <a href="#">
+                                    <img src="img/previews/img-3.png" alt="video preview">
+                                    <div class="overlay">
+                                        <span>воспроизвести</span>
+                                    </div>
+                                </a>
+                                <div class="desc">
+                                    <h4><a href="#">#3. Suspendisse potenti. Donec molestie a mi et ullamcorper molestie
+                                        a mi et ullamcorper. Nullam scele scelerisque se...</a></h4>
+                                    <p><span>121 677</span> просмотров</p>
+                                    <p>30 минут назад</p>
+                                </div>
+                            </div>
+                            <div class="video-item">
+                                <a href="#">
+                                    <img src="img/previews/img-4.png" alt="video preview">
+                                    <div class="overlay">
+                                        <span>воспроизвести</span>
+                                    </div>
+                                </a>
+                                <div class="desc">
+                                    <h4><a href="#">#3. Suspendisse potenti. Donec molestie a mi et ullamcorper molestie
+                                        a mi et ullamcorper. Nullam scele scelerisque se...</a></h4>
+                                    <p><span>121 677</span> просмотров</p>
+                                    <p>30 минут назад</p>
+                                </div>
+                            </div>
+                            <div class="video-item">
+                                <a href="#">
+                                    <img src="img/previews/img-7.png" alt="video preview">
+                                    <div class="overlay">
+                                        <span>воспроизвести</span>
+                                    </div>
+                                </a>
+                                <div class="desc">
+                                    <h4><a href="#">#3. Suspendisse potenti. Donec molestie a mi et ullamcorper molestie
+                                        a mi et ullamcorper. Nullam scele scelerisque se...</a></h4>
+                                    <p><span>121 677</span> просмотров</p>
+                                    <p>30 минут назад</p>
+                                </div>
+                            </div>
+                            <div class="video-item">
+                                <a href="#">
+                                    <img src="img/previews/img-2.png" alt="video preview">
+                                    <div class="overlay">
+                                        <span>воспроизвести</span>
+                                    </div>
+                                </a>
+                                <div class="desc">
+                                    <h4><a href="#">#3. Suspendisse potenti. Donec molestie a mi et ullamcorper molestie
+                                        a mi et ullamcorper. Nullam scele scelerisque se...</a></h4>
+                                    <p><span>121 677</span> просмотров</p>
+                                    <p>30 минут назад</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
