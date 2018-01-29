@@ -8,6 +8,9 @@
     }
     .main {
         width: 60%;
+        @include media(1599px) {
+            width: 100%;
+        }
         .thumb-wrap {
             position: relative;
             padding-bottom: 56%;
@@ -15,6 +18,10 @@
             height: 0;
             overflow: hidden;
             margin-bottom: 20px;
+            @include media(1599px) {
+                max-width: 1000px;
+                margin: 0 auto 20px auto;
+            }
             iframe {
                 position: absolute;
                 top: 0;
@@ -32,6 +39,9 @@
             max-height: 44px;
             overflow: hidden;
             margin-bottom: 15px;
+            @include media(767px) {
+                max-height: 200px;
+            }
         }
         .video-info {
             overflow: hidden;
@@ -45,9 +55,16 @@
                     weight: 400;
                 }
                 color: $color-dark-65;
+                @include media(767px) {
+                    float: none;
+                    margin-bottom: 10px;
+                }
             }
             .statistics {
                 float: right;
+                @include media(767px) {
+                    float: none;
+                }
                 .views {
                     font: {
                         size: 16px;
@@ -102,15 +119,36 @@
                     weight: 500;
                 }
                 color: $color-dark;
+                @include media(859px) {
+                    float: none;
+                    margin-bottom: 15px;
+                }
             }
             .special-links {
                 float: right;
+                @include media(859px) {
+                    float: none;
+                }
                 li {
                     display: inline;
                     border-left: 2px solid $color-base-10;
                     margin-right: 10px;
+                    @include media(589px) {
+                        display: block;
+                        border: none;
+                        margin-bottom: 15px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
                     &:first-child {
                         border-left: none;
+                        a {
+                            padding-left: 35px;
+                            svg {
+                                left: 0;
+                            }
+                        }
                     }
                     a {
                         font: {
@@ -120,6 +158,9 @@
                         color: rgba($color-base, .9);
                         position: relative;
                         padding-left: 50px;
+                        @include media(589px) {
+                            padding-left: 35px;
+                        }
                         &:hover, &:active {
                             color: $color-accent;
                         }
@@ -129,6 +170,9 @@
                             left: 15px;
                             width: 25px;
                             height: 20px;
+                            @include media(589px) {
+                                left: 0;
+                            }
                         }
                     }
                 }
@@ -152,6 +196,9 @@
                 @include transition-single(color, .3s, ease-in-out);
                 &:hover, &:active {
                     color: $color-accent;
+                }
+                @include media(859px) {
+                    float: none;
                 }
             }
         }
@@ -409,6 +456,9 @@
     }
     .additional {
         width: 40%;
+        @include media(1599px) {
+            width: 100%;
+        }
         h3 {
             position: relative;
             font: {

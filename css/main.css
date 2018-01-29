@@ -2510,6 +2510,9 @@ svg {
     padding: 0 15px; }
   #app-video-inner-page .main {
     width: 60%; }
+    @media (max-width: 1599px) {
+      #app-video-inner-page .main {
+        width: 100%; } }
     #app-video-inner-page .main .thumb-wrap {
       position: relative;
       padding-bottom: 56%;
@@ -2517,6 +2520,10 @@ svg {
       height: 0;
       overflow: hidden;
       margin-bottom: 20px; }
+      @media (max-width: 1599px) {
+        #app-video-inner-page .main .thumb-wrap {
+          max-width: 1000px;
+          margin: 0 auto 20px auto; } }
       #app-video-inner-page .main .thumb-wrap iframe {
         position: absolute;
         top: 0;
@@ -2530,6 +2537,9 @@ svg {
       max-height: 44px;
       overflow: hidden;
       margin-bottom: 15px; }
+      @media (max-width: 767px) {
+        #app-video-inner-page .main h2 {
+          max-height: 200px; } }
     #app-video-inner-page .main .video-info {
       overflow: hidden;
       padding-bottom: 20px;
@@ -2540,8 +2550,15 @@ svg {
         font-size: 16px;
         font-weight: 400;
         color: #7f818e; }
+        @media (max-width: 767px) {
+          #app-video-inner-page .main .video-info .date {
+            float: none;
+            margin-bottom: 10px; } }
       #app-video-inner-page .main .video-info .statistics {
         float: right; }
+        @media (max-width: 767px) {
+          #app-video-inner-page .main .video-info .statistics {
+            float: none; } }
         #app-video-inner-page .main .video-info .statistics .views {
           font-size: 16px;
           font-weight: 400;
@@ -2587,20 +2604,41 @@ svg {
         font-size: 16px;
         font-weight: 500;
         color: #3b3d52; }
+        @media (max-width: 859px) {
+          #app-video-inner-page .main .heading h3 {
+            float: none;
+            margin-bottom: 15px; } }
       #app-video-inner-page .main .heading .special-links {
         float: right; }
+        @media (max-width: 859px) {
+          #app-video-inner-page .main .heading .special-links {
+            float: none; } }
         #app-video-inner-page .main .heading .special-links li {
           display: inline;
           border-left: 2px solid #eeeef0;
           margin-right: 10px; }
+          @media (max-width: 589px) {
+            #app-video-inner-page .main .heading .special-links li {
+              display: block;
+              border: none;
+              margin-bottom: 15px; }
+              #app-video-inner-page .main .heading .special-links li:last-child {
+                margin-bottom: 0; } }
           #app-video-inner-page .main .heading .special-links li:first-child {
             border-left: none; }
+            #app-video-inner-page .main .heading .special-links li:first-child a {
+              padding-left: 35px; }
+              #app-video-inner-page .main .heading .special-links li:first-child a svg {
+                left: 0; }
           #app-video-inner-page .main .heading .special-links li a {
             font-size: 12px;
             font-weight: 500;
             color: rgba(85, 87, 110, 0.9);
             position: relative;
             padding-left: 50px; }
+            @media (max-width: 589px) {
+              #app-video-inner-page .main .heading .special-links li a {
+                padding-left: 35px; } }
             #app-video-inner-page .main .heading .special-links li a:hover, #app-video-inner-page .main .heading .special-links li a:active {
               color: #00b6ad; }
             #app-video-inner-page .main .heading .special-links li a svg {
@@ -2609,6 +2647,9 @@ svg {
               left: 15px;
               width: 25px;
               height: 20px; }
+              @media (max-width: 589px) {
+                #app-video-inner-page .main .heading .special-links li a svg {
+                  left: 0; } }
       #app-video-inner-page .main .heading button {
         cursor: pointer;
         border: none;
@@ -2629,6 +2670,9 @@ svg {
         transition: color 0.3s ease-in-out; }
         #app-video-inner-page .main .heading button:hover, #app-video-inner-page .main .heading button:active {
           color: #00b6ad; }
+        @media (max-width: 859px) {
+          #app-video-inner-page .main .heading button {
+            float: none; } }
     #app-video-inner-page .main .typography {
       margin-bottom: 20px; }
       #app-video-inner-page .main .typography a {
@@ -2853,6 +2897,9 @@ svg {
           margin-left: -20px; }
   #app-video-inner-page .additional {
     width: 40%; }
+    @media (max-width: 1599px) {
+      #app-video-inner-page .additional {
+        width: 100%; } }
     #app-video-inner-page .additional h3 {
       position: relative;
       font-size: 16px;
