@@ -1,1 +1,257 @@
 @charset "UTF-8";
+// Playlist inner styles
+
+#app-playlist-inner-page {
+    h2 {
+        font: {
+            size: 16px;
+            weight: 500;
+        }
+        line-height: 1;
+        color: $color-dark;
+        margin-bottom: 30px;
+        position: relative;
+        span {
+            font: {
+                size: 12px;
+                weight: 400;
+            }
+            color: $color-dark-65;
+            position: absolute;
+            top: 2px;
+            right: 0;
+        }
+    }
+    .typography {
+        padding-bottom: 30px;
+        a {
+            color: $color-accent;
+            &:hover, &:active {
+                color: $color-dark-65;
+            }
+        }
+    }
+    .outer {
+        overflow: hidden;
+        margin: 0 -15px;
+        .desc {
+            float: right;
+            width: 66.6667%;
+            padding: 0 15px;
+            @include media(1499px) {
+                width: 100%;
+            }
+            footer {
+                position: relative;
+                margin-bottom: 30px;
+                .count {
+                    float: left;
+                    font: {
+                        size: 12px;
+                        weight: 500;
+                    }
+                    color: rgba($color-base, .9);
+                    @include media(859px) {
+                        float: none;
+                        margin-bottom: 20px;
+                    }
+                    span {
+                        color: $color-accent;
+                    }
+                }
+                .special-links {
+                    float: right;
+                    @include media(859px) {
+                        float: none;
+                    }
+                    li {
+                        display: inline;
+                        border-left: 2px solid $color-base-10;
+                        margin-right: 10px;
+                        @include media(589px) {
+                            display: block;
+                            border: none;
+                            margin-bottom: 15px;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                        &:first-child {
+                            border-left: none;
+                            a {
+                                padding-left: 35px;
+                                svg {
+                                    left: 0;
+                                }
+                            }
+                        }
+                        a {
+                            font: {
+                                size: 12px;
+                                weight: 500;
+                            }
+                            color: rgba($color-base, .9);
+                            position: relative;
+                            padding-left: 50px;
+                            @include media(589px) {
+                                padding-left: 35px;
+                            }
+                            &:hover, &:active {
+                                color: $color-accent;
+                            }
+                            svg {
+                                position: absolute;
+                                top: -4px;
+                                left: 15px;
+                                width: 25px;
+                                height: 20px;
+                                @include media(589px) {
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .pic {
+            float: right;
+            width: 33.3333%;
+            padding: 0 15px;
+            @include media(1499px) {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                @include media(1499px) {
+                    max-width: 740px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    .video-row {
+        overflow: hidden;
+        margin: 0 -5px;
+        .video-item {
+            padding: 0 5px;
+            width: 20%;
+            float: left;
+            margin-bottom: 30px;
+            @include media(1699px) {
+                width: 25%;
+            }
+            @include media(1499px) {
+                width: 33.3333%;
+            }
+            @include media(1023px) {
+                width: 50%;
+            }
+            @include media(639px) {
+                width: 100%;
+            }
+            h3 {
+                font: {
+                    weight: 500;
+                    size: 14px;
+                }
+                height: 40px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                a {
+                    color: $color-dark-65;
+                    &:hover, &:active {
+                        color: $color-dark;
+                    }
+                }
+            }
+            a {
+                display: block;
+                position: relative;
+                margin-bottom: 10px;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+                .info {
+                    position: absolute;
+                    height: 34px;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background: rgba(#000, .6);
+                    line-height: 34px;
+                    overflow: hidden;
+                    padding: 0 10px;
+                    color: rgba(#fff, .8);
+                    font: {
+                        size: 12px;
+                        weight: 500;
+                    }
+                    p {
+                        float: left;
+                    }
+                    div {
+                        float: right;
+                        svg {
+                            display: inline-block;
+                            width: 20px;
+                            height: 12px;
+                        }
+                        .views {
+                            vertical-align: middle;
+                            svg {
+                                position: relative;
+                                top: 1px;
+                            }
+                        }
+                        .likes {
+                            vertical-align: middle;
+                            svg {
+                                @include scaleY(-1);
+                                position: relative;
+                            }
+                        }
+                        .dislikes {
+                            vertical-align: middle;
+                            svg {
+                                position: relative;
+                                top: 3px;
+                            }
+                        }
+                    }
+                }
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background: rgba(#000, .6);
+                    opacity: 0;
+                    @include transition-single(opacity, .3s, ease-in-out);
+                    span {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        @include translate(-50%, -50%);
+                        color: rgba(#fff, .9);
+                        text-transform: uppercase;
+                        font: {
+                            size: 14px;
+                            weight: 500;
+                        }
+                        line-height: 1;
+                    }
+                }
+                &:hover .overlay {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

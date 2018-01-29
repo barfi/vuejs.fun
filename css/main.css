@@ -3038,4 +3038,213 @@ svg {
       #app-video-inner-page .additional .video-item.video-current > a .overlay {
         opacity: 1; }
 
+#app-playlist-inner-page h2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: #3b3d52;
+  margin-bottom: 30px;
+  position: relative; }
+  #app-playlist-inner-page h2 span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #7f818e;
+    position: absolute;
+    top: 2px;
+    right: 0; }
+#app-playlist-inner-page .typography {
+  padding-bottom: 30px; }
+  #app-playlist-inner-page .typography a {
+    color: #00b6ad; }
+    #app-playlist-inner-page .typography a:hover, #app-playlist-inner-page .typography a:active {
+      color: #7f818e; }
+#app-playlist-inner-page .outer {
+  overflow: hidden;
+  margin: 0 -15px; }
+  #app-playlist-inner-page .outer .desc {
+    float: right;
+    width: 66.6667%;
+    padding: 0 15px; }
+    @media (max-width: 1499px) {
+      #app-playlist-inner-page .outer .desc {
+        width: 100%; } }
+    #app-playlist-inner-page .outer .desc footer {
+      position: relative;
+      margin-bottom: 30px; }
+      #app-playlist-inner-page .outer .desc footer .count {
+        float: left;
+        font-size: 12px;
+        font-weight: 500;
+        color: rgba(85, 87, 110, 0.9); }
+        @media (max-width: 859px) {
+          #app-playlist-inner-page .outer .desc footer .count {
+            float: none;
+            margin-bottom: 20px; } }
+        #app-playlist-inner-page .outer .desc footer .count span {
+          color: #00b6ad; }
+      #app-playlist-inner-page .outer .desc footer .special-links {
+        float: right; }
+        @media (max-width: 859px) {
+          #app-playlist-inner-page .outer .desc footer .special-links {
+            float: none; } }
+        #app-playlist-inner-page .outer .desc footer .special-links li {
+          display: inline;
+          border-left: 2px solid #eeeef0;
+          margin-right: 10px; }
+          @media (max-width: 589px) {
+            #app-playlist-inner-page .outer .desc footer .special-links li {
+              display: block;
+              border: none;
+              margin-bottom: 15px; }
+              #app-playlist-inner-page .outer .desc footer .special-links li:last-child {
+                margin-bottom: 0; } }
+          #app-playlist-inner-page .outer .desc footer .special-links li:first-child {
+            border-left: none; }
+            #app-playlist-inner-page .outer .desc footer .special-links li:first-child a {
+              padding-left: 35px; }
+              #app-playlist-inner-page .outer .desc footer .special-links li:first-child a svg {
+                left: 0; }
+          #app-playlist-inner-page .outer .desc footer .special-links li a {
+            font-size: 12px;
+            font-weight: 500;
+            color: rgba(85, 87, 110, 0.9);
+            position: relative;
+            padding-left: 50px; }
+            @media (max-width: 589px) {
+              #app-playlist-inner-page .outer .desc footer .special-links li a {
+                padding-left: 35px; } }
+            #app-playlist-inner-page .outer .desc footer .special-links li a:hover, #app-playlist-inner-page .outer .desc footer .special-links li a:active {
+              color: #00b6ad; }
+            #app-playlist-inner-page .outer .desc footer .special-links li a svg {
+              position: absolute;
+              top: -4px;
+              left: 15px;
+              width: 25px;
+              height: 20px; }
+              @media (max-width: 589px) {
+                #app-playlist-inner-page .outer .desc footer .special-links li a svg {
+                  left: 0; } }
+  #app-playlist-inner-page .outer .pic {
+    float: right;
+    width: 33.3333%;
+    padding: 0 15px; }
+    @media (max-width: 1499px) {
+      #app-playlist-inner-page .outer .pic {
+        width: 100%;
+        margin-bottom: 30px; } }
+    #app-playlist-inner-page .outer .pic img {
+      display: block;
+      width: 100%;
+      height: auto; }
+      @media (max-width: 1499px) {
+        #app-playlist-inner-page .outer .pic img {
+          max-width: 740px;
+          margin: 0 auto; } }
+#app-playlist-inner-page .video-row {
+  overflow: hidden;
+  margin: 0 -5px; }
+  #app-playlist-inner-page .video-row .video-item {
+    padding: 0 5px;
+    width: 20%;
+    float: left;
+    margin-bottom: 30px; }
+    @media (max-width: 1699px) {
+      #app-playlist-inner-page .video-row .video-item {
+        width: 25%; } }
+    @media (max-width: 1499px) {
+      #app-playlist-inner-page .video-row .video-item {
+        width: 33.3333%; } }
+    @media (max-width: 1023px) {
+      #app-playlist-inner-page .video-row .video-item {
+        width: 50%; } }
+    @media (max-width: 639px) {
+      #app-playlist-inner-page .video-row .video-item {
+        width: 100%; } }
+    #app-playlist-inner-page .video-row .video-item h3 {
+      font-weight: 500;
+      font-size: 14px;
+      height: 40px;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      #app-playlist-inner-page .video-row .video-item h3 a {
+        color: #7f818e; }
+        #app-playlist-inner-page .video-row .video-item h3 a:hover, #app-playlist-inner-page .video-row .video-item h3 a:active {
+          color: #3b3d52; }
+    #app-playlist-inner-page .video-row .video-item a {
+      display: block;
+      position: relative;
+      margin-bottom: 10px; }
+      #app-playlist-inner-page .video-row .video-item a img {
+        display: block;
+        width: 100%;
+        height: auto; }
+      #app-playlist-inner-page .video-row .video-item a .info {
+        position: absolute;
+        height: 34px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        line-height: 34px;
+        overflow: hidden;
+        padding: 0 10px;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 12px;
+        font-weight: 500; }
+        #app-playlist-inner-page .video-row .video-item a .info p {
+          float: left; }
+        #app-playlist-inner-page .video-row .video-item a .info div {
+          float: right; }
+          #app-playlist-inner-page .video-row .video-item a .info div svg {
+            display: inline-block;
+            width: 20px;
+            height: 12px; }
+          #app-playlist-inner-page .video-row .video-item a .info div .views {
+            vertical-align: middle; }
+            #app-playlist-inner-page .video-row .video-item a .info div .views svg {
+              position: relative;
+              top: 1px; }
+          #app-playlist-inner-page .video-row .video-item a .info div .likes {
+            vertical-align: middle; }
+            #app-playlist-inner-page .video-row .video-item a .info div .likes svg {
+              -o-transform: scaleY(-1);
+              -ms-transform: scaleY(-1);
+              -moz-transform: scaleY(-1);
+              -webkit-transform: scaleY(-1);
+              transform: scaleY(-1);
+              position: relative; }
+          #app-playlist-inner-page .video-row .video-item a .info div .dislikes {
+            vertical-align: middle; }
+            #app-playlist-inner-page .video-row .video-item a .info div .dislikes svg {
+              position: relative;
+              top: 3px; }
+      #app-playlist-inner-page .video-row .video-item a .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out; }
+        #app-playlist-inner-page .video-row .video-item a .overlay span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -o-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          color: rgba(255, 255, 255, 0.9);
+          text-transform: uppercase;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1; }
+      #app-playlist-inner-page .video-row .video-item a:hover .overlay {
+        opacity: 1; }
+
 /*# sourceMappingURL=main.css.map */
