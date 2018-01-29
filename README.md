@@ -1,2 +1,2 @@
 # vuejs.fun
-vuejs.fun community site markup 
+vuejs.fun community site design and markup from scratch.
